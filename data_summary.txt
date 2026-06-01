@@ -1,0 +1,333 @@
+Detailed inspection of NPS directories and files:
+
+==================== Directory: 2024-10 (8 files) ====================
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-10 Facultad Arquitectura Diseño y Construcción.xlsx
+  Sheets available: ['Sheet']
+  Sheet 'Sheet' Shape: (9, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-10 Facultad de Comunicaciones y Artes.xlsx
+  Sheets available: ['Sheet']
+  Sheet 'Sheet' Shape: (6, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-10 Facultad de Derecho.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (3, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado En Derecho Administrativo Y Función Pública', 'Responses': 17}...
+  Sheet 'Sheet' Shape: (41, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-10 Facultad de Educación VRA.xlsx
+  Sheets available: ['Sheet']
+  Sheet 'Sheet' Shape: (34, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-10 Facultad de Educación.xlsx
+  Sheets available: ['Sheet']
+  Sheet 'Sheet' Shape: (45, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-10 Facultad de Ingeniería y Negocios.xlsx
+  Sheets available: ['Sheet']
+  Sheet 'Sheet' Shape: (84, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-10 Facultad de Medicina Veterinaria y Agronomía.xlsx
+  Sheets available: ['Sheet']
+  Sheet 'Sheet' Shape: (25, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-10 Facultad de Salud y Ciencias Sociales.xlsx
+  Sheets available: ['Sheet']
+  Sheet 'Sheet' Shape: (102, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+==================== Directory: 2024-20 (8 files) ====================
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-20 Facultad Arquitectura Diseño y Construcción.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (4, 2)
+  Columns: ['Nombre del programa realizado', 'Unnamed: 1'] ... (total 2)
+  Sample row 1:
+{'Nombre del programa realizado': 'Answer Choices', 'Unnamed: 1': 'Responses'}...
+  Sheet 'Sheet' Shape: (7, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-20 Facultad de Comunicaciones.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (5, 2)
+  Columns: ['Nombre del programa realizado', 'Unnamed: 1'] ... (total 2)
+  Sample row 1:
+{'Nombre del programa realizado': 'Answer Choices', 'Unnamed: 1': 'Responses'}...
+  Sheet 'Sheet' Shape: (8, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-20 Facultad de Derecho.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (4, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Mediación y Resolución de conflictos en el ámbito familiar', 'Responses': 2}...
+  Sheet 'Sheet' Shape: (16, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-20 Facultad de Educación VRA.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (7, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Docencia para el Aprendizaje a lo Largo de la Vida', 'Responses': 4}...
+  Sheet 'Sheet' Shape: (40, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-20 Facultad de Educación.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (11, 2)
+  Columns: ['Nombre del programa realizado', 'Unnamed: 1'] ... (total 2)
+  Sample row 1:
+{'Nombre del programa realizado': 'Answer Choices', 'Unnamed: 1': 'Responses'}...
+  Sheet 'Sheet' Shape: (5, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-20 Facultad de Ingeniería y Negocios.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (12, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Bioestadística', 'Responses': 2}...
+  Sheet 'Sheet' Shape: (21, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-20 Facultad de Medicina Veterinaria y Agronomía.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (6, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Apicultura', 'Responses': 0}...
+  Sheet 'Sheet' Shape: (13, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción - Estudiantes de Postgrado 2024-20 Facultad de Salud y Ciencias Sociales.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (9, 2)
+  Columns: ['Nombre del programa realizado', 'Unnamed: 1'] ... (total 2)
+  Sample row 1:
+{'Nombre del programa realizado': 'Answer Choices', 'Unnamed: 1': 'Responses'}...
+  Sheet 'Sheet' Shape: (35, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+==================== Directory: 2025-10 (8 files) ====================
+
+File: Encuesta de Satisfacción estudiantes de Ed. Continua 2025-10 Facultad de Medicina Veterinaria y Agronomía.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (6, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Medicina Interna en Caninos', 'Responses': 17}...
+  Sheet 'Sheet' Shape: (29, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continia 2025-10 Facultad de Salud y Ciencias Sociales.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (11, 2)
+  Columns: ['Answer Choices', 'Unnamed: 1'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Psicología Aplicada a la Actividad Física y el Deporte', 'Unnamed: 1': 5}...
+  Sheet 'Sheet' Shape: (92, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-10 Facultad Arquitectura Diseño y Construcción.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (2, 3)
+  Columns: ['Answer Choices', 'Responses', 'Unnamed: 2'] ... (total 3)
+  Sample row 1:
+{'Answer Choices': 'Diplomado BIM en integración del diseño, coordinación y revisión para proyectos AEC', 'Responses': 1, 'Unnamed: 2': 4}...
+  Sheet 'Sheet' Shape: (5, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-10 Facultad de Comunicaciones.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (2, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Comunicación y Marketing Digital para emprender', 'Responses': 1}...
+  Sheet 'Sheet' Shape: (2, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-10 Facultad de Derecho.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (4, 2)
+  Columns: ['Nombre del programa realizado', 'Unnamed: 1'] ... (total 2)
+  Sample row 1:
+{'Nombre del programa realizado': 'Answer Choices', 'Unnamed: 1': 'Responses'}...
+  Sheet 'Sheet' Shape: (2, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-10 Facultad de Educación VRA.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (7, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Docencia para el Aprendizaje a lo Largo de la Vida', 'Responses': 4}...
+  Sheet 'Sheet' Shape: (27, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-10 Facultad de Educación.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (9, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Alfabetización inicial y didáctica para la primera infancia', 'Responses': 6}...
+  Sheet 'Sheet' Shape: (86, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-10 Facultad de Ingeniería y Negocios.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (12, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Turismo Cultural y Las Industrias Creativas', 'Responses': 6}...
+  Sheet 'Sheet' Shape: (120, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+==================== Directory: 2025-20 (8 files) ====================
+
+File: Encuesta de Satisfacción estudiantes de Ed. Continua 2025-20 Facultad de Medicina Veterinaria y Agronomía.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (7, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Rehabilitación y Fisiatría Veterinaria', 'Responses': 5}...
+  Sheet 'Sheet' Shape: (23, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continia 2025-20 Facultad de Salud y Ciencias Sociales.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (11, 2)
+  Columns: ['Answer Choices', 'Respuestas'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado De Kinesiología Respiratoria Para Atención Primaria En Salud- PROVIDENCIA', 'Respuestas': 5}...
+  Sheet 'Sheet' Shape: (62, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-20 Facultad Arquitectura Diseño y Construcción.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (4, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado BIM en integración del diseño, coordinación y revisión para proyectos AEC', 'Responses': 0}...
+  Sheet 'Sheet' Shape: (4, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-20 Facultad de Comunicaciones.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (4, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Enseñanza del Inglés con Enfoque Inclusivo', 'Responses': 6}...
+  Sheet 'Sheet' Shape: (16, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-20 Facultad de Derecho.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (4, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Derecho Inmobiliario', 'Responses': 13}...
+  Sheet 'Sheet' Shape: (18, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-20 Facultad de Educación VRA.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (8, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Docencia para el Aprendizaje a lo Largo de la Vida', 'Responses': 3}...
+  Sheet 'Sheet' Shape: (29, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-20 Facultad de Educación.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (7, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado en Alfabetización inicial y didáctica para la primera infancia', 'Responses': 1}...
+  Sheet 'Sheet' Shape: (46, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
+
+File: Encuesta de Satisfacción estudiantes Ed. Continua 2025-20 Facultad de Ingeniería y Negocios.xlsx
+  Sheets available: ['Hoja1', 'Sheet']
+  Sheet 'Hoja1' Shape: (13, 2)
+  Columns: ['Answer Choices', 'Responses'] ... (total 2)
+  Sample row 1:
+{'Answer Choices': 'Diplomado En Gestión Turistica Sostenible', 'Responses': 6}...
+  Sheet 'Sheet' Shape: (52, 22)
+  Columns: ['respondent_id', 'collector_id', 'date_created', 'date_modified', 'ip_address', 'email_address', 'first_name', 'last_name', 'custom_1', 'Nombre del programa realizado', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes la Universidad a tus familiares y/o amigos?', '¿Qué tan satisfecho estás con los contenidos entregados en este programa? En una escala de 1 a 7, en que 1 es "muy poco satisfecho" y 7 es "muy satisfecho".', '¿En qué medida el Diplomado/Postítulo que cursaste contribuyó a diversificar tus oportunidades laborales? En una escala de 1 a 7, en que 1 es "contribuyó en menor medida" y 7 "contribuyó en gran medida".', '¿Qué tan probable es que vuelvas a realizar un Diplomado o Postítulo en la Universidad de Las Américas? En una escala de 1 a 7, en que 1 es "muy poco probable" y 7 es "muy probable".', 'Indica el nombre de tu coordinador(a) académico(a)'] ... (total 22)
+  Sample row 1:
+{'respondent_id': nan, 'collector_id': nan, 'date_created': NaT, 'date_modified': NaT, 'ip_address': nan, 'email_address': nan, 'first_name': nan, 'last_name': nan, 'custom_1': nan, 'Nombre del programa realizado': 'Response', 'Considerando tu experiencia en Universidad de Las Américas, en una escala de 1 a 7, en que 1 es "muy poco probable" y 7 "muy probable".¿Qué tan probable es que recomiendes ...
