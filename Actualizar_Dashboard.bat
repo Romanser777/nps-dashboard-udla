@@ -41,7 +41,7 @@ if exist "%~dp0.git" (
     echo.
     
     :: Agregar los archivos generados y necesarios
-    git add "%~dp0dashboard.html" "%~dp0dashboard_data.js" "%~dp0dashboard_data.json" "%~dp0NPS_Consolidado.xlsx" "%~dp0consolidate_data.py" "%~dp0matriculas_historicas.json" "%~dp0Detalle Estudiantes Postgrado_Tipo Ingreso.xlsx" "%~dp0Actualizar_Dashboard.bat"
+    git add "%~dp0index.html" "%~dp0dashboard_data.js" "%~dp0dashboard_data.json" "%~dp0NPS_Consolidado.xlsx" "%~dp0consolidate_data.py" "%~dp0matriculas_historicas.json" "%~dp0Detalle Estudiantes Postgrado_Tipo Ingreso.xlsx" "%~dp0Actualizar_Dashboard.bat"
     
     :: Crear el commit con fecha y hora actual de la actualizacion
     git commit -m "Actualizacion automatica de datos - %DATE% %TIME%"
@@ -76,7 +76,7 @@ if exist "%~dp0.git" (
 echo.
 echo ==========================================================
 echo  Para ver los cambios locales:
-echo   1. Dashboard Web: Abre dashboard.html o refrescalo (F5).
+echo   1. Dashboard Web: Abre index.html o refrescalo (F5).
 echo   2. Power BI: Abre tu reporte y haz clic en "Actualizar".
 echo ==========================================================
 echo.
