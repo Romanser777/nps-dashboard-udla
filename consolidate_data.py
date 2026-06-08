@@ -226,6 +226,36 @@ prog_name_map = {
     'DIP.EN GEST. DE PROGR. EN ATENCIÓN PRIMARIA DE SALUD CON ENFOQUE EN MOD. DE ATEN. INTEG. EN SA': 'DIPLOMADO EN GESTIÓN Y COORDINACIÓN DE PROGRAMAS EN ATENCIÓN PRIMARIA DE SALUD',
 }
 
+# Equivalencias entre nombre en archivo de matrículas y nombre en encuestas
+enroll_to_resp_map = {
+    'DIPLOMADO CONVIVENCIA ESCOLAR Y APRENDIZAJE SOCIOEMOCIONAL':           'DIPLOMADO EN CONVIVENCIA ESCOLAR Y APRENDIZAJE SOCIOEMOCIONAL',
+    'DIPLOMADO EN CONVIVENCIA EDUCATIVA Y APRENDIZAJE SOCIOEMOCIONAL':      'DIPLOMADO EN CONVIVENCIA ESCOLAR Y APRENDIZAJE SOCIOEMOCIONAL',
+    'DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA': 'DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICA PARA LA PRIMERA INFANCIA',
+    'DIPLOMADO EN AUDITOR LÍDER EN GESTIÓN DE RIESGOS EN SEGURIDAD Y SALUD OCUPACI. BAJO NORMA ISO 45001': 'DIPLOMADO EN AUDITOR LÍDER EN GESTIÓN DE RIESGOS EN SEGURIDAD Y SALUD OCUPACIONAL BAJO NORMA ISO 45001',
+    'DIPLOMADO EN CONTROL DE GESTIÓN ¿ CONTROLLING SAP':                    'DIPLOMADO EN CONTROL DE GESTIÓN – CONTROLLING SAP',
+    'DIPLOMADO EN DIRECCIÓN DE PROYECTOS ¿ MÓDULO PS SAP':                  'DIPLOMADO EN DIRECCIÓN DE PROYECTOS – MÓDULO PS SAP',
+    'DIPLOMADO EN DISEÑO DE SISTEMAS DE RIEGO Y FERTIIRRIGACIÓN':           'DIPLOMADO EN DISEÑO DE SISTEMAS DE RIEGO Y FERTIRRIGACIÓN',
+    'DIPLOMADO EN ENFOQUE DE GÉNERO E INTERCULTURALIDAD PARA EDUCACIÓN SUPERIOR': 'DIPLOMADO EN ENFOQUE DE GÉNERO E INTERCULTURALIDAD PARA LA EDUCACIÓN SUPERIOR',
+    'DIPLOMADO EN GEST. DE PROGR. EN ATENCIÓN PRIMARIA DE SALUD CON ENFOQUE EN MOD. DE ATEN. INTEG. EN SA': 'DIPLOMADO EN GESTIÓN Y COORDINACIÓN DE PROGRAMAS EN ATENCIÓN PRIMARIA DE SALUD CON ENFOQUE EN EL MODELO DE ATENCIÓN INTEGRAL EN SALUD (MAIS)',
+    'DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN DE SALUD':            'DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN EN SALUD',
+    'DIPLOMADO EN INVESTIGACIÓN-ACCIÓN APLICADA A LA DOCENCIA UNIVERSITARIA': 'DIPLOMADO EN INVESTIGACIÓN – ACCIÓN APLICADA A LA DOCENCIA UNIVERSITARIA',
+    'DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD': 'DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD CON MENCIÓN EN AUDITOR LÍDER SIG',
+    'DIPLOMADO GESTIÓN AMBIENTAL BAJO NORMA ISO 14001':                     'DIPLOMADO EN GESTIÓN AMBIENTAL BAJO NORMA ISO14001 CON MENCIÓN EN AUDITOR LÍDER',
+    'DIPLOMADO MEDICINA INTERNA DE CANINOS':                                'DIPLOMADO EN MEDICINA INTERNA EN CANINOS',
+    'DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR':             'DIPLOMADO EN ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR',
+    'DIPLOMADO PARTICIPACIÓN SOCIAL Y COMUNITARIA EN SALUD: HERRAMIENTAS Y METODOLOGIAS PARTICIPATIVAS': 'DIPLOMADO PARTICIPACIÓN SOCIAL Y COMUNITARIA EN SALUD: HERRAMIENTAS Y METODOLOGÍAS PARTICIPATIVAS',
+    'DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA':            'DIPLOMADO EN PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA',
+    'DIPLOMADO SALUD MENTAL: ABORDAJE INTERDISCIPLINARIO  Y GESTIÓN CLÍNICA': 'DIPLOMADO EN SALUD MENTAL: ABORDAJE INTERDISCIPLINARIO Y GESTIÓN CLÍNICA',
+    'DIPLOMADO ANESTESIA Y MANEJO DE DOLOR EN PEQUEÑOS ANIMALES':           'DIPLOMADO EN ANESTESIA Y MANEJO DE DOLOR EN PEQUEÑOS ANIMALES',
+    'DIPLOMADO DE KINESITERAPIA RESPIRATORIA PARA ATENCIÓN PRIMARIA EN SALUD': 'DIPLOMADO DE KINESIOLOGÍA RESPIRATORIA PARA ATENCIÓN PRIMARIA DE SALUD',
+    'DIPLOMADO DE MEDIACIÓN Y RESOLUCIÓN DE CONFLICTOS EN EL ÁMBITO DE LA FAMILIA': 'DIPLOMADO EN MEDIACIÓN Y RESOLUCIÓN DE CONFLICTOS EN EL ÁMBITO FAMILIAR',
+    'DIPLOMADO DOCENCIA EN SIMULACIÓN CLÍNICA':                             'DIPLOMADO EN DOCENCIA EN SIMULACIÓN CLÍNICA',
+    'DIPLOMADO EN GESTIÓN DE EMERGENCIAS Y RESPUESTAS ANTE DESASTRES BAJO NORMA ISO 22320': 'DIPLOMADO EN GESTIÓN DE EMERGENCIAS Y RESPUESTAS ANTE DESATRES BAJO NORMA ISO 22320',
+    'DIPLOMADO EN GESTIÓN DE PERSONAS Y CAMBIO ORGANIZACIONAL':             'DIPLOMADO EN GESTIÓN DE PERSONAS Y CAMBIO',
+    'DIPLOMADO EN PRESCRIPCIÓN DE EJERCICIOS DE FUERZA Y MUSCULACIÓN PARA LA ACTIVIDAD FÍSICA': 'DIPLOMADO PRESCRIPCIÓN DE EJERCICIOS DE FUERZA Y MUSCULACIÓN PARA LA ACTIVIDAD FÍSICA',
+    'DIPLOMADO SOBRE INCLUSIÓN EN EDUCACIÓN SUPERIOR':                      'DIPLOMADO EN DIVERSIDADES EN EDUCACIÓN SUPERIOR: ENFOQUE INTEGRAL EN NECESIDADES EDUCATIVAS',
+}
+
 for sd in subdirs:
     path  = os.path.join(workspace_dir, sd)
     files = glob.glob(os.path.join(path, "*.xlsx")) if os.path.exists(path) else []
@@ -477,35 +507,40 @@ if not df_sin.empty:
         prog = str(row['Programa Postgrado']).strip()
         prog_up = prog_name_map.get(prog.upper().strip(), prog.upper().strip())
 
-        if (per, prog_up) in resp_set or (per, prog.upper().strip()) in resp_set:
+        # Resolver nombre equivalente para buscar en respuestas
+        prog_up_resolved = enroll_to_resp_map.get(prog_up, prog_up)
+
+        if (per, prog_up_resolved) in resp_set or (per, prog_up) in resp_set:
             continue
 
-        oferta = oferta_lookup.get((per, prog_up))
-        if not oferta:
-            oferta = oferta_lookup.get((per, prog.upper().strip()))
-        if not oferta:
-            for (op, oprog), oval in oferta_lookup.items():
-                if op == per:
+        # 1. Buscar en coord_map (archivo maestro de coordinadores)
+        coord_final = coord_map.get((per, prog_up))
+        if not coord_final:
+            coord_final = coord_map.get((per, prog_up_resolved))
+        if not coord_final:
+            for (mp, mprog), mc in coord_map.items():
+                if mp == per:
                     wp = set(w for w in prog_up.split() if len(w) > 3)
-                    wo = set(w for w in oprog.split() if len(w) > 3)
-                    if len(wp & wo) >= 3:
-                        oferta = oval
+                    wo = set(w for w in mprog.split() if len(w) > 3)
+                    if len(wp & wo) >= 4:
+                        coord_final = mc
                         break
 
-        coord_final = oferta['coord'] if oferta and oferta['coord'] != '—' else '—'
-        if coord_final == '—':
-            prog_key_lookup = prog_up
-            coord_from_map2 = coord_map.get((per, prog_key_lookup))
-            if not coord_from_map2:
-                for (mp, mprog), mc in coord_map.items():
-                    if mp == per:
+        # 2. Si no está en coord_map, buscar en oferta_lookup
+        if not coord_final:
+            oferta = oferta_lookup.get((per, prog_up)) or oferta_lookup.get((per, prog_up_resolved))
+            if not oferta:
+                for (op, oprog), oval in oferta_lookup.items():
+                    if op == per:
                         wp = set(w for w in prog_up.split() if len(w) > 3)
-                        wo = set(w for w in mprog.split() if len(w) > 3)
+                        wo = set(w for w in oprog.split() if len(w) > 3)
                         if len(wp & wo) >= 3:
-                            coord_from_map2 = mc
+                            oferta = oval
                             break
-            if coord_from_map2:
-                coord_final = coord_from_map2
+            if oferta and oferta.get('coord') and oferta['coord'] != '—':
+                coord_final = oferta['coord']
+
+        coord_final = coord_final or '—'
 
         fac = str(row['Facultad Postgrado']).strip()
         fac_norm = fac
