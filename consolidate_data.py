@@ -13,6 +13,7 @@ from datetime import datetime
 workspace_dir = os.path.dirname(os.path.abspath(__file__))
 subdirs = ["2024-10", "2024-20", "2025-10", "2025-20"]
 enrollment_excel = os.path.join(workspace_dir, "Detalle Estudiantes Postgrado_Tipo Ingreso.xlsx")
+coordinadores_excel = os.path.join(workspace_dir, "Coordinadores_por_periodos.xlsx")
 html_template   = os.path.join(workspace_dir, "index.html")
 output_html     = os.path.join(workspace_dir, "Dashboard_NPS_UDLA.html")
 
@@ -108,6 +109,23 @@ print("\n[2/4] Procesando encuestas por período...")
 responses_list = []
 comments_list  = []
 
+# Cargar coordinadores por programa y período
+coord_map = {}
+if os.path.exists(coordinadores_excel):
+    xl_coord = pd.read_excel(coordinadores_excel, sheet_name=None)
+    for sheet_name, df_c in xl_coord.items():
+        per = sheet_name.strip()
+        df_c.columns = [str(c).strip() for c in df_c.columns]
+        coord_col = [c for c in df_c.columns if 'oordinador' in c][0]
+        prog_col  = [c for c in df_c.columns if 'rograma' in c or 'ombre' in c][0]
+        for _, row in df_c.iterrows():
+            c_val = str(row[coord_col]).strip() if pd.notna(row[coord_col]) else ''
+            p_val = str(row[prog_col]).strip()  if pd.notna(row[prog_col])  else ''
+            if c_val and p_val and c_val != 'nan' and p_val != 'nan':
+                c_val = c_val.replace('Vanessa Alvarez', 'Vanessa Álvarez')
+                coord_map[(per, p_val.upper().strip())] = c_val
+    print(f"      {len(coord_map)} asignaciones de coordinador cargadas.")
+
 for sd in subdirs:
     path  = os.path.join(workspace_dir, sd)
     files = glob.glob(os.path.join(path, "*.xlsx")) if os.path.exists(path) else []
@@ -133,6 +151,19 @@ for sd in subdirs:
                 q4  = parse_rating(row.iloc[13])
                 coord = clean_text(row.iloc[14])
                 coord = coord.replace("Vanessa Alvarez", "Vanessa Álvarez")
+
+                # Buscar coordinador en el archivo maestro
+                prog_upper = prog.upper().strip()
+                coord_from_map = coord_map.get((sd, prog_upper))
+                if not coord_from_map:
+                    for (map_per, map_prog), map_coord in coord_map.items():
+                        if map_per == sd and (map_prog.startswith(prog_upper[:45]) or prog_upper[:45] in map_prog):
+                            coord_from_map = map_coord
+                            break
+                if coord_from_map:
+                    coord = coord_from_map
+                elif not coord:
+                    coord = "Sin Coordinador"
                 q5  = parse_rating(row.iloc[15])
                 q6  = parse_rating(row.iloc[16])
                 q7  = parse_rating(row.iloc[17])
