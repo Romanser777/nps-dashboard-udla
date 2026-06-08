@@ -18,11 +18,10 @@ const D = {
   "coordinadores": [
     "Carolina Castro",
     "Fernanda Miranda",
-    "María Fernanda Miranda",
     "Paula Díaz",
+    "Paula Díaz Espinoza",
     "Paulina Toledo",
     "Sergio Román",
-    "Sin Coordinador",
     "Valentina Uribarri",
     "Vanessa Álvarez"
   ],
@@ -1559,14 +1558,14 @@ const D = {
         "pas": 14,
         "nps": 70,
         "coord_calidad": 6.3,
-        "coord_tiempo": 6.3
+        "coord_tiempo": 6.2
       },
       "2024-20": {
-        "resp": 45,
-        "prom": 31,
+        "resp": 44,
+        "prom": 30,
         "det": 6,
         "pas": 8,
-        "nps": 56,
+        "nps": 55,
         "coord_calidad": 5.9,
         "coord_tiempo": 6.1
       },
@@ -1577,20 +1576,28 @@ const D = {
         "pas": 10,
         "nps": 58,
         "coord_calidad": 6.0,
-        "coord_tiempo": 5.9
+        "coord_tiempo": 6.0
       },
       "2025-20": {
         "resp": 35,
-        "prom": 28,
-        "det": 2,
+        "prom": 29,
+        "det": 1,
         "pas": 5,
-        "nps": 74,
-        "coord_calidad": 6.4,
+        "nps": 80,
+        "coord_calidad": 6.3,
         "coord_tiempo": 6.3
       }
     },
     "Fernanda Miranda": {
-      "2024-10": null,
+      "2024-10": {
+        "resp": 48,
+        "prom": 31,
+        "det": 7,
+        "pas": 10,
+        "nps": 50,
+        "coord_calidad": 6.6,
+        "coord_tiempo": 6.6
+      },
       "2024-20": {
         "resp": 19,
         "prom": 12,
@@ -1601,76 +1608,38 @@ const D = {
         "coord_tiempo": 5.8
       },
       "2025-10": {
+        "resp": 52,
+        "prom": 46,
+        "det": 0,
+        "pas": 6,
+        "nps": 88,
+        "coord_calidad": 6.4,
+        "coord_tiempo": 6.1
+      },
+      "2025-20": {
         "resp": 31,
-        "prom": 28,
-        "det": 0,
-        "pas": 3,
-        "nps": 90,
-        "coord_calidad": 6.5,
-        "coord_tiempo": 6.2
-      },
-      "2025-20": {
-        "resp": 18,
-        "prom": 15,
-        "det": 0,
-        "pas": 2,
-        "nps": 83,
-        "coord_calidad": 6.6,
-        "coord_tiempo": 6.2
-      }
-    },
-    "María Fernanda Miranda": {
-      "2024-10": {
-        "resp": 44,
-        "prom": 27,
-        "det": 7,
-        "pas": 10,
-        "nps": 45,
-        "coord_calidad": 6.6,
-        "coord_tiempo": 6.5
-      },
-      "2024-20": null,
-      "2025-10": {
-        "resp": 21,
-        "prom": 18,
-        "det": 0,
-        "pas": 3,
-        "nps": 86,
-        "coord_calidad": 6.3,
-        "coord_tiempo": 6.0
-      },
-      "2025-20": {
-        "resp": 12,
-        "prom": 11,
+        "prom": 26,
         "det": 1,
-        "pas": 0,
-        "nps": 83,
-        "coord_calidad": 6.8,
-        "coord_tiempo": 6.8
+        "pas": 3,
+        "nps": 81,
+        "coord_calidad": 6.6,
+        "coord_tiempo": 6.4
       }
     },
     "Paula Díaz": {
       "2024-10": {
-        "resp": 106,
-        "prom": 84,
+        "resp": 102,
+        "prom": 80,
         "det": 9,
         "pas": 12,
-        "nps": 71,
+        "nps": 70,
         "coord_calidad": 6.4,
         "coord_tiempo": 6.4
       },
-      "2024-20": {
-        "resp": 25,
-        "prom": 20,
-        "det": 1,
-        "pas": 4,
-        "nps": 76,
-        "coord_calidad": 6.6,
-        "coord_tiempo": 6.7
-      },
+      "2024-20": null,
       "2025-10": {
-        "resp": 93,
-        "prom": 71,
+        "resp": 94,
+        "prom": 72,
         "det": 5,
         "pas": 17,
         "nps": 71,
@@ -1687,12 +1656,26 @@ const D = {
         "coord_tiempo": 6.5
       }
     },
+    "Paula Díaz Espinoza": {
+      "2024-10": null,
+      "2024-20": {
+        "resp": 25,
+        "prom": 20,
+        "det": 1,
+        "pas": 4,
+        "nps": 76,
+        "coord_calidad": 6.6,
+        "coord_tiempo": 6.7
+      },
+      "2025-10": null,
+      "2025-20": null
+    },
     "Paulina Toledo": {
       "2024-10": null,
       "2024-20": null,
       "2025-10": {
-        "resp": 19,
-        "prom": 18,
+        "resp": 21,
+        "prom": 20,
         "det": 0,
         "pas": 1,
         "nps": 95,
@@ -1700,40 +1683,40 @@ const D = {
         "coord_tiempo": 6.6
       },
       "2025-20": {
-        "resp": 30,
-        "prom": 25,
+        "resp": 36,
+        "prom": 30,
         "det": 1,
-        "pas": 3,
-        "nps": 80,
-        "coord_calidad": 6.5,
-        "coord_tiempo": 6.4
+        "pas": 4,
+        "nps": 81,
+        "coord_calidad": 6.6,
+        "coord_tiempo": 6.5
       }
     },
     "Sergio Román": {
       "2024-10": {
-        "resp": 30,
-        "prom": 22,
+        "resp": 35,
+        "prom": 27,
         "det": 0,
         "pas": 8,
-        "nps": 73,
-        "coord_calidad": 6.3,
-        "coord_tiempo": 6.4
+        "nps": 77,
+        "coord_calidad": 6.4,
+        "coord_tiempo": 6.5
       },
       "2024-20": {
-        "resp": 5,
-        "prom": 4,
+        "resp": 6,
+        "prom": 5,
         "det": 1,
         "pas": 0,
-        "nps": 60,
-        "coord_calidad": 6.6,
-        "coord_tiempo": 6.5
+        "nps": 67,
+        "coord_calidad": 6.5,
+        "coord_tiempo": 6.4
       },
       "2025-10": {
         "resp": 84,
-        "prom": 75,
+        "prom": 74,
         "det": 0,
         "pas": 8,
-        "nps": 89,
+        "nps": 88,
         "coord_calidad": 6.6,
         "coord_tiempo": 6.5
       },
@@ -1745,44 +1728,6 @@ const D = {
         "nps": 73,
         "coord_calidad": 6.4,
         "coord_tiempo": 6.6
-      }
-    },
-    "Sin Coordinador": {
-      "2024-10": {
-        "resp": 2,
-        "prom": 2,
-        "det": 0,
-        "pas": 0,
-        "nps": 100,
-        "coord_calidad": 7.0,
-        "coord_tiempo": 7.0
-      },
-      "2024-20": {
-        "resp": 2,
-        "prom": 2,
-        "det": 0,
-        "pas": 0,
-        "nps": 100,
-        "coord_calidad": 6.0,
-        "coord_tiempo": 6.0
-      },
-      "2025-10": {
-        "resp": 3,
-        "prom": 2,
-        "det": 0,
-        "pas": 0,
-        "nps": 67,
-        "coord_calidad": 5.0,
-        "coord_tiempo": 7.0
-      },
-      "2025-20": {
-        "resp": 3,
-        "prom": 1,
-        "det": 1,
-        "pas": 1,
-        "nps": 0,
-        "coord_calidad": 5.0,
-        "coord_tiempo": 4.3
       }
     },
     "Valentina Uribarri": {
@@ -1805,60 +1750,60 @@ const D = {
         "coord_tiempo": 4.8
       },
       "2025-10": {
-        "resp": 23,
-        "prom": 15,
+        "resp": 24,
+        "prom": 16,
         "det": 2,
         "pas": 6,
-        "nps": 57,
+        "nps": 58,
         "coord_calidad": 6.2,
         "coord_tiempo": 6.2
       },
       "2025-20": {
-        "resp": 29,
+        "resp": 31,
         "prom": 23,
-        "det": 5,
+        "det": 7,
         "pas": 1,
-        "nps": 62,
-        "coord_calidad": 6.4,
+        "nps": 52,
+        "coord_calidad": 6.3,
         "coord_tiempo": 6.3
       }
     },
     "Vanessa Álvarez": {
       "2024-10": {
-        "resp": 31,
-        "prom": 22,
+        "resp": 28,
+        "prom": 19,
         "det": 1,
         "pas": 8,
-        "nps": 68,
-        "coord_calidad": 6.3,
-        "coord_tiempo": 6.1
-      },
-      "2024-20": {
-        "resp": 18,
-        "prom": 13,
-        "det": 2,
-        "pas": 2,
-        "nps": 61,
-        "coord_calidad": 6.0,
+        "nps": 64,
+        "coord_calidad": 6.1,
         "coord_tiempo": 6.0
       },
+      "2024-20": {
+        "resp": 20,
+        "prom": 15,
+        "det": 2,
+        "pas": 2,
+        "nps": 65,
+        "coord_calidad": 6.1,
+        "coord_tiempo": 6.1
+      },
       "2025-10": {
-        "resp": 33,
-        "prom": 23,
+        "resp": 32,
+        "prom": 22,
         "det": 1,
         "pas": 9,
-        "nps": 67,
+        "nps": 66,
         "coord_calidad": 5.8,
-        "coord_tiempo": 5.6
+        "coord_tiempo": 5.5
       },
       "2025-20": {
-        "resp": 31,
-        "prom": 24,
+        "resp": 25,
+        "prom": 19,
         "det": 1,
-        "pas": 6,
-        "nps": 74,
-        "coord_calidad": 5.6,
-        "coord_tiempo": 5.5
+        "pas": 5,
+        "nps": 72,
+        "coord_calidad": 5.4,
+        "coord_tiempo": 5.1
       }
     }
   },
@@ -1957,7 +1902,7 @@ const D = {
     {
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2024-10",
       "resp": 1,
       "prom": 1,
@@ -1983,7 +1928,7 @@ const D = {
     {
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2024-10",
       "resp": 16,
       "prom": 10,
@@ -2009,7 +1954,7 @@ const D = {
     {
       "fac": "Educación",
       "prog": "Diplomado en liderazgo educativo",
-      "coord": "Paula Díaz",
+      "coord": "Sergio Román",
       "per": "2024-10",
       "resp": 5,
       "prom": 4,
@@ -2074,7 +2019,7 @@ const D = {
     {
       "fac": "Educación VRA",
       "prog": "Diplomado en Innovación en Docencia Universitaria",
-      "coord": "Carolina Castro",
+      "coord": "Vanessa Álvarez",
       "per": "2024-10",
       "resp": 4,
       "prom": 4,
@@ -2126,7 +2071,7 @@ const D = {
     {
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Ciberseguridad y Gestión",
-      "coord": "Vanessa Álvarez",
+      "coord": "Sergio Román",
       "per": "2024-10",
       "resp": 3,
       "prom": 3,
@@ -2165,7 +2110,7 @@ const D = {
     {
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Dirección de Proyectos – Módulo PS SAP",
-      "coord": "Vanessa Álvarez",
+      "coord": "Sergio Román",
       "per": "2024-10",
       "resp": 1,
       "prom": 1,
@@ -2230,7 +2175,7 @@ const D = {
     {
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Producción de Eventos Empresariales, Tecnologías e Inteligencia Artificial",
-      "coord": "Paula Díaz",
+      "coord": "Carolina Castro",
       "per": "2024-10",
       "resp": 6,
       "prom": 6,
@@ -2360,7 +2305,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Gerontogeriatria Interdisciplinaria",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2024-10",
       "resp": 1,
       "prom": 1,
@@ -2373,7 +2318,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Gestión de Personas y Cambio Organizacional",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2024-10",
       "resp": 9,
       "prom": 8,
@@ -2425,7 +2370,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología Aplicada a la Actividad Física y el Deporte",
-      "coord": "Sergio Román",
+      "coord": "Fernanda Miranda",
       "per": "2024-10",
       "resp": 1,
       "prom": 1,
@@ -2438,7 +2383,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2024-10",
       "resp": 11,
       "prom": 5,
@@ -2464,7 +2409,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Salud Mental: Abordaje Interdisciplinario Y Gestión Clínica",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2024-10",
       "resp": 9,
       "prom": 5,
@@ -2542,7 +2487,7 @@ const D = {
     {
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "per": "2024-20",
       "resp": 8,
       "prom": 8,
@@ -2555,7 +2500,7 @@ const D = {
     {
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "per": "2024-20",
       "resp": 5,
       "prom": 3,
@@ -2568,7 +2513,7 @@ const D = {
     {
       "fac": "Derecho",
       "prog": "Diplomado en Mediación y Resolución de conflictos en el ámbito familiar",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "per": "2024-20",
       "resp": 2,
       "prom": 2,
@@ -2633,7 +2578,7 @@ const D = {
     {
       "fac": "Educación VRA",
       "prog": "Diplomado en Innovación en Docencia Universitaria",
-      "coord": "Sin Coordinador",
+      "coord": "Vanessa Álvarez",
       "per": "2024-20",
       "resp": 4,
       "prom": 3,
@@ -2685,7 +2630,7 @@ const D = {
     {
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Bioestadística",
-      "coord": "Sin Coordinador",
+      "coord": "Sergio Román",
       "per": "2024-20",
       "resp": 2,
       "prom": 1,
@@ -2828,7 +2773,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado De Kinesiología Respiratoria Para Atención Primaria de Salud",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "per": "2024-20",
       "resp": 4,
       "prom": 4,
@@ -2841,7 +2786,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado En Infecciones Asociadas a La Atención En Salud",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "per": "2024-20",
       "resp": 5,
       "prom": 2,
@@ -2867,7 +2812,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Docencia En Simulación Clínica",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "per": "2024-20",
       "resp": 1,
       "prom": 1,
@@ -2945,7 +2890,7 @@ const D = {
     {
       "fac": "Derecho",
       "prog": "Diplomado En Derecho Administrativo Y Función Pública",
-      "coord": "Paula Díaz",
+      "coord": "Paulina Toledo",
       "per": "2025-10",
       "resp": 1,
       "prom": 1,
@@ -2984,7 +2929,7 @@ const D = {
     {
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2025-10",
       "resp": 10,
       "prom": 9,
@@ -3023,7 +2968,7 @@ const D = {
     {
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2025-10",
       "resp": 7,
       "prom": 6,
@@ -3049,7 +2994,7 @@ const D = {
     {
       "fac": "Educación",
       "prog": "Postítulo en Discapacidad intelectual y educación inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2025-10",
       "resp": 5,
       "prom": 4,
@@ -3205,7 +3150,7 @@ const D = {
     {
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Gestión Ambiental bajo Norma ISO14001 con mención en Auditor Líder",
-      "coord": "Sergio Román",
+      "coord": "Vanessa Álvarez",
       "per": "2025-10",
       "resp": 5,
       "prom": 5,
@@ -3231,7 +3176,7 @@ const D = {
     {
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Inteligencia Artificial en los Negocios",
-      "coord": "Sin Coordinador",
+      "coord": "Sergio Román",
       "per": "2025-10",
       "resp": 13,
       "prom": 8,
@@ -3322,7 +3267,7 @@ const D = {
     {
       "fac": "Medicina Veterinaria y Agronomía",
       "prog": "Diplomado en Agroecología",
-      "coord": "Sin Coordinador",
+      "coord": "Valentina Uribarri",
       "per": "2025-10",
       "resp": 3,
       "prom": 3,
@@ -3647,7 +3592,7 @@ const D = {
     {
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "per": "2025-20",
       "resp": 12,
       "prom": 11,
@@ -3673,7 +3618,7 @@ const D = {
     {
       "fac": "Educación VRA",
       "prog": "Diplomado en Competencias Digitales para la Docencia",
-      "coord": "Vanessa Álvarez",
+      "coord": "Paulina Toledo",
       "per": "2025-20",
       "resp": 5,
       "prom": 5,
@@ -3946,7 +3891,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado Prescripción de Ejercicios de Fuerza y Musculación para la Actividad Física",
-      "coord": "Vanessa Álvarez",
+      "coord": "Carolina Castro",
       "per": "2025-20",
       "resp": 3,
       "prom": 1,
@@ -4455,7 +4400,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación VRA",
       "prog": "Diplomado en Competencias Digitales para la Docencia",
-      "coord": "Paula Díaz",
+      "coord": "Carolina Castro",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Buen diplomado, cumplió mis espectativas"
@@ -4527,7 +4472,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 6,
       "clase": "Positivo",
       "texto": "El diplomado que tome podría ser también enfocado a nivel parvulario"
@@ -4536,7 +4481,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy satisfecha con el diplomado en general, coordinadora muy atenta y preocupada a mis requerimientos y el profesorado muy entregado en su proceso de enseñanza...felicidades!!!"
@@ -4545,7 +4490,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "En general estoy muy satisfecha, pero no me siento muy satisfecha con una de las docentes que tuvimos, pero en general las otras 3 fueron fantásticas"
@@ -4554,7 +4499,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 1,
       "clase": "Negativo",
       "texto": "Deberían mejorar las plataformas digitales, son muy complejas y poco intuitivas"
@@ -4563,7 +4508,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "."
@@ -4572,7 +4517,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "."
@@ -4581,7 +4526,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 3,
       "clase": "Negativo",
       "texto": "ELIMINAR Y TENER UNA MEJOR PLATAFORMA, POR ESE MOTIVO NO VOLVERÍA A HACER NINGÚN PROGRAMA MÁS EN LA UNIVERSIDAD, HORRIBLE LA PLATAFORMA."
@@ -4590,7 +4535,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 5,
       "clase": "Neutro",
       "texto": "Sin comentarios, muchas gracias."
@@ -4599,7 +4544,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "El diplomado fue muy enriquecedor, tanto en los contenidos como en la calidad de los docentes. Realmente me ayudó a fortalecer mis conocimientos y habilidades. Sin embargo, considere que las plataformas de la UDLA y Blackboard podrían mejorarse, ya que en ocasiones resultaron poco intuitivas o presentaron dificultades técnicas que ralentizaron el acceso a los materiales."
@@ -4608,7 +4553,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 5,
       "clase": "Neutro",
       "texto": "Mejorar el uso de la app de mi udla"
@@ -4698,7 +4643,7 @@ const D = {
       "per": "2024-10",
       "fac": "Educación",
       "prog": "Diplomado en liderazgo educativo",
-      "coord": "Paula Díaz",
+      "coord": "Sergio Román",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buena experiencia en la universidad"
@@ -4770,7 +4715,7 @@ const D = {
       "per": "2024-10",
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Producción de Eventos Empresariales, Tecnologías e Inteligencia Artificial",
-      "coord": "Paula Díaz",
+      "coord": "Carolina Castro",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Estoy muy feliz con mi diplomado realizado.. los felicito por los profesores y la manera de trabajar."
@@ -4833,7 +4778,7 @@ const D = {
       "per": "2024-10",
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Ciberseguridad y Gestión",
-      "coord": "Vanessa Álvarez",
+      "coord": "Sergio Román",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Fue una gran experiencia conocer UDLA, no pensé que iba a pasar tan rápido el diplomado, creo que fue por el dinamismo de los módulos, la conexión con todos los profesores fue muy importante, gracias a ellos. Por el lado de la plataforma, muy amigable y fácil de entender, además que estaba a mano toda la información necesaria. Con relación a la coordinadora Vanessa, se agradece por que siempre estuvo atenta a responder nuestras consultas. Mil gracias a todos."
@@ -5058,7 +5003,7 @@ const D = {
       "per": "2024-10",
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Dirección de Proyectos – Módulo PS SAP",
-      "coord": "Vanessa Álvarez",
+      "coord": "Sergio Román",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Todo ok"
@@ -5211,7 +5156,7 @@ const D = {
       "per": "2024-10",
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Gestión Ambiental bajo Norma ISO14001 con mención en Auditor Líder",
-      "coord": "Sin Coordinador",
+      "coord": "Vanessa Álvarez",
       "nps": 7,
       "clase": "Positivo",
       "texto": "EXCELENTE EXPERIENCIA, MUY BUENOS DOCENTES, UNA PLATAFORMA IMPECABLE. LA EXIGENCIA ES FUERTE Y REAL, LO CUAL PERMITE ENFOCARSE EN REALIZAR ESFUERZOS CONCRETOS POR ALCANZAR EL OBJETIVO DEL DIPLOMADO. ES BUENO POR QUE ES EXIGENTE, TECNICO Y CON MUY BUEN ACOMPAÑAMIENTO."
@@ -5598,7 +5543,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 2,
       "clase": "Negativo",
       "texto": "los problemas con los docentes respecto a sus pagos y problemáticas internas de la universidad nunca, nunca deben llegar a los estudiantes menos aun en un post titulo, esto crea una merma en la calidad del diplomado"
@@ -5607,7 +5552,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 5,
       "clase": "Neutro",
       "texto": "En varias ocasiones tuve problemas para entrar a portal miudla por lo que tampoco me permitía ingresar a blackboard lo que demoraba mi ingreso a clases, también en ocasiones no se enviaba el link de ingreso a tiempo lo que demoraba todo, pero a pesar de los contratiempos y lo demás el diplomado estuvo excelente y contó con buenos profesores"
@@ -5679,7 +5624,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Gestión de Personas y Cambio Organizacional",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 5,
       "clase": "Neutro",
       "texto": "Las presentaciones pueden darse a conocer antes de comenzar las clases para que se vaya dando un conocimiento previo y completando esto se puede dar también quizás un temario relevante de algunos conceptos o recordatorios de la materia a trabajar. Las evaluaciones deben mejorar por qué pareciera ser que para evitar tanto trabajo de revisión se hacen los trabajos de forma grupal cuando no amerita. Por otro lado, la entrega de notas de las evaluaciones deben respetarse para que sean entregadas en la fecha estipulada por UDLA, encuentro que se exige la fecha de entrega de éstos pero no es correspondiente a la resolutividad al alumnado. Ley del embudo. Favor de considerar que los docentes deben tener mínimo y por base una fuente de comunicación efectiva con el alumnado, entendiose que es por vía internet así que con mayor entrega del servicio debe poner énfasis y no solo hablar las ppt."
@@ -5688,7 +5633,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Doy mis agradecimientos a la universidad, profesores, coordinadora y compañeros por la oportunidad que se me dio para completar mis conocimientos aprendidos como alumno regular. Las materias fueron muy interesantes y útiles para ponerlas en ejecución a futuro en beneficio de la excelencia en nuestro trabajo en el manejo del trauma apuntado al bienestar mental de los pacientes. CLAUDETTE VILLAVICENCIO ZUÑIGA"
@@ -5697,7 +5642,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 6,
       "clase": "Positivo",
       "texto": "En Balckboard no todos los docentes lo ocupan de ig7al forma, por tanto era necesario ir abriendo las carpetas o pestañas, para ver donde subian los distintos docentes el material. Fernanda mirando un 10 de 10, cercana, siempre dio respuestas y soluciones rapidas a nuestras inquietudes. Ojala mejirar la comunicación entre docentes y directivos."
@@ -5706,7 +5651,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 4,
       "clase": "Neutro",
       "texto": "bien"
@@ -5715,7 +5660,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 1,
       "clase": "Negativo",
       "texto": "Mejorar presentación del programa, como también realizar una reunión previa al diplomado, en donde se presenten, no los profesores pues a ellos se les va concociendo a través del diplomado en curso, sino los miembros involucrados (cabecillas) de la carrera, lo cual da seriedad y compromiso. Este diplomado fue el 1ro en realizar y la experiencia final no fue grata. Dejó a mi parecer mucho que desear, pues conoci a los encargados de carrera por una circunstancia pauperrima, y no como debiese haber sido (al principio). No hay nada peor que escuchar aun colega hablando mal de otro. Lamento esta situación pues se suman a las que vi cuando fui alumna de pregrado en UDLA. Mucha descordinación. Rescato de esta experiecia a María Fernanda Miranda, que dio la cara a las situaciones que surgieron, demostrando mayor mesura que su misma jefatura. Es una persona que desmostró proactividad, un lenguaje acertivo, y resolución a los problemas que se fueron presentando."
@@ -5724,7 +5669,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "mejorar plataforma"
@@ -5733,7 +5678,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Gracias a Alejandro Soto excelente docente y a Fernanda su trabajo impecable!"
@@ -5742,7 +5687,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Salud Mental: Abordaje Interdisciplinario Y Gestión Clínica",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 2,
       "clase": "Negativo",
       "texto": "Sinceramente considero nefasto el desarrollo de este diplomado. Es una perdida de dinero, solo fue cátedra cero acorde al abordaje directo con personas o comunidades. Parecía un curso de pregrado, no lo recomendaría para nada. Arrepentida y frustrada con seguir pagando algo que no contribuyó a mi desarrollo profesional. Siento que repasé materia de pregrado. El programa prometía hasta herramientas, y en verdad no aprendí lo que quería."
@@ -5751,7 +5696,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Salud Mental: Abordaje Interdisciplinario Y Gestión Clínica",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 1,
       "clase": "Negativo",
       "texto": "El diplomado no cumplió mis expectativas. Sentí que sólo fue repasar cosas de pregrado, y no contribuyeron para mejor mi quehacer laboral. No lo recomiendo."
@@ -5760,7 +5705,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Gestión de Personas y Cambio Organizacional",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Excelente Universidad, gestores y profesores."
@@ -5769,7 +5714,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Gestión de Personas y Cambio Organizacional",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Considero que UDLA como organización me ha entregado un muy buen servicio y grandes herramientas en cuanto al diplomado cursado. Agradecer la coordinación y disposición tanto como de su coordinadora en Gestión de personas y cambio organizacional, como con los profesores que impartieron dicho diplomado. Totalmente recomendable para mi, su universidad. Agradecido enormemente del equipo de trabajo. Gracias."
@@ -5778,7 +5723,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Gestión de Personas y Cambio Organizacional",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 6,
       "clase": "Positivo",
       "texto": "solo decir que en el modulo de capacitación y evaluación de desempeño es muy extenso, debería separarse en dos módulos porque tiene mucha información, y en ese caso quede como al debe con preguntas. No me gustan las pruebas con alternativas, prefiero el desarrollo y el análisis, ya que a veces hay preguntas muy capciosas y me confuden."
@@ -5787,7 +5732,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Gestión de Personas y Cambio Organizacional",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Buena tarde. Fue una muy buena experiencia el portal y un crecimiento profesional y personal el diplomado cursado. Espero realizar un.post grado el próximo año. Atte a Ustedes."
@@ -5796,7 +5741,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Salud Mental: Abordaje Interdisciplinario Y Gestión Clínica",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Estoy satisfecho con el diplomado y con la calidad de los docentes y la coordinadora, sin duda fue una buena experiencia, llena de conocimientos nuevos, gracias."
@@ -5868,7 +5813,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Gerontogeriatria Interdisciplinaria",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Estoy muy satisfecha y agradecida, por la oportunidad y el campus de prácticas. Las docentes muy profesionales. La srta: María Fernanda Miranda desempeñó y continúa ejerciendo una gran labor e información oportuna. Gracias."
@@ -5886,7 +5831,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Salud Mental: Abordaje Interdisciplinario Y Gestión Clínica",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Con respecto a los contenidos de las asignaturas, se deberia considerar profundizar y mas actividades practicas."
@@ -5895,7 +5840,7 @@ const D = {
       "per": "2024-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Salud Mental: Abordaje Interdisciplinario Y Gestión Clínica",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy satisfecha con las gestiones y los profesores que aportaron en este diplomado."
@@ -6057,7 +6002,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muchas gracias y felicidades por la dedicación"
@@ -6066,7 +6011,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Mediación y Resolución de conflictos en el ámbito familiar",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 7,
       "clase": "Positivo",
       "texto": "en todo momento, nos mantuvo informados, excelente compromiso con los alumnos, tanto de manera presencial como online"
@@ -6075,7 +6020,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 5,
       "clase": "Neutro",
       "texto": "buen diplomado, solo mejorar en ciertos aspectos, como el contenido y las clases"
@@ -6084,7 +6029,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 7,
       "clase": "Positivo",
       "texto": "."
@@ -6093,7 +6038,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 3,
       "clase": "Negativo",
       "texto": "Esperé mucho mejor contenido académico."
@@ -6102,7 +6047,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 7,
       "clase": "Positivo",
       "texto": "solo considerar mas actividades de practica"
@@ -6111,7 +6056,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Me gustó bastante el diplomado"
@@ -6120,7 +6065,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buen diplomado y excelente coordinadora."
@@ -6129,7 +6074,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Paula es una maravillosa coordinadora, de trato amable y paciente, respondió con claridad y rapidez todas mis dudas e inquietudes."
@@ -6138,7 +6083,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Me encantó el diplomado, pude obtener muchos conocimientos que podré poner en práctica en mis futuros trabajos, además el equipo docente y la coordinadora fueron un gran apoyo tanto en el aprendizaje como con la solución de problemas que se pudieron haber presentado."
@@ -6210,7 +6155,7 @@ const D = {
       "per": "2024-20",
       "fac": "Educación VRA",
       "prog": "Diplomado en Innovación en Docencia Universitaria",
-      "coord": "Sin Coordinador",
+      "coord": "Vanessa Álvarez",
       "nps": 6,
       "clase": "Positivo",
       "texto": "En el programa el primer módulo fue el único que aportó a la innovación, los otros módulos si bien brindaron algunos conocimientos, la mayoría de los contenidos no resultaban del todo aplicables a cursos muy grandes ni a cursos on line. Las docentes daban ejemplos basados en educación básica"
@@ -6246,7 +6191,7 @@ const D = {
       "per": "2024-20",
       "fac": "Educación VRA",
       "prog": "Diplomado en Innovación en Docencia Universitaria",
-      "coord": "Carolina Castro",
+      "coord": "Vanessa Álvarez",
       "nps": 7,
       "clase": "Positivo",
       "texto": "El Diplomado me ha permitido ampliar significativamente mi visión de la forma de aportar al proceso de aprendizaje de los estudiantes."
@@ -6426,7 +6371,7 @@ const D = {
       "per": "2024-20",
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Bioestadística",
-      "coord": "Sin Coordinador",
+      "coord": "Sergio Román",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Si bien los profesores tienen una muy buena competencia con respecto a los conocimientos, son dispares en cuanto a la forma de enseñanza y su metodología de llevar a la práctica laboral la diferentes materias."
@@ -6597,7 +6542,7 @@ const D = {
       "per": "2024-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Docencia En Simulación Clínica",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Creo que deberían mejorar las jornadas de clases sincrónicas, fueron muy largas. Podrían parcializarlas"
@@ -6615,7 +6560,7 @@ const D = {
       "per": "2024-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado En Infecciones Asociadas a La Atención En Salud",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 5,
       "clase": "Neutro",
       "texto": "Diplomado poco interactivo, material de estudio pobre en información"
@@ -6750,7 +6695,7 @@ const D = {
       "per": "2024-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado De Kinesiología Respiratoria Para Atención Primaria de Salud",
-      "coord": "Paula Díaz",
+      "coord": "Paula Díaz Espinoza",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buena gestión en todo."
@@ -7164,7 +7109,7 @@ const D = {
       "per": "2025-10",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Salud Familiar y Comunitario",
-      "coord": "Fernanda Miranda",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Un gran equipo docente, excelentes maestros. la coordinadora atenta a todas mis dudas y con mucha paciencia. Mejoraría las plataformas."
@@ -7542,7 +7487,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación VRA",
       "prog": "Diplomado en Integración de la Inteligencia Artificial en el Ámbito Educativo",
-      "coord": "Vanessa Álvarez",
+      "coord": "Paulina Toledo",
       "nps": 6,
       "clase": "Positivo",
       "texto": "La mayor deficiencia es la modalidad de un solo día presencial en virtud de ser un diploma on - line, esto no potencia el proceso de aprendizaje para estudiantes como nosotros que estudiamos y trabajamos, podría haber sido de mayor profundidad y calidad si ambos días hubiesen aportado al proceso socioeducativo."
@@ -7614,7 +7559,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación VRA",
       "prog": "Diplomado en Docencia para el Aprendizaje a lo Largo de la Vida",
-      "coord": "Vanessa Álvarez",
+      "coord": "Paulina Toledo",
       "nps": 6,
       "clase": "Positivo",
       "texto": "muchas gracias por la oportunidad, muy productiva y enriquecedora"
@@ -7704,7 +7649,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Orientación Educacional, Vocacional y Familiar",
-      "coord": "Carolina Castro",
+      "coord": "Sergio Román",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Bueno"
@@ -7803,7 +7748,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Postítulo en Discapacidad intelectual y educación inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Por lo general, fueron excelentes profesoras quienes impartieron las asignaturas, debo destacar a profesora Jeimy y Rocío. Uno de los puntos a mejorar es que cada docente tenga claro los horarios de cada módulo, por ejemplo, profesoras comenzaban a las 09:00 y otras a las 08:30 horas los días sábados; es mejor que todo sea unificado así como los horarios de break. La plataforma a veces presentaba fallas, pero era amigable para poder descargar los materiales de apoyo."
@@ -7812,7 +7757,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Postítulo en Discapacidad intelectual y educación inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Agradecida de cada profesora que tuvimos excepto del último ramo, ojalá cambien esa visión y que la docente sea diferente"
@@ -7821,7 +7766,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Excelente Diplomado"
@@ -7830,7 +7775,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Debiesen considerar que para nosotros en un diplomado el aula no cambia el semestre, por lo que nos pasó que cuando estábamos en agosto nos salía el aula en segundo semestre por lo que no aparecían nuestros cursos.Tuvimos que ir a la parte superior y cambiarlo manualmente"
@@ -7839,7 +7784,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Solo mejorar donde suben las grabaciones , ya que no es tan accesible debido a que no es visible."
@@ -7848,7 +7793,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Un excelente diplomado, muy necesario para complementar nuestros conocimientos ya adquiridos. Docentes de alta calidad y gracias a ellos seremos un gran aporte a la sociedad influyendo en una sociedad más inclusiva."
@@ -7857,7 +7802,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Gracias Totales"
@@ -7866,7 +7811,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy contento y satisfecho con los contenidos aprendidos, buenos docentes"
@@ -7875,7 +7820,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 6,
       "clase": "Positivo",
       "texto": "La verdad que para ser mi primer diplomado, quede muy conforme con los profesores y el gran equipo que tiene la universidad."
@@ -7884,7 +7829,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buenos profesores¡¡¡ Muchas gracias por lo entregado!!!!"
@@ -7893,7 +7838,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buena organización y gestión por parte del equipo de UDLA. Excelente diplomado y docentes!!"
@@ -7902,7 +7847,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Me hubiese gustado que el ultimo módulo estuviese más enfocado a crear experiencias de aprendizajes aplicables al aula."
@@ -7911,7 +7856,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muchas gracias a los docentes y a la coordinadora Fernanda por el apoyo en este proceso. Espero en 2026 seguir aprendiendo junto a ustedes."
@@ -7920,7 +7865,7 @@ const D = {
       "per": "2025-10",
       "fac": "Educación",
       "prog": "Diplomado en Diversificación de la Enseñanza para la Educación Inclusiva",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 5,
       "clase": "Neutro",
       "texto": "la plataforma de acceso es facil de utilizar dispone de distintos recursos que ayudan al aprendizaje"
@@ -8280,7 +8225,7 @@ const D = {
       "per": "2025-10",
       "fac": "Ingeniería y Negocios",
       "prog": "Diplomado en Gestión Ambiental bajo Norma ISO14001 con mención en Auditor Líder",
-      "coord": "Sergio Román",
+      "coord": "Vanessa Álvarez",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Encuentro que fue un muy buen diplomado el cual me ha entregado herramientas necesarias para ejecutar mis actividades laborales."
@@ -9027,7 +8972,7 @@ const D = {
       "per": "2025-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado Prescripción de Ejercicios de Fuerza y Musculación para la Actividad Física",
-      "coord": "Vanessa Álvarez",
+      "coord": "Carolina Castro",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buena universidad"
@@ -9045,7 +8990,7 @@ const D = {
       "per": "2025-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Peritaje Psicosocial En Materia Penal Y Familia",
-      "coord": "Carolina Castro",
+      "coord": "Valentina Uribarri",
       "nps": 3,
       "clase": "Negativo",
       "texto": "Omito"
@@ -9099,7 +9044,7 @@ const D = {
       "per": "2025-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Peritaje Psicosocial En Materia Penal Y Familia",
-      "coord": "Sin Coordinador",
+      "coord": "Valentina Uribarri",
       "nps": 1,
       "clase": "Negativo",
       "texto": "La verdad la universidad todo bien pero su curso de diplomado es pésimo explican al lote…. Prácticamente no te dicen la nota antes del informe creo que no tiene transparencia deberían mostrar antes la nota del informe y uno prepararse para el examen oral aparte los profesores como que a última instancia te dan toda las notas y si te quieren reprobar lo hacen, además solo dan una instancia de examen y son meses perdidos, no lo recomiendo para nada es malo, los profesores y más que nada algunos y la forma que tienen para calificar al final pésima"
@@ -9189,7 +9134,7 @@ const D = {
       "per": "2025-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Gestión de Personas y Cambio Organizacional",
-      "coord": "Sin Coordinador",
+      "coord": "Fernanda Miranda",
       "nps": 4,
       "clase": "Neutro",
       "texto": "dejar disponible el ingreso a la plataforma y las aplicaciones"
@@ -9567,7 +9512,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación VRA",
       "prog": "Diplomado en Competencias Digitales para la Docencia",
-      "coord": "Vanessa Álvarez",
+      "coord": "Paulina Toledo",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Encuentro que está bien estructurado y formulado el diplomado"
@@ -9576,7 +9521,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación VRA",
       "prog": "Diplomado en Competencias Digitales para la Docencia",
-      "coord": "Vanessa Álvarez",
+      "coord": "Paulina Toledo",
       "nps": 7,
       "clase": "Positivo",
       "texto": "El enfoque de aprendizaje aplicado a la práctica pedagógica me ha aportado mucho en los trabajos que nos tocó realizar. Fue una muy buena oportunidad y la agradezco mucho."
@@ -9585,7 +9530,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación VRA",
       "prog": "Diplomado en Investigación – Acción Aplicada a la Docencia Universitaria",
-      "coord": "Paulina Toledo",
+      "coord": "Vanessa Álvarez",
       "nps": 6,
       "clase": "Positivo",
       "texto": "no hubo coordinacion en el diplomado, las clases, los materiales y grabaciones no fueron entregados por la plataforma. NO hay uso de las plataformas de la UDLA por parte de los profesores. Aun no colocan todas las notas. Desde la coordinación no hubo respuesta a las necesidades de los estudiantes"
@@ -9603,7 +9548,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación VRA",
       "prog": "Diplomado en Competencias Digitales para la Docencia",
-      "coord": "Vanessa Álvarez",
+      "coord": "Paulina Toledo",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buen programa y excelentes docentes"
@@ -9612,7 +9557,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación VRA",
       "prog": "Diplomado en Integración de la Inteligencia Artificial en el Ámbito Educativo",
-      "coord": "Vanessa Álvarez",
+      "coord": "Paulina Toledo",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Respuesta profesores"
@@ -9630,7 +9575,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación VRA",
       "prog": "Diplomado en Integración de la Inteligencia Artificial en el Ámbito Educativo",
-      "coord": "Vanessa Álvarez",
+      "coord": "Paulina Toledo",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Me encantó, sumamente útil"
@@ -9666,7 +9611,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación VRA",
       "prog": "Diplomado en Integración de la Inteligencia Artificial en el Ámbito Educativo",
-      "coord": "Vanessa Álvarez",
+      "coord": "Paulina Toledo",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Satisfecha con contenidos, materiales, metodología y académicos excepto uno de ellos que sus instrumentos de evaluación no eran los más pertinentes por su grado de exigencia. Copiar y pegar de un escrito a otro no corresponde. Gracias por sus aportes importantes y destacados"
@@ -9702,7 +9647,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "El diplomado impartido cuenta con el contenido necesario para poder adquirir conocimientos en relación a la educación inclusiva. Recomiendo integrar más estrategias para implementar en clases."
@@ -9711,7 +9656,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Me encanto el diplomado, la modalidad de estudio y los profesores, lo unico que considero muy importante de mejorar es la plataforma poco predecible para encontrar información y para subir información, me paso ahora al germinar que vi que dos de mis foros no se subieron y afectaron mi promedio final, el resto todo super bien."
@@ -9720,7 +9665,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buen diplomado, profesores excelentes dispuestos a aclarar dudas y ayudar siempre que se necesite"
@@ -9729,7 +9674,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Excelente el diplomado, tanto en contenido como en la calidad de los docentes. Termino este diplomado con muchos aprendizajes esperando poder entrar al mundo laboral, muchas gracias ☺️"
@@ -9738,7 +9683,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Los felicito por la calidad de docentes que integran la udla,un alto nivel de profesionalismo y calidad humana. Me senti muy contenta con mi desempeño y apoyada en cada instancia. Espero volver a ser parte de esta universidad. Saludos cordiales"
@@ -9747,7 +9692,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy completas las clases y los profesores muy profesionales y completos demostrando gran calidad de enseñanza."
@@ -9756,7 +9701,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Yo cambiaría el foco de los foros. Generaria preguntas para discución y análisis, para activación de conocimientos previos. Mientras que en la actualidad esmás un trabajo de investigación académico con apa incluída."
@@ -9765,7 +9710,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 3,
       "clase": "Negativo",
       "texto": "El contenido del diplomado estaba en medir medida enfocado al área de psicólogos. Muchas de las actividades prácticas y con nota eran desde el área de que hacer pedagógicamente. Por ello es que, se me hizo complejo conectar con varios apartados del diplomado. Hubiese sido más provechoso poder conectar más desde mi área"
@@ -9783,7 +9728,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "La malla curricular fue excelente ,cada profesor con un conocimiento excepcional ,me voy con un arcenal de aprendizajes .muchas gracias"
@@ -9792,7 +9737,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Al ser un diplomado certificado deberían dar pase escolar aunque sea online, dado que uno paga mensualidades al menos por un año."
@@ -9801,7 +9746,7 @@ const D = {
       "per": "2025-20",
       "fac": "Educación",
       "prog": "Diplomado en Necesidades Educativas Especiales Y Contextos Inclusivos",
-      "coord": "María Fernanda Miranda",
+      "coord": "Fernanda Miranda",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Gracias a los docentes por su apoyo en todo el diplomado, aprendí mucho"
