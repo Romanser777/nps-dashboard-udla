@@ -471,6 +471,8 @@ if not df_sin.empty:
     resp_set = set(zip(df_all['periodo'], df_all['programa'].str.upper().str.strip()))
 
     for _, row in enrolled_all.iterrows():
+        if row['per_label'] < '2024-10':
+            continue
         per  = row['per_label']
         prog = str(row['Programa Postgrado']).strip()
         prog_up = prog_name_map.get(prog.upper().strip(), prog.upper().strip())
