@@ -501,49 +501,41 @@ if not df_sin.empty:
     resp_set = set(zip(df_all['periodo'], df_all['programa'].str.upper().str.strip()))
 
     for _, row in enrolled_all.iterrows():
-        if row['per_label'] < '2024-10':
-            continue
         per  = row['per_label']
-        prog = str(row['Programa Postgrado']).strip()
-        prog_up = prog_name_map.get(prog.upper().strip(), prog.upper().strip())
-
-        # Resolver nombre equivalente para buscar en respuestas
-        prog_up_resolved = enroll_to_resp_map.get(prog_up, prog_up)
-
-        if (per, prog_up_resolved) in resp_set or (per, prog_up) in resp_set:
+        if per < '2024-10':
             continue
 
-        # 1. Buscar en coord_map (archivo maestro de coordinadores)
-        coord_final = coord_map.get((per, prog_up))
-        if not coord_final:
-            coord_final = coord_map.get((per, prog_up_resolved))
-        if not coord_final:
-            for (mp, mprog), mc in coord_map.items():
-                if mp == per:
-                    wp = set(w for w in prog_up.split() if len(w) > 3)
-                    wo = set(w for w in mprog.split() if len(w) > 3)
-                    if len(wp & wo) >= 4:
-                        coord_final = mc
+        prog = str(row['Programa Postgrado']).strip()
+        prog_up   = prog.upper().strip()
+        prog_resp = enroll_to_resp_map.get(prog.upper().strip(), prog.upper().strip())
+
+        if (per, prog_resp.upper()) in resp_set or (per, prog.upper().strip()) in resp_set:
+            continue
+
+        oferta_match = oferta_lookup.get((per, prog_up))
+        if not oferta_match:
+            words = set(w for w in prog_up.split() if len(w) > 3)
+            for (op, oprog), oval in oferta_lookup.items():
+                if op == per:
+                    words_o = set(w for w in oprog.split() if len(w) > 3)
+                    if len(words & words_o) >= 4:
+                        oferta_match = oval
                         break
 
-        # 2. Si no está en coord_map, buscar en oferta_lookup
-        if not coord_final:
-            oferta = oferta_lookup.get((per, prog_up)) or oferta_lookup.get((per, prog_up_resolved))
-            if not oferta:
-                for (op, oprog), oval in oferta_lookup.items():
-                    if op == per:
-                        wp = set(w for w in prog_up.split() if len(w) > 3)
-                        wo = set(w for w in oprog.split() if len(w) > 3)
-                        if len(wp & wo) >= 3:
-                            oferta = oval
-                            break
-            if oferta and oferta.get('coord') and oferta['coord'] != '—':
-                coord_final = oferta['coord']
+        if not oferta_match:
+            continue
 
-        coord_final = coord_final or '—'
+        coord = coord_map.get((per, prog_up))
+        if not coord:
+            words = set(w for w in prog_up.split() if len(w) > 3)
+            for (mp, mprog), mc in coord_map.items():
+                if mp == per and len(words & set(w for w in mprog.split() if len(w) > 3)) >= 4:
+                    coord = mc; break
+        if not coord and oferta_match.get('coord'):
+            coord = oferta_match['coord']
 
-        fac = str(row['Facultad Postgrado']).strip()
-        fac_norm = fac
+        fac_raw = str(row['Facultad Postgrado']).strip()
+        fac = fac_raw
         for key, val in [
             ('Arquitectura','Arquitectura, Diseño y Construcción'),
             ('Comunicaciones','Comunicaciones'),
@@ -553,17 +545,16 @@ if not df_sin.empty:
             ('Medicina Veterinaria','Medicina Veterinaria y Agronomía'),
             ('Salud','Salud y Ciencias Sociales'),
         ]:
-            if key.lower() in fac.lower():
-                fac_norm = val
-                break
+            if key.lower() in fac_raw.lower():
+                fac = val; break
 
         sin_respuesta.append({
             'per': per,
-            'fac': fac_norm,
+            'fac': fac,
             'prog': prog,
-            'coord': coord_final,
+            'coord': coord or '—',
             'matriculados': int(row['matriculados']),
-            'fecha_termino': oferta['fecha_termino'] if oferta and oferta.get('fecha_termino') else None
+            'fecha_termino': oferta_match.get('fecha_termino') or '—'
         })
 
 D = {

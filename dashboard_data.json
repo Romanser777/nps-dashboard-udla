@@ -10198,19 +10198,11 @@
   "sin_respuesta": [
     {
       "per": "2024-10",
-      "fac": "Fac. de Arq.Anin.Dis. y Const.",
-      "prog": "DIPLOMADO BIM AVANZADO",
-      "coord": "—",
-      "matriculados": 18,
-      "fecha_termino": null
-    },
-    {
-      "per": "2024-10",
       "fac": "Educación",
       "prog": "DIPLOMADO EN EVALUACIÓN Y DISEÑO DE INSTRUMENTOS PARA EL CONTEXTO ESCOLAR",
       "coord": "Sergio Román",
       "matriculados": 23,
-      "fecha_termino": null
+      "fecha_termino": "17/08/2024"
     },
     {
       "per": "2024-10",
@@ -10218,39 +10210,7 @@
       "prog": "POSTÍTULO EN DISCAPACIDAD INTELECTUAL Y EDUCACIÓN INCLUSIVA",
       "coord": "Fernanda Miranda",
       "matriculados": 28,
-      "fecha_termino": null
-    },
-    {
-      "per": "2024-10",
-      "fac": "Salud y Ciencias Sociales",
-      "prog": "DIPLOMADO EN GERONTOGERIATRÍA INTERDISCIPLINARIA",
-      "coord": "—",
-      "matriculados": 20,
-      "fecha_termino": null
-    },
-    {
-      "per": "2024-10",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
-      "coord": "Vanessa Álvarez",
-      "matriculados": 24,
-      "fecha_termino": "12/09/2024"
-    },
-    {
-      "per": "2024-10",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
-      "coord": "—",
-      "matriculados": 27,
-      "fecha_termino": "22/12/2023"
-    },
-    {
-      "per": "2024-10",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
-      "coord": "Sergio Román",
-      "matriculados": 23,
-      "fecha_termino": "17/08/2024"
+      "fecha_termino": "19/07/2025"
     },
     {
       "per": "2024-10",
@@ -10258,15 +10218,7 @@
       "prog": "DIPLOMADO EN INVESTIGACIÓN-ACCIÓN APLICADA A LA DOCENCIA UNIVERSITARIA",
       "coord": "Vanessa Álvarez",
       "matriculados": 25,
-      "fecha_termino": "17/08/2024"
-    },
-    {
-      "per": "2024-20",
-      "fac": "Fac. de Arq.Anin.Dis. y Const.",
-      "prog": "DIPLOMADO BIM AVANZADO",
-      "coord": "—",
-      "matriculados": 15,
-      "fecha_termino": null
+      "fecha_termino": "12/09/2024"
     },
     {
       "per": "2024-20",
@@ -10274,7 +10226,7 @@
       "prog": "DIPLOMADO CONVIVENCIA ESCOLAR Y APRENDIZAJE SOCIOEMOCIONAL",
       "coord": "Sergio Román",
       "matriculados": 26,
-      "fecha_termino": null
+      "fecha_termino": "28/12/2024"
     },
     {
       "per": "2024-20",
@@ -10282,7 +10234,7 @@
       "prog": "DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA",
       "coord": "Carolina Castro",
       "matriculados": 14,
-      "fecha_termino": null
+      "fecha_termino": "27/11/2024"
     },
     {
       "per": "2024-20",
@@ -10290,7 +10242,7 @@
       "prog": "DIPLOMADO EN DIVERSIFICACIÓN DE LA ENSEÑANZA PARA LA EDUCACIÓN INCLUSIVA",
       "coord": "Fernanda Miranda",
       "matriculados": 9,
-      "fecha_termino": null
+      "fecha_termino": "24/01/2025"
     },
     {
       "per": "2024-20",
@@ -10298,7 +10250,7 @@
       "prog": "DIPLOMADO EN EVALUACIÓN Y DISEÑO DE INSTRUMENTOS PARA EL CONTEXTO ESCOLAR",
       "coord": "Sergio Román",
       "matriculados": 12,
-      "fecha_termino": null
+      "fecha_termino": "28/12/2024"
     },
     {
       "per": "2024-20",
@@ -10306,7 +10258,7 @@
       "prog": "DIPLOMADO EN LIDERAZGO EDUCATIVO",
       "coord": "Sergio Román",
       "matriculados": 12,
-      "fecha_termino": null
+      "fecha_termino": "28/12/2024"
     },
     {
       "per": "2024-20",
@@ -10314,7 +10266,7 @@
       "prog": "DIPLOMADO EN NECESIDADES EDUCATIVAS ESPECIALES Y CONTEXTOS INCLUSIVOS",
       "coord": "Fernanda Miranda",
       "matriculados": 16,
-      "fecha_termino": null
+      "fecha_termino": "25/01/2025"
     },
     {
       "per": "2024-20",
@@ -10322,7 +10274,7 @@
       "prog": "DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR",
       "coord": "Sergio Román",
       "matriculados": 32,
-      "fecha_termino": null
+      "fecha_termino": "28/12/2024"
     },
     {
       "per": "2024-20",
@@ -10330,15 +10282,7 @@
       "prog": "POSTÍTULO EN DISCAPACIDAD INTELECTUAL Y EDUCACIÓN INCLUSIVA",
       "coord": "Fernanda Miranda",
       "matriculados": 12,
-      "fecha_termino": null
-    },
-    {
-      "per": "2024-20",
-      "fac": "Ingeniería y Negocios",
-      "prog": "DIPLOMADO EN BIOESTADISTICA",
-      "coord": "—",
-      "matriculados": 9,
-      "fecha_termino": null
+      "fecha_termino": "22/11/2025"
     },
     {
       "per": "2024-20",
@@ -10346,7 +10290,7 @@
       "prog": "DIPLOMADO EN GESTIÓN TURISTICA SOSTENIBLE",
       "coord": "Carolina Castro",
       "matriculados": 12,
-      "fecha_termino": null
+      "fecha_termino": "26/12/2024"
     },
     {
       "per": "2024-20",
@@ -10354,23 +10298,7 @@
       "prog": "DIPLOMADO EN GESTIÓN Y OPERACIÓN EN ALIMENTOS Y BEBIDAS",
       "coord": "Sergio Román",
       "matriculados": 10,
-      "fecha_termino": null
-    },
-    {
-      "per": "2024-20",
-      "fac": "Ingeniería y Negocios",
-      "prog": "POSTITULO EN PREVENCIÓN DE RIESGOS",
-      "coord": "—",
-      "matriculados": 14,
-      "fecha_termino": null
-    },
-    {
-      "per": "2024-20",
-      "fac": "Fac. de Med. Veter. y Agronom.",
-      "prog": "DIPLOMADO DE CIRUGIA EN ESPECIES DE COMPAÑIA",
-      "coord": "—",
-      "matriculados": 56,
-      "fecha_termino": null
+      "fecha_termino": "25/11/2024"
     },
     {
       "per": "2024-20",
@@ -10378,31 +10306,7 @@
       "prog": "DIPLOMADO EN APICULTURA",
       "coord": "Valentina Uribarri",
       "matriculados": 11,
-      "fecha_termino": null
-    },
-    {
-      "per": "2024-20",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
-      "coord": "Vanessa Álvarez",
-      "matriculados": 21,
-      "fecha_termino": "23/01/2025"
-    },
-    {
-      "per": "2024-20",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
-      "coord": "Sergio Román",
-      "matriculados": 24,
-      "fecha_termino": "28/12/2024"
-    },
-    {
-      "per": "2025-10",
-      "fac": "Fac. de Arq.Anin.Dis. y Const.",
-      "prog": "DIPLOMADO BIM AVANZADO",
-      "coord": "—",
-      "matriculados": 24,
-      "fecha_termino": null
+      "fecha_termino": "11/01/2025"
     },
     {
       "per": "2025-10",
@@ -10410,7 +10314,7 @@
       "prog": "DIPLOMADO EN GESTIÓN DE INFRAESTRUCTURA",
       "coord": "Paulina Toledo",
       "matriculados": 19,
-      "fecha_termino": null
+      "fecha_termino": "02/10/2025"
     },
     {
       "per": "2025-10",
@@ -10418,7 +10322,7 @@
       "prog": "DIPLOMADO DERECHO DEL TRABAJO Y SISTEMA DE RELACIONES LABORALES EN LA EMPRESA",
       "coord": "Paulina Toledo",
       "matriculados": 42,
-      "fecha_termino": null
+      "fecha_termino": "16/10/2025"
     },
     {
       "per": "2025-10",
@@ -10426,15 +10330,7 @@
       "prog": "DIPLOMADO ANESTESIA Y MANEJO DE DOLOR EN PEQUEÑOS ANIMALES",
       "coord": "Valentina Uribarri",
       "matriculados": 39,
-      "fecha_termino": null
-    },
-    {
-      "per": "2025-10",
-      "fac": "Salud y Ciencias Sociales",
-      "prog": "DIPLOMADO EN GERONTOGERIATRÍA INTERDISCIPLINARIA",
-      "coord": "—",
-      "matriculados": 20,
-      "fecha_termino": null
+      "fecha_termino": "29/10/2025"
     },
     {
       "per": "2025-10",
@@ -10445,84 +10341,12 @@
       "fecha_termino": "16/11/2025"
     },
     {
-      "per": "2025-10",
-      "fac": "Salud y Ciencias Sociales",
-      "prog": "DIPLOMADO EN PERITAJE SOCIAL",
-      "coord": "—",
-      "matriculados": 1,
-      "fecha_termino": null
-    },
-    {
-      "per": "2025-10",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
-      "coord": "Vanessa Álvarez",
-      "matriculados": 22,
-      "fecha_termino": "11/09/2025"
-    },
-    {
-      "per": "2025-10",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
-      "coord": "Sergio Román",
-      "matriculados": 18,
-      "fecha_termino": null
-    },
-    {
-      "per": "2025-10",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
-      "coord": "Sergio Román",
-      "matriculados": 17,
-      "fecha_termino": "16/08/2025"
-    },
-    {
-      "per": "2025-20",
-      "fac": "Fac. de Arq.Anin.Dis. y Const.",
-      "prog": "DIPLOMADO BIM AVANZADO",
-      "coord": "—",
-      "matriculados": 25,
-      "fecha_termino": null
-    },
-    {
-      "per": "2025-20",
-      "fac": "Comunicaciones",
-      "prog": "DIP.EN IA APL. PERIOD. Y COM.",
-      "coord": "Carolina Castro",
-      "matriculados": 10,
-      "fecha_termino": "04/09/2025"
-    },
-    {
       "per": "2025-20",
       "fac": "Derecho",
       "prog": "DIPLOMADO DE MEDIACIÓN Y RESOLUCIÓN DE CONFLICTOS EN EL ÁMBITO DE LA FAMILIA",
       "coord": "Paulina Toledo",
       "matriculados": 15,
-      "fecha_termino": "04/09/2025"
-    },
-    {
-      "per": "2025-20",
-      "fac": "Ingeniería y Negocios",
-      "prog": "DIP.EN GEST. ENER.LEY 21.305",
-      "coord": "Vanessa Álvarez",
-      "matriculados": 14,
-      "fecha_termino": "22/12/2025"
-    },
-    {
-      "per": "2025-20",
-      "fac": "Ingeniería y Negocios",
-      "prog": "DIP.EN GEST. Y MAN. RES. PEL.",
-      "coord": "Vanessa Álvarez",
-      "matriculados": 12,
-      "fecha_termino": "22/12/2025"
-    },
-    {
-      "per": "2025-20",
-      "fac": "Ingeniería y Negocios",
-      "prog": "DIPLOMADO EN BIOESTADISTICA",
-      "coord": "—",
-      "matriculados": 12,
-      "fecha_termino": null
+      "fecha_termino": "23/07/2026"
     },
     {
       "per": "2025-20",
@@ -10530,7 +10354,7 @@
       "prog": "DIPLOMADO EN GESTIÓN DE EMERGENCIAS Y RESPUESTAS ANTE DESASTRES BAJO NORMA ISO 22320",
       "coord": "Vanessa Álvarez",
       "matriculados": 18,
-      "fecha_termino": null
+      "fecha_termino": "10/12/2025"
     },
     {
       "per": "2025-20",
@@ -10538,15 +10362,7 @@
       "prog": "DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD",
       "coord": "Vanessa Álvarez",
       "matriculados": 30,
-      "fecha_termino": null
-    },
-    {
-      "per": "2025-20",
-      "fac": "Fac. de Med. Veter. y Agronom.",
-      "prog": "DIPLOMADO DE CIRUGIA EN ESPECIES DE COMPAÑIA",
-      "coord": "—",
-      "matriculados": 47,
-      "fecha_termino": null
+      "fecha_termino": "12/12/2025"
     },
     {
       "per": "2025-20",
@@ -10554,23 +10370,7 @@
       "prog": "DIPLOMADO EN MEDICINA FELINA",
       "coord": "Valentina Uribarri",
       "matriculados": 30,
-      "fecha_termino": null
-    },
-    {
-      "per": "2025-20",
-      "fac": "Salud y Ciencias Sociales",
-      "prog": "DIP.EN PSICO. EDUC. INTE. INT.",
-      "coord": "Fernanda Miranda",
-      "matriculados": 10,
-      "fecha_termino": "23/01/2026"
-    },
-    {
-      "per": "2025-20",
-      "fac": "Salud y Ciencias Sociales",
-      "prog": "DIP.INTERV. PSICOS. A VÍCTIMAS",
-      "coord": "Valentina Uribarri",
-      "matriculados": 12,
-      "fecha_termino": "23/01/2026"
+      "fecha_termino": "22/05/2026"
     },
     {
       "per": "2025-20",
@@ -10578,7 +10378,7 @@
       "prog": "DIPLOMADO DE KINESITERAPIA RESPIRATORIA PARA ATENCIÓN PRIMARIA EN SALUD",
       "coord": "Vanessa Álvarez",
       "matriculados": 35,
-      "fecha_termino": "23/01/2026"
+      "fecha_termino": "24/01/2026"
     },
     {
       "per": "2025-20",
@@ -10586,7 +10386,7 @@
       "prog": "DIPLOMADO DOCENCIA EN SIMULACIÓN CLÍNICA",
       "coord": "Fernanda Miranda",
       "matriculados": 13,
-      "fecha_termino": "23/01/2026"
+      "fecha_termino": "12/03/2026"
     },
     {
       "per": "2025-20",
@@ -10594,39 +10394,7 @@
       "prog": "DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN DE SALUD",
       "coord": "Paulina Toledo",
       "matriculados": 39,
-      "fecha_termino": "23/01/2026"
-    },
-    {
-      "per": "2025-20",
-      "fac": "Salud y Ciencias Sociales",
-      "prog": "DIPLOMADO SOBRE INCLUSIÓN EN EDUCACIÓN SUPERIOR",
-      "coord": "Vanessa Álvarez",
-      "matriculados": 13,
-      "fecha_termino": "27/01/2026"
-    },
-    {
-      "per": "2025-20",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
-      "coord": "Vanessa Álvarez",
-      "matriculados": 19,
-      "fecha_termino": "27/01/2026"
-    },
-    {
-      "per": "2025-20",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
-      "coord": "Sergio Román",
-      "matriculados": 20,
-      "fecha_termino": null
-    },
-    {
-      "per": "2025-20",
-      "fac": "Vicerrectoría Académica",
-      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
-      "coord": "Sergio Román",
-      "matriculados": 7,
-      "fecha_termino": "27/12/2025"
+      "fecha_termino": "22/03/2026"
     }
   ]
 }
