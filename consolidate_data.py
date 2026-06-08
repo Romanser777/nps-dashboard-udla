@@ -5,542 +5,439 @@ import json
 import pandas as pd
 import numpy as np
 import sqlite3
+from datetime import datetime
 
-workspace_dir = r"c:\Users\sroman\Desktop\ENCUESTAS NPS"
+# ─────────────────────────────────────────────────────────────────
+#  CONFIGURACIÓN — cambia solo esta ruta si mueves la carpeta
+# ─────────────────────────────────────────────────────────────────
+workspace_dir = os.path.dirname(os.path.abspath(__file__))
 subdirs = ["2024-10", "2024-20", "2025-10", "2025-20"]
 enrollment_excel = os.path.join(workspace_dir, "Detalle Estudiantes Postgrado_Tipo Ingreso.xlsx")
+html_template   = os.path.join(workspace_dir, "index.html")
+output_html     = os.path.join(workspace_dir, "Dashboard_NPS_UDLA.html")
 
-# Regular expression to extract rating number
+# ─────────────────────────────────────────────────────────────────
+#  HELPERS
+# ─────────────────────────────────────────────────────────────────
 def parse_rating(val):
     if pd.isna(val):
         return None
-    val_str = str(val).strip()
-    if not val_str:
-        return None
-    m = re.match(r'^(\d+)', val_str)
-    if m:
-        return int(m.group(1))
-    return None
+    m = re.match(r'^(\d+)', str(val).strip())
+    return int(m.group(1)) if m else None
 
-# Clean text strings (e.g. whitespace, clean names)
 def clean_text(val):
     if pd.isna(val):
         return ""
-    val_str = str(val).strip()
-    # Normalize multiple spaces
-    val_str = re.sub(r'\s+', ' ', val_str)
-    return val_str
+    return re.sub(r'\s+', ' ', str(val).strip())
 
-# Smart string cleaner for matching programs
 def clean_matching_name(s):
     if pd.isna(s):
         return ""
     s = str(s).lower().strip()
-    s = s.replace("í", "i").replace("á", "a").replace("ó", "o").replace("ú", "u").replace("ñ", "n")
-    s = s.replace("é", "e").replace("ü", "u")
-    
-    # Expand abbreviations
-    s = s.replace("dip.en", "diplomado")
-    s = s.replace("dip. de", "diplomado")
-    s = s.replace("dip.", "diplomado")
-    s = s.replace("rehab.", "rehabilitacion")
-    s = s.replace("fisiat.", "fisiatria")
-    s = s.replace("veter.", "veterinaria")
-    
-    # Remove Spanish stop words
-    stop_words = ["en", "de", "el", "la", "y", "para", "del", "con", "a", "los", "las"]
-    words = re.findall(r'[a-z0-9]+', s)
-    filtered_words = [w for w in words if w not in stop_words]
-    
-    return "".join(filtered_words)
+    for src, dst in [("í","i"),("á","a"),("ó","o"),("ú","u"),("ñ","n"),("é","e"),("ü","u")]:
+        s = s.replace(src, dst)
+    for src, dst in [("dip.en","diplomado"),("dip. de","diplomado"),("dip.","diplomado"),
+                     ("rehab.","rehabilitacion"),("fisiat.","fisiatria"),("veter.","veterinaria")]:
+        s = s.replace(src, dst)
+    stop = {"en","de","el","la","y","para","del","con","a","los","las"}
+    return "".join(w for w in re.findall(r'[a-z0-9]+', s) if w not in stop)
 
-print("Starting data consolidation...")
+def safe_mean(series):
+    s = series.dropna()
+    return float(round(s.mean(), 1)) if len(s) else None
 
-# ----------------------------------------------------
-# 1. Load Real Enrollments from BD MATRICULA
-# ----------------------------------------------------
+def get_faculty_name(filename):
+    fn = filename.lower()
+    if "arquitectura" in fn:                              return "Arquitectura, Diseño y Construcción"
+    if "comunicaciones" in fn:                            return "Comunicaciones"
+    if "derecho" in fn:                                   return "Derecho"
+    if "educaci" in fn and "vra" in fn:                   return "Educación VRA"
+    if "educaci" in fn:                                   return "Educación"
+    if "ingenier" in fn or "negocio" in fn:               return "Ingeniería y Negocios"
+    if "medicina" in fn or "veterinaria" in fn or "agronom" in fn: return "Medicina Veterinaria y Agronomía"
+    if "salud" in fn or "social" in fn:                   return "Salud y Ciencias Sociales"
+    return "Otra"
+
+print("=" * 60)
+print("  ACTUALIZADOR DE DASHBOARD NPS — UDLA")
+print(f"  {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
+print("=" * 60)
+
+# ─────────────────────────────────────────────────────────────────
+#  1. MATRÍCULAS REALES
+# ─────────────────────────────────────────────────────────────────
 enrollment_dict = {}
 global_enrollment_period = {}
 fac_enrollment_period = {}
 
 if os.path.exists(enrollment_excel):
-    print(f"Loading real enrollments from {enrollment_excel}...")
+    print("\n[1/4] Cargando matrículas reales...")
     try:
-        df_enr = pd.read_excel(enrollment_excel, sheet_name='BD MATRICULA', usecols=['Periodo', 'Rut', 'Programa', 'Programa Postgrado', 'Facultad Postgrado'])
-        print(f"Loaded {len(df_enr)} enrollment records.")
-        
-        # Calculate student count per Periodo, Programa Postgrado, Programa code
-        # We group by Periodo and Programa Postgrado to count total enrolled students
-        enr_grouped = df_enr.groupby(['Periodo', 'Programa Postgrado']).size().reset_index(name='estudiantes')
-        print(f"Distinct enrollment candidate entries: {len(enr_grouped)}")
-        
-        # We also sum enrollment per Periodo globally and per Facultad
-        for idx, r_en in df_enr.drop_duplicates(subset=['Rut', 'Periodo']).groupby(['Periodo']).size().items():
-            # Periodo maps e.g. 202410 to "2024-10"
+        df_enr = pd.read_excel(
+            enrollment_excel, sheet_name='BD MATRICULA',
+            usecols=['Periodo','Rut','Programa','Programa Postgrado','Facultad Postgrado']
+        )
+        print(f"      {len(df_enr)} registros de matrícula cargados.")
+
+        enr_grouped = df_enr.groupby(['Periodo','Programa Postgrado']).size().reset_index(name='estudiantes')
+
+        for idx, r_en in df_enr.drop_duplicates(subset=['Rut','Periodo']).groupby(['Periodo']).size().items():
             per_str = f"{str(idx)[:4]}-{str(idx)[4:]}"
             global_enrollment_period[per_str] = int(r_en)
-            
-        # Group enrollment by Facultad and Periodo
-        enr_fac_grouped = df_enr.groupby(['Periodo', 'Facultad Postgrado']).size().reset_index(name='estudiantes')
-        for idx, row in enr_fac_grouped.iterrows():
+
+        enr_fac = df_enr.groupby(['Periodo','Facultad Postgrado']).size().reset_index(name='estudiantes')
+        for _, row in enr_fac.iterrows():
             per_str = f"{str(row['Periodo'])[:4]}-{str(row['Periodo'])[4:]}"
-            db_fac = str(row['Facultad Postgrado']).strip()
-            # Map database faculty name to survey faculty name
-            # Let's clean the name for mapping
-            fac_key = f"{db_fac}||{per_str}"
-            fac_enrollment_period[fac_key] = int(row['estudiantes'])
-            
-        # Keep list of db candidates
-        for idx, row in enr_grouped.iterrows():
-            per_val = row['Periodo']
-            per_str = f"{str(per_val)[:4]}-{str(per_val)[4:]}"
+            fac_enrollment_period[f"{str(row['Facultad Postgrado']).strip()}||{per_str}"] = int(row['estudiantes'])
+
+        for _, row in enr_grouped.iterrows():
+            per_str = f"{str(row['Periodo'])[:4]}-{str(row['Periodo'])[4:]}"
             prog_name = str(row['Programa Postgrado']).strip()
-            c_name = clean_matching_name(prog_name)
-            
-            # Save mapping key
-            map_key = f"{per_str}||{c_name}"
-            enrollment_dict[map_key] = int(row['estudiantes'])
-            
-        print("Real enrollments loaded and indexed.")
+            enrollment_dict[f"{per_str}||{clean_matching_name(prog_name)}"] = int(row['estudiantes'])
+
+        print("      Matrículas indexadas correctamente.")
     except Exception as e:
-        print(f"Error loading BD MATRICULA: {e}")
+        print(f"      ERROR al cargar matrículas: {e}")
 else:
-    print("Warning: Detalle Estudiantes Postgrado_Tipo Ingreso.xlsx not found. Enrollment numbers will use backup estimates.")
+    print("\n[1/4] AVISO: Archivo de matrículas no encontrado. Se usarán estimaciones.")
 
-# ----------------------------------------------------
-# 2. Process Survey Excel Files
-# ----------------------------------------------------
+# ─────────────────────────────────────────────────────────────────
+#  2. PROCESAR ENCUESTAS EXCEL
+# ─────────────────────────────────────────────────────────────────
+print("\n[2/4] Procesando encuestas por período...")
 responses_list = []
-comments_list = []
-
-# Faculty name mapper based on filename keywords
-def get_faculty_name(filename):
-    filename_lower = filename.lower()
-    if "arquitectura" in filename_lower:
-        return "Arquitectura, Diseño y Construcción"
-    elif "comunicaciones" in filename_lower:
-        return "Comunicaciones"
-    elif "derecho" in filename_lower:
-        return "Derecho"
-    elif "educaci" in filename_lower and "vra" in filename_lower:
-        return "Educación VRA"
-    elif "educaci" in filename_lower:
-        return "Educación"
-    elif "ingenier" in filename_lower or "negocio" in filename_lower:
-        return "Ingeniería y Negocios"
-    elif "medicina" in filename_lower or "veterinaria" in filename_lower or "agronom" in filename_lower:
-        return "Medicina Veterinaria y Agronomía"
-    elif "salud" in filename_lower or "social" in filename_lower:
-        return "Salud y Ciencias Sociales"
-    else:
-        return "Otra"
+comments_list  = []
 
 for sd in subdirs:
-    path = os.path.join(workspace_dir, sd)
-    if os.path.exists(path):
-        files = glob.glob(os.path.join(path, "*.xlsx"))
-        print(f"Processing folder {sd} ({len(files)} files)...")
-        for f in files:
-            filename = os.path.basename(f)
-            faculty = get_faculty_name(filename)
-            
-            try:
-                xl = pd.ExcelFile(f)
-                sheet_name = 'Sheet' if 'Sheet' in xl.sheet_names else xl.sheet_names[0]
-                df = pd.read_excel(f, sheet_name=sheet_name)
-                
-                # Clean header metadata row added by SurveyMonkey
-                df_clean = df[df['respondent_id'].notna()].copy()
-                
-                for idx, row in df_clean.iterrows():
-                    resp_id = str(int(row.iloc[0]))
-                    prog = clean_text(row.iloc[9])
-                    
-                    if not prog or prog == "Response":
-                        continue
-                        
-                    q1 = parse_rating(row.iloc[10])
-                    q2 = parse_rating(row.iloc[11])
-                    q3 = parse_rating(row.iloc[12])
-                    q4 = parse_rating(row.iloc[13])
-                    coord = clean_text(row.iloc[14])
-                    q5 = parse_rating(row.iloc[15])
-                    q6 = parse_rating(row.iloc[16])
-                    q7 = parse_rating(row.iloc[17])
-                    q8 = parse_rating(row.iloc[18])
-                    q9 = parse_rating(row.iloc[19])
-                    q10 = parse_rating(row.iloc[20])
-                    com = clean_text(row.iloc[21])
-                    
-                    # Classification of NPS (Q1)
-                    # Promotores: 6-7, Pasivos: 5, Detractores: 1-4
-                    tipo_nps = None
+    path  = os.path.join(workspace_dir, sd)
+    files = glob.glob(os.path.join(path, "*.xlsx")) if os.path.exists(path) else []
+    print(f"      {sd}: {len(files)} archivos")
+
+    for f in files:
+        filename = os.path.basename(f)
+        faculty  = get_faculty_name(filename)
+        try:
+            xl = pd.ExcelFile(f)
+            sheet = 'Sheet' if 'Sheet' in xl.sheet_names else xl.sheet_names[0]
+            df = pd.read_excel(f, sheet_name=sheet)
+            df_clean = df[df['respondent_id'].notna()].copy()
+
+            for _, row in df_clean.iterrows():
+                prog = clean_text(row.iloc[9])
+                if not prog or prog == "Response":
+                    continue
+
+                q1  = parse_rating(row.iloc[10])
+                q2  = parse_rating(row.iloc[11])
+                q3  = parse_rating(row.iloc[12])
+                q4  = parse_rating(row.iloc[13])
+                coord = clean_text(row.iloc[14])
+                q5  = parse_rating(row.iloc[15])
+                q6  = parse_rating(row.iloc[16])
+                q7  = parse_rating(row.iloc[17])
+                q8  = parse_rating(row.iloc[18])
+                q9  = parse_rating(row.iloc[19])
+                q10 = parse_rating(row.iloc[20])
+                com = clean_text(row.iloc[21])
+
+                tipo_nps = None
+                if q1 is not None:
+                    tipo_nps = "Promotor" if q1 >= 6 else ("Pasivo" if q1 == 5 else "Detractor")
+
+                responses_list.append({
+                    "respondent_id": str(int(row.iloc[0])),
+                    "periodo": sd, "facultad": faculty,
+                    "programa": prog,
+                    "coordinador": coord if coord else "Sin Coordinador",
+                    "Q1_Recomendacion_NPS": q1, "Q2_Contenidos": q2,
+                    "Q3_Oportunidades": q3, "Q4_Volveria": q4,
+                    "Q5_Servicio_Coordinador": q5, "Q6_Tiempos_Coordinador": q6,
+                    "Q7_Portal_Facilidad": q7, "Q8_Portal_Aporte": q8,
+                    "Q9_Blackboard_Facilidad": q9, "Q10_Blackboard_Aporte": q10,
+                    "tipo_nps": tipo_nps
+                })
+
+                if com and com.lower() not in ["open-ended response","nan",""]:
+                    sentimiento = "Neutro"
                     if q1 is not None:
-                        if q1 >= 6:
-                            tipo_nps = "Promotor"
-                        elif q1 == 5:
-                            tipo_nps = "Pasivo"
-                        else:
-                            tipo_nps = "Detractor"
-                            
-                    response_dict = {
-                        "respondent_id": resp_id,
-                        "periodo": sd,
-                        "facultad": faculty,
+                        sentimiento = "Positivo" if q1 >= 6 else ("Negativo" if q1 <= 4 else "Neutro")
+                    comments_list.append({
+                        "periodo": sd, "facultad": faculty,
                         "programa": prog,
                         "coordinador": coord if coord else "Sin Coordinador",
-                        "Q1_Recomendacion_NPS": q1,
-                        "Q2_Contenidos": q2,
-                        "Q3_Oportunidades": q3,
-                        "Q4_Volveria": q4,
-                        "Q5_Servicio_Coordinador": q5,
-                        "Q6_Tiempos_Coordinador": q6,
-                        "Q7_Portal_Facilidad": q7,
-                        "Q8_Portal_Aporte": q8,
-                        "Q9_Blackboard_Facilidad": q9,
-                        "Q10_Blackboard_Aporte": q10,
-                        "tipo_nps": tipo_nps
-                    }
-                    responses_list.append(response_dict)
-                    
-                    if com and com.lower() not in ["open-ended response", "nan", ""]:
-                        sentimiento = "Neutro"
-                        if q1 is not None:
-                            if q1 >= 6:
-                                sentimiento = "Positivo"
-                            elif q1 <= 4:
-                                sentimiento = "Negativo"
-                                
-                        comments_list.append({
-                            "periodo": sd,
-                            "facultad": faculty,
-                            "programa": prog,
-                            "coordinador": coord if coord else "Sin Coordinador",
-                            "puntaje": q1,
-                            "clasificacion": sentimiento,
-                            "comentario": com
-                        })
-                        
-            except Exception as e:
-                print(f"Error processing file {filename} in {sd}: {e}")
+                        "puntaje": q1, "clasificacion": sentimiento, "comentario": com
+                    })
+        except Exception as e:
+            print(f"        ERROR en {filename}: {e}")
 
-df_all_responses = pd.DataFrame(responses_list)
-df_all_comments = pd.DataFrame(comments_list)
+df_all  = pd.DataFrame(responses_list)
+df_coms = pd.DataFrame(comments_list)
+print(f"      Total: {len(df_all)} respuestas, {len(df_coms)} comentarios.")
 
-print(f"Consolidated {len(df_all_responses)} responses and {len(df_all_comments)} comments.")
+# ─────────────────────────────────────────────────────────────────
+#  3. CALCULAR RESUMEN Y ESTRUCTURA D
+# ─────────────────────────────────────────────────────────────────
+print("\n[3/4] Calculando métricas y construyendo estructura de datos...")
 
-# Helper to find real enrollment for a program and period
-def get_enrollment(period, program_name, responses_count):
-    c_prog = clean_matching_name(program_name)
-    key = f"{period}||{c_prog}"
-    
-    # Try direct lookup
+def get_enrollment(period, program_name, n_resp):
+    key = f"{period}||{clean_matching_name(program_name)}"
     if key in enrollment_dict:
         return enrollment_dict[key]
-        
-    # Try fuzzy key lookup (starts with candidate)
     for k, val in enrollment_dict.items():
         k_per, k_prog = k.split("||")
         if period == k_per:
-            if c_prog.startswith(k_prog[:15]) or k_prog.startswith(c_prog[:15]):
+            c = clean_matching_name(program_name)
+            if c.startswith(k_prog[:15]) or k_prog.startswith(c[:15]):
                 return val
-                
-    # Fallback to smart backup estimator (approx 55% response rate)
-    return int(np.ceil(responses_count / 0.55) + 2)
+    return int(np.ceil(n_resp / 0.55) + 2)
 
-# Generate summary metrics per program/period for Excel sheet
+# Resumen por programa
 summary_list = []
-grouped = df_all_responses.groupby(['periodo', 'facultad', 'programa'])
-for name, group in grouped:
-    period, fac, prog = name
-    n_resp = len(group)
-    
-    q1_vals = group['Q1_Recomendacion_NPS'].dropna()
-    n_q1 = len(q1_vals)
-    promotores = sum(group['tipo_nps'] == "Promotor")
-    detractores = sum(group['tipo_nps'] == "Detractor")
-    nps = None
-    if n_q1 > 0:
-        nps = int(round((promotores - detractores) / n_q1 * 100))
-        
-    # Get enrollment
-    enroll = get_enrollment(period, prog, n_resp)
-    cov = round(n_resp / enroll * 100, 1) if enroll > 0 else 0
-        
+for (period, fac, prog), grp in df_all.groupby(['periodo','facultad','programa']):
+    n   = len(grp)
+    q1  = grp['Q1_Recomendacion_NPS'].dropna()
+    pr  = int((grp['tipo_nps'] == "Promotor").sum())
+    de  = int((grp['tipo_nps'] == "Detractor").sum())
+    pa  = int((grp['tipo_nps'] == "Pasivo").sum())
+    nps = int(round((pr - de) / len(q1) * 100)) if len(q1) else 0
+    enr = get_enrollment(period, prog, n)
     summary_list.append({
-        "periodo": period,
-        "facultad": fac,
-        "programa": prog,
-        "n_respuestas": n_resp,
-        "promotores": promotores,
-        "pasivos": sum(group['tipo_nps'] == "Pasivo"),
-        "detractores": detractores,
-        "NPS": nps,
-        "enrollment": enroll,
-        "cobertura_pct": cov,
-        "prom_Q2_Contenidos": group['Q2_Contenidos'].mean(),
-        "prom_Q3_Oportunidades": group['Q3_Oportunidades'].mean(),
-        "prom_Q4_Volveria": group['Q4_Volveria'].mean(),
-        "prom_Q5_Servicio_Coord": group['Q5_Servicio_Coordinador'].mean(),
-        "prom_Q6_Tiempos_Coord": group['Q6_Tiempos_Coordinador'].mean(),
-        "prom_Q7_Portal_Facilidad": group['Q7_Portal_Facilidad'].mean(),
-        "prom_Q8_Portal_Aporte": group['Q8_Portal_Aporte'].mean(),
-        "prom_Q9_BB_Facilidad": group['Q9_Blackboard_Facilidad'].mean(),
-        "prom_Q10_BB_Aporte": group['Q10_Blackboard_Aporte'].mean()
+        "periodo": period, "facultad": fac, "programa": prog,
+        "n_respuestas": n, "promotores": pr, "pasivos": pa, "detractores": de,
+        "NPS": nps, "enrollment": enr, "cobertura_pct": round(n/enr*100,1) if enr else 0,
+        "prom_Q2": safe_mean(grp['Q2_Contenidos']),
+        "prom_Q3": safe_mean(grp['Q3_Oportunidades']),
+        "prom_Q4": safe_mean(grp['Q4_Volveria']),
+        "prom_Q5": safe_mean(grp['Q5_Servicio_Coordinador']),
+        "prom_Q6": safe_mean(grp['Q6_Tiempos_Coordinador']),
+        "prom_Q7": safe_mean(grp['Q7_Portal_Facilidad']),
+        "prom_Q8": safe_mean(grp['Q8_Portal_Aporte']),
+        "prom_Q9": safe_mean(grp['Q9_Blackboard_Facilidad']),
+        "prom_Q10": safe_mean(grp['Q10_Blackboard_Aporte']),
     })
-df_summary = pd.DataFrame(summary_list)
+df_sum = pd.DataFrame(summary_list)
 
-# Write to Excel NPS_Consolidado.xlsx
+all_periods = sorted(df_all['periodo'].unique().tolist())
+all_facs    = sorted(df_all['facultad'].unique().tolist())
+all_coords  = sorted(df_all['coordinador'].dropna().unique().tolist())
+
+# Global
+d_global = {}
+for p in all_periods:
+    g = df_all[df_all['periodo'] == p]
+    pr = int((g['tipo_nps']=="Promotor").sum())
+    de = int((g['tipo_nps']=="Detractor").sum())
+    pa = int((g['tipo_nps']=="Pasivo").sum())
+    n = len(g)
+    nps = int(round((pr - de) / n * 100)) if n else 0
+    enr = int(df_sum[df_sum['periodo']==p]['enrollment'].sum())
+    d_global[p] = {"resp":n,"prom":int(pr),"det":int(de),"pas":int(pa),
+                   "nps":nps,"enroll":enr,"cov_pct":round(n/enr*100,1) if enr else 0}
+
+# Global grupos
+d_global_grupos = {}
+for p in all_periods:
+    g = df_all[df_all['periodo']==p]
+    d_global_grupos[p] = {
+        "exp":  {"nps_val":safe_mean(g['Q1_Recomendacion_NPS']),"contenidos":safe_mean(g['Q2_Contenidos']),
+                 "laboral":safe_mean(g['Q3_Oportunidades']),"recompra":safe_mean(g['Q4_Volveria'])},
+        "coord":{"coord_calidad":safe_mean(g['Q5_Servicio_Coordinador']),"coord_tiempo":safe_mean(g['Q6_Tiempos_Coordinador'])},
+        "plat": {"portal_facil":safe_mean(g['Q7_Portal_Facilidad']),"portal_aporte":safe_mean(g['Q8_Portal_Aporte']),
+                 "bb_facil":safe_mean(g['Q9_Blackboard_Facilidad']),"bb_aporte":safe_mean(g['Q10_Blackboard_Aporte'])}
+    }
+
+# Por facultad
+d_por_fac = {}
+d_preg_fac = {}
+for f in all_facs:
+    d_por_fac[f] = {}
+    d_preg_fac[f] = {}
+    for p in all_periods:
+        g = df_all[(df_all['facultad']==f) & (df_all['periodo']==p)]
+        if len(g) == 0:
+            continue
+        n  = len(g)
+        pr = int((g['tipo_nps']=="Promotor").sum())
+        de = int((g['tipo_nps']=="Detractor").sum())
+        pa = int((g['tipo_nps']=="Pasivo").sum())
+        nps = int(round((pr-de)/n*100)) if n else 0
+        enr = int(df_sum[(df_sum['facultad']==f)&(df_sum['periodo']==p)]['enrollment'].sum())
+        exp   = {"nps_val":safe_mean(g['Q1_Recomendacion_NPS']),"contenidos":safe_mean(g['Q2_Contenidos']),
+                 "laboral":safe_mean(g['Q3_Oportunidades']),"recompra":safe_mean(g['Q4_Volveria'])}
+        coord = {"coord_calidad":safe_mean(g['Q5_Servicio_Coordinador']),"coord_tiempo":safe_mean(g['Q6_Tiempos_Coordinador'])}
+        plat  = {"portal_facil":safe_mean(g['Q7_Portal_Facilidad']),"portal_aporte":safe_mean(g['Q8_Portal_Aporte']),
+                 "bb_facil":safe_mean(g['Q9_Blackboard_Facilidad']),"bb_aporte":safe_mean(g['Q10_Blackboard_Aporte'])}
+        d_por_fac[f][p]  = {"resp":n,"prom":pr,"det":de,"pas":pa,"nps":nps,"enroll":enr,
+                             "cov_pct":round(n/enr*100,1) if enr else 0,"exp":exp,"coord":coord,"plat":plat}
+        d_preg_fac[f][p] = {"exp":exp,"coord":coord,"plat":plat}
+
+# Por coordinador
+d_por_coord = {}
+for c in all_coords:
+    d_por_coord[c] = {}
+    for p in all_periods:
+        g = df_all[(df_all['coordinador']==c)&(df_all['periodo']==p)]
+        if len(g) == 0:
+            d_por_coord[c][p] = None
+            continue
+        n  = len(g)
+        pr = int((g['tipo_nps']=="Promotor").sum())
+        de = int((g['tipo_nps']=="Detractor").sum())
+        pa = int((g['tipo_nps']=="Pasivo").sum())
+        nps = int(round((pr-de)/n*100)) if n else 0
+        d_por_coord[c][p] = {"resp":n,"prom":pr,"det":de,"pas":pa,"nps":nps,
+                              "coord_calidad":safe_mean(g['Q5_Servicio_Coordinador']),
+                              "coord_tiempo":safe_mean(g['Q6_Tiempos_Coordinador'])}
+
+# Programas
+d_programas = []
+for _, row in df_sum.iterrows():
+    period, fac, prog = row['periodo'], row['facultad'], row['programa']
+    df_pr = df_all[(df_all['periodo']==period)&(df_all['programa']==prog)]
+    coords = df_pr['coordinador'].dropna().unique()
+    coord  = str(coords[0]).strip() if len(coords) else "Sin Coordinador"
+    d_programas.append({
+        "fac":fac,"prog":prog,"coord":coord,"per":period,
+        "resp":int(row['n_respuestas']),"prom":int(row['promotores']),
+        "det":int(row['detractores']),"pas":int(row['pasivos']),
+        "nps":int(row['NPS']) if pd.notna(row['NPS']) else 0,
+        "enroll":int(row['enrollment']),"cov":float(row['cobertura_pct'])
+    })
+
+# Comentarios
+d_comentarios = []
+for _, row in df_coms.iterrows():
+    d_comentarios.append({
+        "per":row['periodo'],"fac":row['facultad'],"prog":row['programa'],
+        "coord":row['coordinador'],
+        "nps":int(row['puntaje']) if pd.notna(row['puntaje']) else None,
+        "clase":row['clasificacion'],"texto":row['comentario']
+    })
+
+# Estructura D final
+D = {
+    "periodos": all_periods, "facultades": all_facs, "coordinadores": all_coords,
+    "global": d_global, "global_grupos": d_global_grupos,
+    "por_facultad": d_por_fac, "preguntas_fac": d_preg_fac,
+    "por_coordinador": d_por_coord,
+    "programas": d_programas, "comentarios": d_comentarios
+}
+
+# ─────────────────────────────────────────────────────────────────
+#  4. GUARDAR ARCHIVOS DE SALIDA
+# ─────────────────────────────────────────────────────────────────
+print("\n[4/4] Generando archivos de salida...")
+
+# 4a. Excel consolidado
 output_excel = os.path.join(workspace_dir, "NPS_Consolidado.xlsx")
 try:
+    df_resp_export = df_all.copy()
+    df_com_export  = df_coms.copy()
     with pd.ExcelWriter(output_excel, engine='openpyxl') as writer:
-        df_all_responses.to_excel(writer, sheet_name='Detalle_Respuestas', index=False)
-        df_summary.to_excel(writer, sheet_name='Resumen_Programas', index=False)
-        df_all_comments.to_excel(writer, sheet_name='Comentarios', index=False)
-    print(f"Successfully generated {output_excel}")
+        df_resp_export.to_excel(writer, sheet_name='Detalle_Respuestas', index=False)
+        df_sum.to_excel(writer, sheet_name='Resumen_Programas', index=False)
+        df_com_export.to_excel(writer, sheet_name='Comentarios', index=False)
+    print(f"      ✓ {os.path.basename(output_excel)}")
 except Exception as e:
-    print(f"Error writing excel file: {e}")
+    print(f"      ✗ Excel: {e}")
 
-# Write to SQLite Database
+# 4b. SQLite
 output_db = os.path.join(workspace_dir, "NPS_Consolidado.db")
 try:
     conn = sqlite3.connect(output_db)
-    df_all_responses.to_sql('detalle_respuestas', conn, if_exists='replace', index=False)
-    df_summary.to_sql('resumen_programas', conn, if_exists='replace', index=False)
-    df_all_comments.to_sql('comentarios', conn, if_exists='replace', index=False)
+    df_all.to_sql('detalle_respuestas', conn, if_exists='replace', index=False)
+    df_sum.to_sql('resumen_programas',  conn, if_exists='replace', index=False)
+    df_coms.to_sql('comentarios',       conn, if_exists='replace', index=False)
     conn.close()
-    print(f"Successfully generated {output_db}")
+    print(f"      ✓ {os.path.basename(output_db)}")
 except Exception as e:
-    print(f"Error writing SQLite DB: {e}")
+    print(f"      ✗ SQLite: {e}")
 
-# ----------------------------------------------------
-# 3. Compile dynamic JSON structure 'D' for Web Dashboard
-# ----------------------------------------------------
-print("Compiling dynamic D structure for HTML frontend...")
-
-# Helper to safe mean float or None
-def safe_mean(series):
-    s = series.dropna()
-    if len(s) == 0:
-        return None
-    return float(round(s.mean(), 1))
-
-# Lists
-all_periods = sorted(list(df_all_responses['periodo'].unique()))
-all_facultades = sorted(list(df_all_responses['facultad'].unique()))
-all_coordinadores = sorted(list(df_all_responses['coordinador'].dropna().unique()))
-
-# D Global
-d_global = {}
-for p in all_periods:
-    df_p = df_all_responses[df_all_responses['periodo'] == p]
-    resp = len(df_p)
-    prom = sum(df_p['tipo_nps'] == "Promotor")
-    det = sum(df_p['tipo_nps'] == "Detractor")
-    pas = sum(df_p['tipo_nps'] == "Pasivo")
-    nps = int(round((prom - det) / resp * 100)) if resp > 0 else 0
-    
-    # Calculate enrollments globally
-    # Try to sum all matched program enrollments for this period
-    period_progs = df_summary[df_summary['periodo'] == p]
-    enroll = int(period_progs['enrollment'].sum())
-    
-    cov_pct = round(resp / enroll * 100, 1) if enroll > 0 else 0
-    
-    d_global[p] = {
-        "resp": resp,
-        "prom": prom,
-        "det": det,
-        "pas": pas,
-        "nps": nps,
-        "enroll": enroll,
-        "cov_pct": cov_pct
-    }
-
-# D Global Grupos
-d_global_grupos = {}
-for p in all_periods:
-    df_p = df_all_responses[df_all_responses['periodo'] == p]
-    d_global_grupos[p] = {
-        "exp": {
-            "nps_val": safe_mean(df_p['Q1_Recomendacion_NPS']),
-            "contenidos": safe_mean(df_p['Q2_Contenidos']),
-            "laboral": safe_mean(df_p['Q3_Oportunidades']),
-            "recompra": safe_mean(df_p['Q4_Volveria'])
-        },
-        "coord": {
-            "coord_calidad": safe_mean(df_p['Q5_Servicio_Coordinador']),
-            "coord_tiempo": safe_mean(df_p['Q6_Tiempos_Coordinador'])
-        },
-        "plat": {
-            "portal_facil": safe_mean(df_p['Q7_Portal_Facilidad']),
-            "portal_aporte": safe_mean(df_p['Q8_Portal_Aporte']),
-            "bb_facil": safe_mean(df_p['Q9_Blackboard_Facilidad']),
-            "bb_aporte": safe_mean(df_p['Q10_Blackboard_Aporte'])
-        }
-    }
-
-# D Por Facultad & Preguntas Facultad
-d_por_facultad = {}
-d_preguntas_fac = {}
-for f in all_facultades:
-    d_por_facultad[f] = {}
-    d_preguntas_fac[f] = {}
-    for p in all_periods:
-        df_fp = df_all_responses[(df_all_responses['facultad'] == f) & (df_all_responses['periodo'] == p)]
-        if len(df_fp) == 0:
-            continue
-            
-        resp = len(df_fp)
-        prom = sum(df_fp['tipo_nps'] == "Promotor")
-        det = sum(df_fp['tipo_nps'] == "Detractor")
-        pas = sum(df_fp['tipo_nps'] == "Pasivo")
-        nps = int(round((prom - det) / resp * 100)) if resp > 0 else 0
-        
-        # Calculate faculty enrollment
-        fac_progs = df_summary[(df_summary['facultad'] == f) & (df_summary['periodo'] == p)]
-        enroll = int(fac_progs['enrollment'].sum())
-        cov_pct = round(resp / enroll * 100, 1) if enroll > 0 else 0
-        
-        exp_dict = {
-            "nps_val": safe_mean(df_fp['Q1_Recomendacion_NPS']),
-            "contenidos": safe_mean(df_fp['Q2_Contenidos']),
-            "laboral": safe_mean(df_fp['Q3_Oportunidades']),
-            "recompra": safe_mean(df_fp['Q4_Volveria'])
-        }
-        coord_dict = {
-            "coord_calidad": safe_mean(df_fp['Q5_Servicio_Coordinador']),
-            "coord_tiempo": safe_mean(df_fp['Q6_Tiempos_Coordinador'])
-        }
-        plat_dict = {
-            "portal_facil": safe_mean(df_fp['Q7_Portal_Facilidad']),
-            "portal_aporte": safe_mean(df_fp['Q8_Portal_Aporte']),
-            "bb_facil": safe_mean(df_fp['Q9_Blackboard_Facilidad']),
-            "bb_aporte": safe_mean(df_fp['Q10_Blackboard_Aporte'])
-        }
-        
-        d_por_facultad[f][p] = {
-            "resp": resp,
-            "prom": prom,
-            "det": det,
-            "pas": pas,
-            "nps": nps,
-            "enroll": enroll,
-            "cov_pct": cov_pct,
-            "exp": exp_dict,
-            "coord": coord_dict,
-            "plat": plat_dict
-        }
-        
-        d_preguntas_fac[f][p] = {
-            "exp": exp_dict,
-            "coord": coord_dict,
-            "plat": plat_dict
-        }
-
-# D Por Coordinador
-d_por_coordinador = {}
-for c in all_coordinadores:
-    d_por_coordinador[c] = {}
-    for p in all_periods:
-        df_cp = df_all_responses[(df_all_responses['coordinador'] == c) & (df_all_responses['periodo'] == p)]
-        if len(df_cp) == 0:
-            continue
-            
-        resp = len(df_cp)
-        prom = sum(df_cp['tipo_nps'] == "Promotor")
-        det = sum(df_cp['tipo_nps'] == "Detractor")
-        pas = sum(df_cp['tipo_nps'] == "Pasivo")
-        nps = int(round((prom - det) / resp * 100)) if resp > 0 else 0
-        
-        d_por_coordinador[c][p] = {
-            "resp": resp,
-            "prom": prom,
-            "det": det,
-            "pas": pas,
-            "nps": nps,
-            "coord_calidad": safe_mean(df_cp['Q5_Servicio_Coordinador']),
-            "coord_tiempo": safe_mean(df_cp['Q6_Tiempos_Coordinador'])
-        }
-
-# D Programas List
-d_programas = []
-for idx, row in df_summary.iterrows():
-    period = row['periodo']
-    fac = row['facultad']
-    prog = row['programa']
-    n_resp = int(row['n_respuestas'])
-    prom = int(row['promotores'])
-    det = int(row['detractores'])
-    pas = int(row['pasivos'])
-    nps = int(row['NPS']) if not pd.isna(row['NPS']) else 0
-    enroll = int(row['enrollment'])
-    cov = float(row['cobertura_pct'])
-    
-    # Find coordinator name for this program/period
-    df_prog_resp = df_all_responses[(df_all_responses['periodo'] == period) & (df_all_responses['programa'] == prog)]
-    coord = "Sin Coordinador"
-    if len(df_prog_resp) > 0:
-        coord_candidates = df_prog_resp['coordinador'].dropna().unique()
-        if len(coord_candidates) > 0:
-            coord = str(coord_candidates[0]).strip()
-            
-    d_programas.append({
-        "fac": fac,
-        "prog": prog,
-        "coord": coord,
-        "per": period,
-        "resp": n_resp,
-        "prom": prom,
-        "det": det,
-        "pas": pas,
-        "nps": nps,
-        "enroll": enroll,
-        "cov": cov
-    })
-
-# D Comentarios List
-d_comentarios = []
-for idx, row in df_all_comments.iterrows():
-    d_comentarios.append({
-        "per": row['periodo'],
-        "fac": row['facultad'],
-        "prog": row['programa'],
-        "coord": row['coordinador'],
-        "nps": int(row['puntaje']) if pd.notna(row['puntaje']) else None,
-        "clase": row['clasificacion'],
-        "texto": row['comentario']
-    })
-
-# Build final D structure
-D = {
-    "periodos": all_periods,
-    "facultades": all_facultades,
-    "coordinadores": all_coordinadores,
-    "global": d_global,
-    "global_grupos": d_global_grupos,
-    "por_facultad": d_por_facultad,
-    "preguntas_fac": d_preguntas_fac,
-    "por_coordinador": d_por_coordinador,
-    "programas": d_programas,
-    "comentarios": d_comentarios
-}
-
-# Save D to dashboard_data.js and dashboard_data.json
-dashboard_json_path = os.path.join(workspace_dir, "dashboard_data.json")
-dashboard_js_path = os.path.join(workspace_dir, "dashboard_data.js")
-
+# 4c. dashboard_data.js y .json (para GitHub Pages)
+json_str = json.dumps(D, ensure_ascii=False, indent=2)
 try:
-    with open(dashboard_json_path, 'w', encoding='utf-8') as f_json:
-        json.dump(D, f_json, ensure_ascii=False, indent=2)
-    print(f"Successfully generated {dashboard_json_path}")
-    
-    with open(dashboard_js_path, 'w', encoding='utf-8') as f_js:
-        f_js.write("const D = ")
-        json.dump(D, f_js, ensure_ascii=False, indent=2)
-        f_js.write(";")
-    print(f"Successfully generated {dashboard_js_path}")
+    with open(os.path.join(workspace_dir, "dashboard_data.json"), 'w', encoding='utf-8') as f:
+        f.write(json_str)
+    with open(os.path.join(workspace_dir, "dashboard_data.js"), 'w', encoding='utf-8') as f:
+        f.write("const D = ")
+        f.write(json_str)
+        f.write(";")
+    print(f"      ✓ dashboard_data.js / dashboard_data.json")
 except Exception as e:
-    print(f"Error writing dynamic JSON/JS dashboard files: {e}")
+    print(f"      ✗ dashboard_data: {e}")
 
-print("Data consolidation and dynamic dashboard calculation completed successfully!")
+# 4d. HTML autocontenido — el objetivo principal
+# Lee index.html y reemplaza <script src="dashboard_data.js"></script>
+# por el JSON embebido directamente en una etiqueta <script>
+if os.path.exists(html_template):
+    try:
+        with open(html_template, 'r', encoding='utf-8') as f:
+            html = f.read()
+
+        # Calcular totales para el subtítulo dinámico
+        total_resp  = len(df_all)
+        total_facs  = len(all_facs)
+        total_cords = len(all_coords)
+        periodo_label = f"{all_periods[0]} a {all_periods[-1]}" if all_periods else ""
+        fecha_gen = datetime.now().strftime('%d/%m/%Y %H:%M')
+
+        # Reemplazar la carga externa por datos embebidos
+        embedded_script = (
+            f'<script>\n'
+            f'/* Datos generados automáticamente el {fecha_gen} */\n'
+            f'const D = {json_str};\n'
+            f'</script>'
+        )
+        html_out = re.sub(
+            r'<script\s+src=["\']dashboard_data\.js["\']></script>',
+            embedded_script,
+            html,
+            flags=re.IGNORECASE
+        )
+
+        # Actualizar el subtítulo con cifras reales
+        html_out = re.sub(
+            r'(<p[^>]*>)([^<]*períodos[^<]*)</p>',
+            f'<p>Comparativo {len(all_periods)} períodos · {total_resp:,} respuestas · {total_facs} facultades · {total_cords} coordinadores</p>',
+            html_out
+        )
+
+        # Botón de descarga (lo inyecta si no existe ya)
+        if 'Descargar HTML' not in html_out:
+            download_btn = (
+                '<button onclick="(function(){const a=document.createElement(\'a\');'
+                'a.href=URL.createObjectURL(new Blob([document.documentElement.outerHTML],'
+                '{type:\'text/html\'}));a.download=\'Dashboard_NPS_UDLA.html\';a.click();})()" '
+                'style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);'
+                'color:#fff;padding:5px 13px;border-radius:6px;font-size:11px;font-weight:600;'
+                'cursor:pointer;white-space:nowrap" '
+                'onmouseover="this.style.background=\'rgba(255,255,255,.28)\'" '
+                'onmouseout="this.style.background=\'rgba(255,255,255,.15)\'">⬇ Descargar HTML</button>'
+            )
+            html_out = html_out.replace(
+                'class="hdr-badge">', f'class="hdr-badge" style="display:flex;align-items:center;gap:10px"><span>', 1
+            )
+            # Insertar botón después del badge
+            html_out = re.sub(
+                r'(class="hdr-badge"[^>]*><span>[^<]*</span>)',
+                r'\1' + download_btn,
+                html_out
+            )
+
+        with open(output_html, 'w', encoding='utf-8') as f:
+            f.write(html_out)
+
+        size_kb = os.path.getsize(output_html) // 1024
+        print(f"      ✓ {os.path.basename(output_html)}  ({size_kb} KB — autocontenido)")
+    except Exception as e:
+        print(f"      ✗ HTML autocontenido: {e}")
+        import traceback; traceback.print_exc()
+else:
+    print(f"      ✗ No se encontró {html_template} — omitiendo generación de HTML.")
+
+print("\n" + "=" * 60)
+print("  ¡Consolidación completada!")
+print(f"  Períodos: {', '.join(all_periods)}")
+print(f"  Respuestas: {len(df_all):,}   Comentarios: {len(df_coms):,}")
+print(f"  HTML listo: {os.path.basename(output_html)}")
+print("=" * 60)

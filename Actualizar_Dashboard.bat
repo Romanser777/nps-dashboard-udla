@@ -26,9 +26,9 @@ echo ==========================================================
 echo  [EXITO] ¡Los datos se han consolidado correctamente!
 echo.
 echo  Se han generado los siguientes archivos actualizados:
-echo   - NPS_Consolidado.xlsx (Para Power BI)
-echo   - NPS_Consolidado.db   (Base de datos SQLite)
-echo   - dashboard_data.js    (Datos para el Dashboard Web)
+echo   - Dashboard_NPS_UDLA.html  (Dashboard autocontenido - abre sin internet)
+echo   - NPS_Consolidado.xlsx     (Para Power BI)
+echo   - dashboard_data.js        (Datos para GitHub Pages)
 echo ==========================================================
 echo.
 
