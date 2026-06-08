@@ -19,7 +19,6 @@ const D = {
     "Carolina Castro",
     "Fernanda Miranda",
     "Paula Díaz",
-    "Paula Díaz Espinoza",
     "Paulina Toledo",
     "Sergio Román",
     "Valentina Uribarri",
@@ -1636,7 +1635,15 @@ const D = {
         "coord_calidad": 6.4,
         "coord_tiempo": 6.4
       },
-      "2024-20": null,
+      "2024-20": {
+        "resp": 25,
+        "prom": 20,
+        "det": 1,
+        "pas": 4,
+        "nps": 76,
+        "coord_calidad": 6.6,
+        "coord_tiempo": 6.7
+      },
       "2025-10": {
         "resp": 94,
         "prom": 72,
@@ -1655,20 +1662,6 @@ const D = {
         "coord_calidad": 6.3,
         "coord_tiempo": 6.5
       }
-    },
-    "Paula Díaz Espinoza": {
-      "2024-10": null,
-      "2024-20": {
-        "resp": 25,
-        "prom": 20,
-        "det": 1,
-        "pas": 4,
-        "nps": 76,
-        "coord_calidad": 6.6,
-        "coord_tiempo": 6.7
-      },
-      "2025-10": null,
-      "2025-20": null
     },
     "Paulina Toledo": {
       "2024-10": null,
@@ -2487,7 +2480,7 @@ const D = {
     {
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "per": "2024-20",
       "resp": 8,
       "prom": 8,
@@ -2500,7 +2493,7 @@ const D = {
     {
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "per": "2024-20",
       "resp": 5,
       "prom": 3,
@@ -2513,7 +2506,7 @@ const D = {
     {
       "fac": "Derecho",
       "prog": "Diplomado en Mediación y Resolución de conflictos en el ámbito familiar",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "per": "2024-20",
       "resp": 2,
       "prom": 2,
@@ -2773,7 +2766,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado De Kinesiología Respiratoria Para Atención Primaria de Salud",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "per": "2024-20",
       "resp": 4,
       "prom": 4,
@@ -2786,7 +2779,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado En Infecciones Asociadas a La Atención En Salud",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "per": "2024-20",
       "resp": 5,
       "prom": 2,
@@ -2812,7 +2805,7 @@ const D = {
     {
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Docencia En Simulación Clínica",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "per": "2024-20",
       "resp": 1,
       "prom": 1,
@@ -6002,7 +5995,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muchas gracias y felicidades por la dedicación"
@@ -6011,7 +6004,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Mediación y Resolución de conflictos en el ámbito familiar",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "en todo momento, nos mantuvo informados, excelente compromiso con los alumnos, tanto de manera presencial como online"
@@ -6020,7 +6013,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 5,
       "clase": "Neutro",
       "texto": "buen diplomado, solo mejorar en ciertos aspectos, como el contenido y las clases"
@@ -6029,7 +6022,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "."
@@ -6038,7 +6031,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 3,
       "clase": "Negativo",
       "texto": "Esperé mucho mejor contenido académico."
@@ -6047,7 +6040,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Litigación y Argumentación",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "solo considerar mas actividades de practica"
@@ -6056,7 +6049,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Me gustó bastante el diplomado"
@@ -6065,7 +6058,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buen diplomado y excelente coordinadora."
@@ -6074,7 +6067,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 6,
       "clase": "Positivo",
       "texto": "Paula es una maravillosa coordinadora, de trato amable y paciente, respondió con claridad y rapidez todas mis dudas e inquietudes."
@@ -6083,7 +6076,7 @@ const D = {
       "per": "2024-20",
       "fac": "Derecho",
       "prog": "Diplomado en Derecho Inmobiliario",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Me encantó el diplomado, pude obtener muchos conocimientos que podré poner en práctica en mis futuros trabajos, además el equipo docente y la coordinadora fueron un gran apoyo tanto en el aprendizaje como con la solución de problemas que se pudieron haber presentado."
@@ -6542,7 +6535,7 @@ const D = {
       "per": "2024-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado en Docencia En Simulación Clínica",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Creo que deberían mejorar las jornadas de clases sincrónicas, fueron muy largas. Podrían parcializarlas"
@@ -6560,7 +6553,7 @@ const D = {
       "per": "2024-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado En Infecciones Asociadas a La Atención En Salud",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 5,
       "clase": "Neutro",
       "texto": "Diplomado poco interactivo, material de estudio pobre en información"
@@ -6695,7 +6688,7 @@ const D = {
       "per": "2024-20",
       "fac": "Salud y Ciencias Sociales",
       "prog": "Diplomado De Kinesiología Respiratoria Para Atención Primaria de Salud",
-      "coord": "Paula Díaz Espinoza",
+      "coord": "Paula Díaz",
       "nps": 7,
       "clase": "Positivo",
       "texto": "Muy buena gestión en todo."

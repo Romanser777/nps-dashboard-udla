@@ -123,6 +123,8 @@ if os.path.exists(coordinadores_excel):
             p_val = str(row[prog_col]).strip()  if pd.notna(row[prog_col])  else ''
             if c_val and p_val and c_val != 'nan' and p_val != 'nan':
                 c_val = c_val.replace('Vanessa Alvarez', 'Vanessa Álvarez')
+                c_val = c_val.replace('Paula Díaz Espinoza', 'Paula Díaz')
+                c_val = c_val.strip()
                 coord_map[(per, p_val.upper().strip())] = c_val
     print(f"      {len(coord_map)} asignaciones de coordinador cargadas.")
 

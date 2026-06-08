@@ -10,6 +10,7 @@ echo Procesando archivos Excel en las carpetas de periodos...
 echo Por favor, espere...
 echo.
 
+set PYTHONIOENCODING=utf-8
 python "%~dp0consolidate_data.py"
 
 if %ERRORLEVEL% NEQ 0 (
