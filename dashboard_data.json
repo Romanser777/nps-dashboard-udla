@@ -30,36 +30,36 @@
     "2024-10": {
       "resp": 338,
       "prom": 247,
-      "det": 42,
-      "pas": 48,
-      "nps": 61,
+      "det": 29,
+      "pas": 61,
+      "nps": 64,
       "enroll": 1347,
       "cov_pct": 25.1
     },
     "2024-20": {
       "resp": 137,
       "prom": 91,
-      "det": 27,
-      "pas": 17,
-      "nps": 47,
+      "det": 20,
+      "pas": 24,
+      "nps": 52,
       "enroll": 717,
       "cov_pct": 19.1
     },
     "2025-10": {
       "resp": 355,
       "prom": 283,
-      "det": 29,
-      "pas": 41,
-      "nps": 72,
+      "det": 13,
+      "pas": 57,
+      "nps": 76,
       "enroll": 1292,
       "cov_pct": 27.5
     },
     "2025-20": {
       "resp": 242,
       "prom": 188,
-      "det": 23,
-      "pas": 29,
-      "nps": 68,
+      "det": 14,
+      "pas": 38,
+      "nps": 72,
       "enroll": 894,
       "cov_pct": 27.1
     }
@@ -245,9 +245,9 @@
       "2024-10": {
         "resp": 5,
         "prom": 1,
-        "det": 4,
-        "pas": 0,
-        "nps": -60,
+        "det": 1,
+        "pas": 3,
+        "nps": 0,
         "enroll": 31,
         "cov_pct": 16.1,
         "exp": {
@@ -347,9 +347,9 @@
       "2024-10": {
         "resp": 40,
         "prom": 26,
-        "det": 6,
-        "pas": 7,
-        "nps": 50,
+        "det": 5,
+        "pas": 8,
+        "nps": 52,
         "enroll": 82,
         "cov_pct": 48.8,
         "exp": {
@@ -449,9 +449,9 @@
       "2024-10": {
         "resp": 44,
         "prom": 30,
-        "det": 5,
-        "pas": 9,
-        "nps": 57,
+        "det": 3,
+        "pas": 11,
+        "nps": 61,
         "enroll": 227,
         "cov_pct": 19.4,
         "exp": {
@@ -499,9 +499,9 @@
       "2025-10": {
         "resp": 85,
         "prom": 76,
-        "det": 3,
-        "pas": 5,
-        "nps": 86,
+        "det": 2,
+        "pas": 6,
+        "nps": 87,
         "enroll": 283,
         "cov_pct": 30.0,
         "exp": {
@@ -524,9 +524,9 @@
       "2025-20": {
         "resp": 45,
         "prom": 40,
-        "det": 4,
-        "pas": 1,
-        "nps": 80,
+        "det": 3,
+        "pas": 2,
+        "nps": 82,
         "enroll": 114,
         "cov_pct": 39.5,
         "exp": {
@@ -551,9 +551,9 @@
       "2024-10": {
         "resp": 33,
         "prom": 23,
-        "det": 3,
-        "pas": 7,
-        "nps": 61,
+        "det": 1,
+        "pas": 9,
+        "nps": 67,
         "enroll": 112,
         "cov_pct": 29.5,
         "exp": {
@@ -576,9 +576,9 @@
       "2024-20": {
         "resp": 39,
         "prom": 27,
-        "det": 6,
-        "pas": 5,
-        "nps": 54,
+        "det": 3,
+        "pas": 8,
+        "nps": 62,
         "enroll": 140,
         "cov_pct": 27.9,
         "exp": {
@@ -601,9 +601,9 @@
       "2025-10": {
         "resp": 26,
         "prom": 19,
-        "det": 4,
-        "pas": 3,
-        "nps": 58,
+        "det": 1,
+        "pas": 6,
+        "nps": 69,
         "enroll": 110,
         "cov_pct": 23.6,
         "exp": {
@@ -626,9 +626,9 @@
       "2025-20": {
         "resp": 28,
         "prom": 24,
-        "det": 1,
-        "pas": 3,
-        "nps": 82,
+        "det": 0,
+        "pas": 4,
+        "nps": 86,
         "enroll": 107,
         "cov_pct": 26.2,
         "exp": {
@@ -703,9 +703,9 @@
       "2025-10": {
         "resp": 119,
         "prom": 95,
-        "det": 10,
-        "pas": 13,
-        "nps": 71,
+        "det": 4,
+        "pas": 19,
+        "nps": 76,
         "enroll": 306,
         "cov_pct": 38.9,
         "exp": {
@@ -728,9 +728,9 @@
       "2025-20": {
         "resp": 51,
         "prom": 37,
-        "det": 4,
-        "pas": 10,
-        "nps": 65,
+        "det": 2,
+        "pas": 12,
+        "nps": 69,
         "enroll": 174,
         "cov_pct": 29.3,
         "exp": {
@@ -755,9 +755,9 @@
       "2024-10": {
         "resp": 24,
         "prom": 10,
-        "det": 8,
-        "pas": 6,
-        "nps": 8,
+        "det": 6,
+        "pas": 8,
+        "nps": 17,
         "enroll": 232,
         "cov_pct": 10.3,
         "exp": {
@@ -780,9 +780,9 @@
       "2024-20": {
         "resp": 12,
         "prom": 1,
-        "det": 7,
-        "pas": 4,
-        "nps": -50,
+        "det": 5,
+        "pas": 6,
+        "nps": -33,
         "enroll": 116,
         "cov_pct": 10.3,
         "exp": {
@@ -805,9 +805,9 @@
       "2025-10": {
         "resp": 28,
         "prom": 20,
-        "det": 4,
-        "pas": 4,
-        "nps": 57,
+        "det": 3,
+        "pas": 5,
+        "nps": 61,
         "enroll": 189,
         "cov_pct": 14.8,
         "exp": {
@@ -830,9 +830,9 @@
       "2025-20": {
         "resp": 22,
         "prom": 14,
-        "det": 3,
-        "pas": 5,
-        "nps": 50,
+        "det": 0,
+        "pas": 8,
+        "nps": 64,
         "enroll": 96,
         "cov_pct": 22.9,
         "exp": {
@@ -857,9 +857,9 @@
       "2024-10": {
         "resp": 101,
         "prom": 80,
-        "det": 13,
-        "pas": 8,
-        "nps": 66,
+        "det": 10,
+        "pas": 11,
+        "nps": 69,
         "enroll": 364,
         "cov_pct": 27.7,
         "exp": {
@@ -882,9 +882,9 @@
       "2024-20": {
         "resp": 34,
         "prom": 21,
-        "det": 7,
-        "pas": 5,
-        "nps": 41,
+        "det": 5,
+        "pas": 7,
+        "nps": 47,
         "enroll": 175,
         "cov_pct": 19.4,
         "exp": {
@@ -907,9 +907,9 @@
       "2025-10": {
         "resp": 91,
         "prom": 69,
-        "det": 8,
-        "pas": 14,
-        "nps": 67,
+        "det": 3,
+        "pas": 19,
+        "nps": 73,
         "enroll": 320,
         "cov_pct": 28.4,
         "exp": {
@@ -932,9 +932,9 @@
       "2025-20": {
         "resp": 61,
         "prom": 43,
-        "det": 10,
-        "pas": 7,
-        "nps": 54,
+        "det": 8,
+        "pas": 9,
+        "nps": 57,
         "enroll": 288,
         "cov_pct": 21.2,
         "exp": {
@@ -1555,36 +1555,36 @@
       "2024-10": {
         "resp": 80,
         "prom": 61,
-        "det": 7,
-        "pas": 12,
-        "nps": 68,
+        "det": 5,
+        "pas": 14,
+        "nps": 70,
         "coord_calidad": 6.3,
         "coord_tiempo": 6.3
       },
       "2024-20": {
         "resp": 45,
         "prom": 31,
-        "det": 8,
-        "pas": 6,
-        "nps": 51,
+        "det": 6,
+        "pas": 8,
+        "nps": 56,
         "coord_calidad": 5.9,
         "coord_tiempo": 6.1
       },
       "2025-10": {
         "resp": 48,
         "prom": 33,
-        "det": 7,
-        "pas": 8,
-        "nps": 54,
+        "det": 5,
+        "pas": 10,
+        "nps": 58,
         "coord_calidad": 6.0,
         "coord_tiempo": 5.9
       },
       "2025-20": {
         "resp": 35,
         "prom": 28,
-        "det": 3,
-        "pas": 4,
-        "nps": 71,
+        "det": 2,
+        "pas": 5,
+        "nps": 74,
         "coord_calidad": 6.4,
         "coord_tiempo": 6.3
       }
@@ -1603,18 +1603,18 @@
       "2025-10": {
         "resp": 31,
         "prom": 28,
-        "det": 2,
-        "pas": 1,
-        "nps": 84,
+        "det": 0,
+        "pas": 3,
+        "nps": 90,
         "coord_calidad": 6.5,
         "coord_tiempo": 6.2
       },
       "2025-20": {
         "resp": 18,
         "prom": 15,
-        "det": 1,
-        "pas": 1,
-        "nps": 78,
+        "det": 0,
+        "pas": 2,
+        "nps": 83,
         "coord_calidad": 6.6,
         "coord_tiempo": 6.2
       }
@@ -1623,9 +1623,9 @@
       "2024-10": {
         "resp": 44,
         "prom": 27,
-        "det": 10,
-        "pas": 7,
-        "nps": 39,
+        "det": 7,
+        "pas": 10,
+        "nps": 45,
         "coord_calidad": 6.6,
         "coord_tiempo": 6.5
       },
@@ -1653,36 +1653,36 @@
       "2024-10": {
         "resp": 106,
         "prom": 84,
-        "det": 10,
-        "pas": 11,
-        "nps": 70,
+        "det": 9,
+        "pas": 12,
+        "nps": 71,
         "coord_calidad": 6.4,
         "coord_tiempo": 6.4
       },
       "2024-20": {
         "resp": 25,
         "prom": 20,
-        "det": 3,
-        "pas": 2,
-        "nps": 68,
+        "det": 1,
+        "pas": 4,
+        "nps": 76,
         "coord_calidad": 6.6,
         "coord_tiempo": 6.7
       },
       "2025-10": {
         "resp": 93,
         "prom": 71,
-        "det": 10,
-        "pas": 12,
-        "nps": 66,
+        "det": 5,
+        "pas": 17,
+        "nps": 71,
         "coord_calidad": 6.3,
         "coord_tiempo": 6.3
       },
       "2025-20": {
         "resp": 32,
         "prom": 20,
-        "det": 3,
-        "pas": 9,
-        "nps": 53,
+        "det": 0,
+        "pas": 12,
+        "nps": 62,
         "coord_calidad": 6.3,
         "coord_tiempo": 6.5
       }
@@ -1713,9 +1713,9 @@
       "2024-10": {
         "resp": 30,
         "prom": 22,
-        "det": 2,
-        "pas": 6,
-        "nps": 67,
+        "det": 0,
+        "pas": 8,
+        "nps": 73,
         "coord_calidad": 6.3,
         "coord_tiempo": 6.4
       },
@@ -1731,18 +1731,18 @@
       "2025-10": {
         "resp": 84,
         "prom": 75,
-        "det": 1,
-        "pas": 7,
-        "nps": 88,
+        "det": 0,
+        "pas": 8,
+        "nps": 89,
         "coord_calidad": 6.6,
         "coord_tiempo": 6.5
       },
       "2025-20": {
         "resp": 52,
         "prom": 41,
-        "det": 5,
-        "pas": 6,
-        "nps": 69,
+        "det": 3,
+        "pas": 8,
+        "nps": 73,
         "coord_calidad": 6.4,
         "coord_tiempo": 6.6
       }
@@ -1778,9 +1778,9 @@
       "2025-20": {
         "resp": 3,
         "prom": 1,
-        "det": 2,
-        "pas": 0,
-        "nps": -33,
+        "det": 1,
+        "pas": 1,
+        "nps": 0,
         "coord_calidad": 5.0,
         "coord_tiempo": 4.3
       }
@@ -1789,18 +1789,18 @@
       "2024-10": {
         "resp": 45,
         "prom": 29,
-        "det": 9,
-        "pas": 7,
-        "nps": 44,
+        "det": 7,
+        "pas": 9,
+        "nps": 49,
         "coord_calidad": 5.9,
         "coord_tiempo": 5.9
       },
       "2024-20": {
         "resp": 23,
         "prom": 9,
-        "det": 9,
-        "pas": 5,
-        "nps": 0,
+        "det": 7,
+        "pas": 7,
+        "nps": 9,
         "coord_calidad": 4.6,
         "coord_tiempo": 4.8
       },
@@ -1827,36 +1827,36 @@
       "2024-10": {
         "resp": 31,
         "prom": 22,
-        "det": 4,
-        "pas": 5,
-        "nps": 58,
+        "det": 1,
+        "pas": 8,
+        "nps": 68,
         "coord_calidad": 6.3,
         "coord_tiempo": 6.1
       },
       "2024-20": {
         "resp": 18,
         "prom": 13,
-        "det": 3,
-        "pas": 1,
-        "nps": 56,
+        "det": 2,
+        "pas": 2,
+        "nps": 61,
         "coord_calidad": 6.0,
         "coord_tiempo": 6.0
       },
       "2025-10": {
         "resp": 33,
         "prom": 23,
-        "det": 7,
-        "pas": 3,
-        "nps": 48,
+        "det": 1,
+        "pas": 9,
+        "nps": 67,
         "coord_calidad": 5.8,
         "coord_tiempo": 5.6
       },
       "2025-20": {
         "resp": 31,
         "prom": 24,
-        "det": 2,
-        "pas": 5,
-        "nps": 71,
+        "det": 1,
+        "pas": 6,
+        "nps": 74,
         "coord_calidad": 5.6,
         "coord_tiempo": 5.5
       }
@@ -1883,9 +1883,9 @@
       "per": "2024-10",
       "resp": 4,
       "prom": 1,
-      "det": 3,
-      "pas": 0,
-      "nps": -50,
+      "det": 1,
+      "pas": 2,
+      "nps": 0,
       "enroll": 20,
       "cov": 20.0
     },
@@ -1896,9 +1896,9 @@
       "per": "2024-10",
       "resp": 1,
       "prom": 0,
-      "det": 1,
-      "pas": 0,
-      "nps": -100,
+      "det": 0,
+      "pas": 1,
+      "nps": 0,
       "enroll": 11,
       "cov": 9.1
     },
@@ -1922,9 +1922,9 @@
       "per": "2024-10",
       "resp": 17,
       "prom": 9,
-      "det": 3,
-      "pas": 4,
-      "nps": 38,
+      "det": 2,
+      "pas": 5,
+      "nps": 44,
       "enroll": 50,
       "cov": 34.0
     },
@@ -2000,9 +2000,9 @@
       "per": "2024-10",
       "resp": 6,
       "prom": 3,
-      "det": 2,
-      "pas": 1,
-      "nps": 17,
+      "det": 0,
+      "pas": 3,
+      "nps": 50,
       "enroll": 56,
       "cov": 10.7
     },
@@ -2026,9 +2026,9 @@
       "per": "2024-10",
       "resp": 10,
       "prom": 6,
-      "det": 2,
-      "pas": 2,
-      "nps": 40,
+      "det": 1,
+      "pas": 3,
+      "nps": 50,
       "enroll": 21,
       "cov": 47.6
     },
@@ -2039,9 +2039,9 @@
       "per": "2024-10",
       "resp": 11,
       "prom": 7,
-      "det": 1,
-      "pas": 3,
-      "nps": 55,
+      "det": 0,
+      "pas": 4,
+      "nps": 64,
       "enroll": 20,
       "cov": 55.0
     },
@@ -2260,9 +2260,9 @@
       "per": "2024-10",
       "resp": 5,
       "prom": 2,
-      "det": 2,
-      "pas": 1,
-      "nps": 0,
+      "det": 1,
+      "pas": 2,
+      "nps": 20,
       "enroll": 17,
       "cov": 29.4
     },
@@ -2273,9 +2273,9 @@
       "per": "2024-10",
       "resp": 10,
       "prom": 4,
-      "det": 2,
-      "pas": 4,
-      "nps": 20,
+      "det": 1,
+      "pas": 5,
+      "nps": 30,
       "enroll": 41,
       "cov": 24.4
     },
@@ -2442,9 +2442,9 @@
       "per": "2024-10",
       "resp": 11,
       "prom": 5,
-      "det": 5,
-      "pas": 1,
-      "nps": 0,
+      "det": 3,
+      "pas": 3,
+      "nps": 18,
       "enroll": 31,
       "cov": 35.5
     },
@@ -2468,9 +2468,9 @@
       "per": "2024-10",
       "resp": 9,
       "prom": 5,
-      "det": 3,
-      "pas": 1,
-      "nps": 22,
+      "det": 2,
+      "pas": 2,
+      "nps": 33,
       "enroll": 25,
       "cov": 36.0
     },
@@ -2611,9 +2611,9 @@
       "per": "2024-20",
       "resp": 2,
       "prom": 1,
-      "det": 1,
-      "pas": 0,
-      "nps": 0,
+      "det": 0,
+      "pas": 1,
+      "nps": 50,
       "enroll": 19,
       "cov": 10.5
     },
@@ -2650,9 +2650,9 @@
       "per": "2024-20",
       "resp": 18,
       "prom": 11,
-      "det": 3,
-      "pas": 4,
-      "nps": 44,
+      "det": 1,
+      "pas": 6,
+      "nps": 56,
       "enroll": 45,
       "cov": 40.0
     },
@@ -2819,9 +2819,9 @@
       "per": "2024-20",
       "resp": 5,
       "prom": 0,
-      "det": 3,
-      "pas": 2,
-      "nps": -60,
+      "det": 1,
+      "pas": 4,
+      "nps": -20,
       "enroll": 13,
       "cov": 38.5
     },
@@ -2845,9 +2845,9 @@
       "per": "2024-20",
       "resp": 5,
       "prom": 2,
-      "det": 2,
-      "pas": 1,
-      "nps": 0,
+      "det": 0,
+      "pas": 3,
+      "nps": 40,
       "enroll": 32,
       "cov": 15.6
     },
@@ -2962,9 +2962,9 @@
       "per": "2025-10",
       "resp": 6,
       "prom": 5,
-      "det": 1,
-      "pas": 0,
-      "nps": 67,
+      "det": 0,
+      "pas": 1,
+      "nps": 83,
       "enroll": 31,
       "cov": 19.4
     },
@@ -3105,9 +3105,9 @@
       "per": "2025-10",
       "resp": 5,
       "prom": 2,
-      "det": 1,
-      "pas": 2,
-      "nps": 20,
+      "det": 0,
+      "pas": 3,
+      "nps": 40,
       "enroll": 17,
       "cov": 29.4
     },
@@ -3118,9 +3118,9 @@
       "per": "2025-10",
       "resp": 1,
       "prom": 0,
-      "det": 1,
-      "pas": 0,
-      "nps": -100,
+      "det": 0,
+      "pas": 1,
+      "nps": 0,
       "enroll": 4,
       "cov": 25.0
     },
@@ -3144,9 +3144,9 @@
       "per": "2025-10",
       "resp": 3,
       "prom": 1,
-      "det": 2,
-      "pas": 0,
-      "nps": -33,
+      "det": 1,
+      "pas": 1,
+      "nps": 0,
       "enroll": 21,
       "cov": 14.3
     },
@@ -3157,9 +3157,9 @@
       "per": "2025-10",
       "resp": 22,
       "prom": 18,
-      "det": 2,
-      "pas": 2,
-      "nps": 73,
+      "det": 1,
+      "pas": 3,
+      "nps": 77,
       "enroll": 41,
       "cov": 53.7
     },
@@ -3170,9 +3170,9 @@
       "per": "2025-10",
       "resp": 9,
       "prom": 7,
-      "det": 2,
-      "pas": 0,
-      "nps": 56,
+      "det": 0,
+      "pas": 2,
+      "nps": 78,
       "enroll": 27,
       "cov": 33.3
     },
@@ -3196,9 +3196,9 @@
       "per": "2025-10",
       "resp": 11,
       "prom": 9,
-      "det": 1,
-      "pas": 1,
-      "nps": 73,
+      "det": 0,
+      "pas": 2,
+      "nps": 82,
       "enroll": 23,
       "cov": 47.8
     },
@@ -3248,9 +3248,9 @@
       "per": "2025-10",
       "resp": 17,
       "prom": 14,
-      "det": 2,
-      "pas": 1,
-      "nps": 71,
+      "det": 1,
+      "pas": 2,
+      "nps": 76,
       "enroll": 35,
       "cov": 48.6
     },
@@ -3274,9 +3274,9 @@
       "per": "2025-10",
       "resp": 7,
       "prom": 6,
-      "det": 1,
-      "pas": 0,
-      "nps": 71,
+      "det": 0,
+      "pas": 1,
+      "nps": 86,
       "enroll": 50,
       "cov": 14.0
     },
@@ -3339,9 +3339,9 @@
       "per": "2025-10",
       "resp": 17,
       "prom": 11,
-      "det": 3,
-      "pas": 3,
-      "nps": 47,
+      "det": 2,
+      "pas": 4,
+      "nps": 53,
       "enroll": 47,
       "cov": 36.2
     },
@@ -3365,9 +3365,9 @@
       "per": "2025-10",
       "resp": 5,
       "prom": 0,
-      "det": 2,
-      "pas": 3,
-      "nps": -40,
+      "det": 1,
+      "pas": 4,
+      "nps": -20,
       "enroll": 18,
       "cov": 27.8
     },
@@ -3417,9 +3417,9 @@
       "per": "2025-10",
       "resp": 12,
       "prom": 6,
-      "det": 2,
-      "pas": 4,
-      "nps": 33,
+      "det": 1,
+      "pas": 5,
+      "nps": 42,
       "enroll": 21,
       "cov": 57.1
     },
@@ -3469,9 +3469,9 @@
       "per": "2025-10",
       "resp": 8,
       "prom": 6,
-      "det": 1,
-      "pas": 1,
-      "nps": 62,
+      "det": 0,
+      "pas": 2,
+      "nps": 75,
       "enroll": 20,
       "cov": 40.0
     },
@@ -3482,9 +3482,9 @@
       "per": "2025-10",
       "resp": 4,
       "prom": 2,
-      "det": 1,
-      "pas": 1,
-      "nps": 25,
+      "det": 0,
+      "pas": 2,
+      "nps": 50,
       "enroll": 21,
       "cov": 19.0
     },
@@ -3495,9 +3495,9 @@
       "per": "2025-10",
       "resp": 11,
       "prom": 10,
-      "det": 1,
-      "pas": 0,
-      "nps": 82,
+      "det": 0,
+      "pas": 1,
+      "nps": 91,
       "enroll": 64,
       "cov": 17.2
     },
@@ -3664,9 +3664,9 @@
       "per": "2025-20",
       "resp": 16,
       "prom": 14,
-      "det": 1,
-      "pas": 1,
-      "nps": 81,
+      "det": 0,
+      "pas": 2,
+      "nps": 88,
       "enroll": 44,
       "cov": 36.4
     },
@@ -3703,9 +3703,9 @@
       "per": "2025-20",
       "resp": 2,
       "prom": 1,
-      "det": 1,
-      "pas": 0,
-      "nps": 0,
+      "det": 0,
+      "pas": 1,
+      "nps": 50,
       "enroll": 16,
       "cov": 12.5
     },
@@ -3846,9 +3846,9 @@
       "per": "2025-20",
       "resp": 7,
       "prom": 2,
-      "det": 3,
-      "pas": 2,
-      "nps": -14,
+      "det": 2,
+      "pas": 3,
+      "nps": 0,
       "enroll": 21,
       "cov": 33.3
     },
@@ -3859,9 +3859,9 @@
       "per": "2025-20",
       "resp": 6,
       "prom": 4,
-      "det": 1,
-      "pas": 1,
-      "nps": 50,
+      "det": 0,
+      "pas": 2,
+      "nps": 67,
       "enroll": 16,
       "cov": 37.5
     },
@@ -3885,9 +3885,9 @@
       "per": "2025-20",
       "resp": 7,
       "prom": 5,
-      "det": 1,
-      "pas": 1,
-      "nps": 57,
+      "det": 0,
+      "pas": 2,
+      "nps": 71,
       "enroll": 21,
       "cov": 33.3
     },
@@ -3898,9 +3898,9 @@
       "per": "2025-20",
       "resp": 5,
       "prom": 1,
-      "det": 2,
-      "pas": 2,
-      "nps": -20,
+      "det": 0,
+      "pas": 4,
+      "nps": 20,
       "enroll": 20,
       "cov": 25.0
     },
@@ -3976,9 +3976,9 @@
       "per": "2025-20",
       "resp": 13,
       "prom": 10,
-      "det": 2,
-      "pas": 0,
-      "nps": 67,
+      "det": 0,
+      "pas": 2,
+      "nps": 83,
       "enroll": 28,
       "cov": 46.4
     },
@@ -4052,7 +4052,7 @@
       "prog": "Diplomado en Comunicación y Marketing Digital para emprender",
       "coord": "Vanessa Álvarez",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Buenas noches, las plataformas muy poco amigables, había que bucear por todos lados para tratar de encontrar todo. Algunos compañeros nunca recibieron correos y nosotros teníamos que enviar la información por el grupo de WhatsApp. No me agradó que no existiera algún material por módulo para descargar y ampliar conocimientos, teníamos que nosotros pedir a los profesores materiales adicionales, la última profesora Bernardita nos entregó por cuenta de ella muchos PDF y libros y material.(Ella es lo mejor del Diplomado) No aprendimos nada Google Ads solo lo mencionaron. Faltó más tiempo para ese aprendizaje. Lo mejor del Diplomado para mí fue el último módulo de la profesora Bernardita, ella enseña mucho, es amorosa para comunicarse con nosotros, nos entregó mucho material y nos enseñó muchísimo, siempre disponible. Bueno muchas gracias por todo, fue una grata experiencia de aprendizaje y estoy muy contenta de haber terminado ésta etapa. Hasta una próxima"
     },
     {
@@ -4061,7 +4061,7 @@
       "prog": "Diplomado en Comunicación y Marketing Digital para emprender",
       "coord": "Vanessa Álvarez",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "buena cominicacion pero falto mas apoyo con temas puntuales de la universidad c"
     },
     {
@@ -4304,7 +4304,7 @@
       "prog": "Diplomado en Competencias Digitales para la Docencia",
       "coord": "Carolina Castro",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Falta mejorar en las actividades realizadas."
     },
     {
@@ -4655,7 +4655,7 @@
       "prog": "Diplomado en Orientación Educacional, Vocacional y Familiar",
       "coord": "Sergio Román",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Debería estar todo en una única plataforma. Muchos compañeros no pudieron ingresar nunca a Blackboard y al final los profes se vieron obligados a mandarnos todo por correo."
     },
     {
@@ -4664,7 +4664,7 @@
       "prog": "Diplomado en Orientación Educacional, Vocacional y Familiar",
       "coord": "Sergio Román",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Al principio estaba muy motivada, hasta el tercer módulo específicamente. Los últimos dos módulos no fueron lo suficiente desafiantes."
     },
     {
@@ -5402,7 +5402,7 @@
       "prog": "Diplomado En Diseño De Sistemas De Riego Y Fertirrigación",
       "coord": "Valentina Uribarri",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "La coordinación de Valentina Uribarri fue de la mejor calidad, solucionó todos los inconvenientes presentados con la plataforma. Con respecto a los docentes, capacitarlos de mejor manera para que puedan manejar de mejor la plataforma de BlackBoard."
     },
     {
@@ -5708,7 +5708,7 @@
       "prog": "Diplomado en Psicología del trauma: Clínica y Abordajes Psicoterapéuticos",
       "coord": "María Fernanda Miranda",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "bien"
     },
     {
@@ -6167,7 +6167,7 @@
       "prog": "Diplomado en Enfoque de género e interculturalidad para la Educación Superior",
       "coord": "Vanessa Álvarez",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "El diplomado se enfocó sólo en interculturalidad fue muy poco lo que se trabajó de género, además muchos docentes de otros países que costaba coordinar horarios por zona horaria, un poco de desorden en aspectos evaluativos, retroalimentación de los trabajos realizados"
     },
     {
@@ -6176,7 +6176,7 @@
       "prog": "Diplomado en Integración de la Inteligencia Artificial en el Ámbito Educativo",
       "coord": "Carolina Castro",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "deberían implementar docentes que estén mas capacitados en el tema y que no se dediquen a rellenar los módulos."
     },
     {
@@ -6293,7 +6293,7 @@
       "prog": "Diplomado en Integración de la Inteligencia Artificial en el Ámbito Educativo",
       "coord": "Carolina Castro",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Los docentes que imparten asignaturas de diplomado deben tener las competencias necesarias para entregar conocimiento, se noto mucho la improvisación en las clases, trabajos sin indicaciones claras, rellenar los modulos con clases vistas con los otros docentes, en fin...hay que realizar una mejor coordinaciòn del programa ya que las clases recibimos docentes que estamos preparados y tenemos experiencia, por tanto deja mucho que desear este programa."
     },
     {
@@ -6572,7 +6572,7 @@
       "prog": "Diplomado en Medicina Equina",
       "coord": "Valentina Uribarri",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Sugiero para futuras ediciones considerar además de la coordinación más relacionada a gestión, que exista una o un coordinador académico del área de medicina veterinaria, eso hace más fácil la coordinación y toma de decisiones y coordinación de aspectos médicos. A modo de ejemplo en el práctico del 25 de enero un día antes se gestionó el trabajo con los animales y no habían segun propio comentario del Dr. extranjero incitado. A su vez no se contaba con los insumos necesarios para los procedimientos. Por otra parte si bien el Dr. Jorge Lohse es un profesional de basta trayectoria, les sugiero cambiar docente, no por su falta de conocimiento sino que considero que hablar de uno durante 1,5 hrs en una clase 4 horas no es apropiado. Por otra parte el uso de diapos de otros diplomas muestra falta de prolijidad."
     },
     {
@@ -6581,7 +6581,7 @@
       "prog": "Diplomado en Medicina Equina",
       "coord": "Valentina Uribarri",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "En el práctico presencial habían caballos no mu dóciles para manejarlos, el Dr de odontología equina no asistió lo cual deberían haber reemplazado por otro práctico. Así mismo las clases del odontologo no dejo PPT disponibles."
     },
     {
@@ -6959,7 +6959,7 @@
       "prog": "Diplomado en Trastorno del Espectro Autista y Discapacidad Intelectual en el Curso de la Vida",
       "coord": "Fernanda Miranda",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Deberían permitir trabajos individuales y asegurarse de que todos los integrantes participen, por qué muchos salen haciendo nada en los grupos y reciben certificados a gracias de sus compañeros. La mayoría de los docentes espectaculares enseñanzas a excepción de algunos que les falta trabajar el trato. Se aprenden contenidos muy buenos. La coordinadora no siempre responde por lo general solo se comunica con la delegada."
     },
     {
@@ -7103,7 +7103,7 @@
       "prog": "Diplomado en Salud Familiar y Comunitario",
       "coord": "Paula Díaz",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Muchas gracias"
     },
     {
@@ -7148,7 +7148,7 @@
       "prog": "Diplomado en Fisiología Humana con orientación clínica",
       "coord": "Carolina Castro",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Inscripción automática en diplomado de Fisiopatología, mejorar laboratorios."
     },
     {
@@ -7499,7 +7499,7 @@
       "prog": "Diplomado en Investigación – Acción Aplicada a la Docencia Universitaria",
       "coord": "Vanessa Álvarez",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Terminados los módulos, estos eran cerrados automáticamente, sin acceso a grabaciones, ppts, literatura, etc. aún no habiendo terminado los procesos evaluativos de los módulos cerrados."
     },
     {
@@ -7994,7 +7994,7 @@
       "prog": "Diplomado en Alfabetización inicial y didáctica para la primera infancia",
       "coord": "Carolina Castro",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "El diplomado tiene un sistema de pregrado, mucho trabajo grupal y pocos momentos de reflexión."
     },
     {
@@ -8156,7 +8156,7 @@
       "prog": "Diplomado en Auditor líder en Gestión de Riesgos en Seguridad y Salud Ocupacional bajo Norma ISO 45001",
       "coord": "Vanessa Álvarez",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Me gusto el diplomado, la interacción con los docentes y los colegas, dentro de lo que solicito mejorar es que los docentes puedan cargar oportunamente la información de las notas y materias a la plataforma. Ahora bien también tarea aparte pra el departamento de informatica que la plataforma sea más estable, gracias"
     },
     {
@@ -8354,7 +8354,7 @@
       "prog": "Diplomado en Auditor líder en Gestión de Riesgos en Seguridad y Salud Ocupacional bajo Norma ISO 45001",
       "coord": "Vanessa Álvarez",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Lamento expresar mi decepción con respecto al diplomado. Por motivos de señal y horarios no pude cumplir como hubiera querido, pero encontré muy poca flexibilidad en el proceso. Además, no recibí comunicación ni apoyo por parte de Vanessa respecto a mi inasistencia y a mis notas. Considerando el monto que se cobra por este diplomado, uno espera una formación de calidad y un acompañamiento adecuado durante el proceso, lo cual en mi caso no se cumplió. Espero que puedan tomar en cuenta esta experiencia para mejorar en el futuro, ya que en esta oportunidad me llevé una mala impresión. Saludos cordiales."
     },
     {
@@ -8561,7 +8561,7 @@
       "prog": "Diplomado En Gestión Y Planificación Tributaria",
       "coord": "Paula Díaz",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Falto más horas para el ramo de gestión y planificación tributaria"
     },
     {
@@ -8597,7 +8597,7 @@
       "prog": "Diplomado en Normativa Laboral Aplicada",
       "coord": "Paula Díaz",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "."
     },
     {
@@ -8876,7 +8876,7 @@
       "prog": "Diplomado en Medicina Equina",
       "coord": "Paula Díaz",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Las grabaciones de las clases no son fáciles de visualizar, ya que habían 5 o 7 aprox. Se modifico mucho los horarios de las clases con respecto al organigrama entregado. Faltaron contenidos fundamentales en patologías musculoesqueleticas, anestesia y otros Muy buenos docentes nacionales e internacionales Excelente clase práctica"
     },
     {
@@ -8939,7 +8939,7 @@
       "prog": "Diplomado en Rehabilitación y Fisiatría Veterinaria",
       "coord": "Paula Díaz",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "En los prácticos no había instrumental ni pacientes para practicar"
     },
     {
@@ -8966,7 +8966,7 @@
       "prog": "Diplomado en Rehabilitación y Fisiatría Veterinaria",
       "coord": "Paula Díaz",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Disminuyeron la cantidad de prácticos que ofrecían al comienzo y en el folleto que daban salían equinos y no se ve nada de equinos, solo animales menores."
     },
     {
@@ -9191,7 +9191,7 @@
       "prog": "Diplomado en Gestión de Personas y Cambio Organizacional",
       "coord": "Sin Coordinador",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "dejar disponible el ingreso a la plataforma y las aplicaciones"
     },
     {
@@ -9524,7 +9524,7 @@
       "prog": "Diplomado en Enfoque de género e interculturalidad para la Educación Superior",
       "coord": "Vanessa Álvarez",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Las clases del diplomado fueron un poco aburridas, falta dinamizar las clases, agregar TIC ya que en algunos casos los docentes hicieron muchos monólogos o clase expositiva."
     },
     {
@@ -9911,7 +9911,7 @@
       "prog": "Diplomado en Orientación Educacional, Vocacional y Familiar",
       "coord": "Sergio Román",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Docentes con escaso manejo pedagógico en asignaturas de Orientación Familiar y Orientación Educacional. Agradecer a la docente Pilar que fue la mejor de todo el diplomado con sus consejos y contenidos"
     },
     {
@@ -10244,7 +10244,7 @@
       "prog": "Diplomado en Gestión y Operación en Alimentos y Bebidas",
       "coord": "Sergio Román",
       "nps": 4,
-      "clase": "Negativo",
+      "clase": "Neutro",
       "texto": "Encuentro que para ser un diplomado de una universidad y el valor de este, es muy básico. En un principio se comento que era presencial y en las clases nos enteramos que era Online. Para un diplomado es importante filtrar los alumnos, muchas veces nos quedamos en un mismo tema solo por que algunos compañero no entendían conceptos básicos (Tanto financieros como gastronómicos). Sinceramente me voy con un gusto extraño ya que era un diplomado que me gusto mucho por su malla pero que en las clases no se demostraba eso."
     },
     {

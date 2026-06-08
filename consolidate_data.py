@@ -132,6 +132,7 @@ for sd in subdirs:
                 q3  = parse_rating(row.iloc[12])
                 q4  = parse_rating(row.iloc[13])
                 coord = clean_text(row.iloc[14])
+                coord = coord.replace("Vanessa Alvarez", "Vanessa Álvarez")
                 q5  = parse_rating(row.iloc[15])
                 q6  = parse_rating(row.iloc[16])
                 q7  = parse_rating(row.iloc[17])
@@ -142,7 +143,12 @@ for sd in subdirs:
 
                 tipo_nps = None
                 if q1 is not None:
-                    tipo_nps = "Promotor" if q1 >= 6 else ("Pasivo" if q1 == 5 else "Detractor")
+                    if q1 >= 6:
+                        tipo_nps = "Promotor"
+                    elif q1 >= 4:
+                        tipo_nps = "Pasivo"
+                    else:
+                        tipo_nps = "Detractor"
 
                 responses_list.append({
                     "respondent_id": str(int(row.iloc[0])),
@@ -160,7 +166,7 @@ for sd in subdirs:
                 if com and com.lower() not in ["open-ended response","nan",""]:
                     sentimiento = "Neutro"
                     if q1 is not None:
-                        sentimiento = "Positivo" if q1 >= 6 else ("Negativo" if q1 <= 4 else "Neutro")
+                        sentimiento = "Positivo" if q1 >= 6 else ("Negativo" if q1 <= 3 else "Neutro")
                     comments_list.append({
                         "periodo": sd, "facultad": faculty,
                         "programa": prog,
