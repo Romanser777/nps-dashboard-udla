@@ -162,6 +162,7 @@ for sd in subdirs:
                 q4  = parse_rating(row.iloc[13])
                 coord = clean_text(row.iloc[14])
                 coord = coord.replace("Vanessa Alvarez", "Vanessa Álvarez")
+                coord = coord.replace("Paula Díaz Espinoza", "Paula Díaz")
 
                 prog_upper = prog.upper().strip()
 
