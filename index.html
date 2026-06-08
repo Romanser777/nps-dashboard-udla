@@ -97,7 +97,19 @@ select.flt,input.flt{padding:5px 8px;font-size:10px;font-family:inherit;backgrou
   </div>
   <div class="hdr-badge" style="display:flex;align-items:center;gap:10px">
     <span>Cobertura histórica verificada</span>
-    <button onclick="(function(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([document.documentElement.outerHTML],{type:'text/html'}));a.download='Dashboard_NPS_UDLA.html';a.click();})()" style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;padding:5px 13px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap">⬇ Descargar HTML</button>
+    <button onclick="(function(){
+  const blob = new Blob([document.documentElement.outerHTML], {type:'text/html;charset=utf-8'});
+  const reader = new FileReader();
+  reader.onload = function(e){
+    const a = document.createElement('a');
+    a.href = e.target.result;
+    a.download = 'Dashboard_NPS_UDLA.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+  reader.readAsDataURL(blob);
+})()" style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;padding:5px 13px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap">⬇ Descargar HTML</button>
   </div>
 </div>
 <nav class="nav">
