@@ -165,6 +165,12 @@ if os.path.exists(ofertas_dir):
                 if not prog or prog == 'nan':
                     continue
                 prog_up = prog.upper().strip()
+                # Excluir programas cerrados por quórum
+                status_col_upper = [c for c in df_of.columns if str(c).strip().upper() == 'STATUS' and df_of[c].astype(str).str.lower().str.contains('quorum|quórum|cerrado').any()]
+                if status_col_upper:
+                    status_val = str(row[status_col_upper[0]]).lower()
+                    if any(k in status_val for k in ['quorum','quórum','cerrado por','baja por']):
+                        continue
                 coord = normalize_coord(row[cols['coord']], per)
                 fecha = parse_fecha_termino(row[cols['fecha']])
                 oferta_lookup[(per, prog_up)] = {
