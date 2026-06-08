@@ -14,6 +14,7 @@ workspace_dir = os.path.dirname(os.path.abspath(__file__))
 subdirs = ["2024-10", "2024-20", "2025-10", "2025-20"]
 enrollment_excel = os.path.join(workspace_dir, "Detalle Estudiantes Postgrado_Tipo Ingreso.xlsx")
 coordinadores_excel = os.path.join(workspace_dir, "Coordinadores por periodos.xlsx")
+ofertas_dir = os.path.join(workspace_dir, "Ofertas")
 html_template   = os.path.join(workspace_dir, "index.html")
 output_html     = os.path.join(workspace_dir, "Dashboard_NPS_UDLA.html")
 
@@ -59,6 +60,27 @@ def get_faculty_name(filename):
     if "salud" in fn or "social" in fn:                   return "Salud y Ciencias Sociales"
     return "Otra"
 
+def normalize_coord(val, periodo):
+    """Normaliza nombres abreviados de coordinadores según período."""
+    if pd.isna(val) or str(val).strip() in ('', 'nan'):
+        return '—'
+    v = str(val).strip()
+    v = v.replace('Paula Díaz Espinoza', 'Paula Díaz')
+    v = v.replace('Vanessa Alvarez', 'Vanessa Álvarez')
+    if periodo == '2024-10':
+        mapa = {
+            'Caro': 'Carolina Castro',
+            'Fer':  'Fernanda Miranda',
+            'Pauli':'Paula Díaz',
+            'Sergio':'Sergio Román',
+            'Vale': 'Valentina Uribarri',
+            'Vane': 'Vanessa Álvarez',
+        }
+        v_clean = v.strip()
+        if v_clean in mapa:
+            return mapa[v_clean]
+    return v
+
 print("=" * 60)
 print("  ACTUALIZADOR DE DASHBOARD NPS — UDLA")
 print(f"  {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
@@ -76,8 +98,9 @@ if os.path.exists(enrollment_excel):
     try:
         df_enr = pd.read_excel(
             enrollment_excel, sheet_name='BD MATRICULA',
-            usecols=['Periodo','Rut','Programa','Programa Postgrado','Facultad Postgrado']
+            usecols=['Periodo','Rut','Programa','Programa Postgrado','Facultad Postgrado','Tipo Programa']
         )
+        df_enr['per_label'] = df_enr['Periodo'].apply(lambda x: f"{str(x)[:4]}-{str(x)[4:]}")
         print(f"      {len(df_enr)} registros de matrícula cargados.")
 
         enr_grouped = df_enr.groupby(['Periodo','Programa Postgrado']).size().reset_index(name='estudiantes')
@@ -101,6 +124,58 @@ if os.path.exists(enrollment_excel):
         print(f"      ERROR al cargar matrículas: {e}")
 else:
     print("\n[1/4] AVISO: Archivo de matrículas no encontrado. Se usarán estimaciones.")
+
+# ── Leer archivos de oferta (fecha término + coordinador) ──────────────
+print("\n[1b/4] Cargando archivos de oferta...")
+oferta_col_map = {
+    '2024-10': {'prog': 'Nombre Programa',      'coord': 'Coordinador asignado ', 'fecha': 'Fecha Término', 'tipo': 'Tipo de programa'},
+    '2024-20': {'prog': 'Nombre Programa',      'coord': 'Coordinador asignado ', 'fecha': 'Fecha Término', 'tipo': 'Tipo de programa'},
+    '2025-10': {'prog': 'Nombre del Programa ', 'coord': 'Coordinador asignado ', 'fecha': 'Fecha Término', 'tipo': 'Tipo de programa'},
+    '2025-20': {'prog': 'Programas ',           'coord': 'Coordinador asignado ', 'fecha': 'Fecha Término', 'tipo': 'Tipo de programa'},
+}
+
+def parse_fecha_termino(val):
+    if pd.isna(val): return None
+    s = str(val).strip()
+    meses = {'enero':'01','febrero':'02','marzo':'03','abril':'04','mayo':'05','junio':'06',
+             'julio':'07','agosto':'08','septiembre':'09','octubre':'10','noviembre':'11','diciembre':'12'}
+    for m, n in meses.items():
+        if m in s.lower():
+            nums = re.findall(r'\d+', s)
+            if len(nums) >= 2:
+                return f"{nums[0].zfill(2)}/{n}/{nums[-1]}"
+    try:
+        return pd.to_datetime(val).strftime('%d/%m/%Y')
+    except:
+        return None
+
+oferta_lookup = {}
+if os.path.exists(ofertas_dir):
+    for per, cols in oferta_col_map.items():
+        fpath = os.path.join(ofertas_dir, f"Oferta {per}.xlsx")
+        if not os.path.exists(fpath):
+            continue
+        try:
+            df_of = pd.read_excel(fpath)
+            tipos_validos = [t for t in df_of[cols['tipo']].unique()
+                             if pd.notna(t) and ('iplomado' in str(t) or 'ost' in str(t).lower())]
+            df_of = df_of[df_of[cols['tipo']].isin(tipos_validos)]
+            for _, row in df_of.iterrows():
+                prog = str(row[cols['prog']]).strip() if pd.notna(row[cols['prog']]) else ''
+                if not prog or prog == 'nan':
+                    continue
+                prog_up = prog.upper().strip()
+                coord = normalize_coord(row[cols['coord']], per)
+                fecha = parse_fecha_termino(row[cols['fecha']])
+                oferta_lookup[(per, prog_up)] = {
+                    'coord': coord,
+                    'fecha_termino': fecha
+                }
+        except Exception as e:
+            print(f"        ERROR oferta {per}: {e}")
+    print(f"      {len(oferta_lookup)} entradas de oferta cargadas.")
+else:
+    print("      AVISO: Carpeta 'Ofertas' no encontrada.")
 
 # ─────────────────────────────────────────────────────────────────
 #  2. PROCESAR ENCUESTAS EXCEL
@@ -137,6 +212,18 @@ coord_manual = {
     ('2025-20', 'DIPLOMADO EN PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA'): 'Valentina Uribarri',
     ('2025-20', 'DIPLOMADO EN INVESTIGACIÓN – ACCIÓN APLICADA A LA DOCENCIA UNIVERSITARIA'): 'Vanessa Álvarez',
     ('2025-20', 'DIPLOMADO EN BIOESTADÍSTICA'): 'Sergio Román',
+}
+
+prog_name_map = {
+    'DIP.EN ENSEÑ.DEL INGL. CON ENF':          'DIPLOMADO EN ENSEÑANZA DEL INGLÉS CON ENFOQUE INCLUSIVO',
+    'DIP.EN IA APL. PERIOD. Y COM.':            'DIPLOMADO EN INTELIGENCIA ARTIFICIAL APLICADA AL PERIODISMO Y COMUNICACIONES',
+    'DIP.EN GEST. ENER.LEY 21.305':             'DIPLOMADO EN GESTIÓN ENERGÉTICA LEY 21.305',
+    'DIP.EN GEST. Y MAN. RES. PEL.':            'DIPLOMADO EN GESTIÓN Y MANEJO DE SUSTANCIAS Y RESIDUOS PELIGROSOS',
+    'DIP.EN REHAB. Y FISIAT. VETER.':           'DIPLOMADO EN REHABILITACIÓN Y FISIATRÍA VETERINARIA',
+    'DIP.EN TRAUMAT. Y ORTOP. VET.':            'DIPLOMADO EN TRAUMATOLOGÍA Y ORTOPEDIA VETERINARIA',
+    'DIP.EN PSICO. EDUC. INTE. INT.':           'DIPLOMADO EN PSICOLOGÍA EDUCACIONAL INTERVENCIÓN INTEGRAL Y SISTÉMICA',
+    'DIP.INTERV. PSICOS. A VÍCTIMAS':           'DIPLOMADO EN INTERVENCIÓN PSICOSOCIAL A VÍCTIMAS',
+    'DIP.EN GEST. DE PROGR. EN ATENCIÓN PRIMARIA DE SALUD CON ENFOQUE EN MOD. DE ATEN. INTEG. EN SA': 'DIPLOMADO EN GESTIÓN Y COORDINACIÓN DE PROGRAMAS EN ATENCIÓN PRIMARIA DE SALUD',
 }
 
 for sd in subdirs:
@@ -373,13 +460,82 @@ for _, row in df_coms.iterrows():
         "clase":row['clasificacion'],"texto":row['comentario']
     })
 
-# Estructura D final
+# ── Programas sin respuesta ───────────────────────────────────────────
+print("      Calculando programas sin respuesta...")
+
+df_sin = df_enr[df_enr['Tipo Programa'].isin(['DIPLOMADO','POSTITULO'])].copy() if 'Tipo Programa' in df_enr.columns else pd.DataFrame()
+
+sin_respuesta = []
+if not df_sin.empty:
+    enrolled_all = df_sin.groupby(['per_label','Facultad Postgrado','Programa Postgrado']).size().reset_index(name='matriculados')
+    resp_set = set(zip(df_all['periodo'], df_all['programa'].str.upper().str.strip()))
+
+    for _, row in enrolled_all.iterrows():
+        per  = row['per_label']
+        prog = str(row['Programa Postgrado']).strip()
+        prog_up = prog_name_map.get(prog.upper().strip(), prog.upper().strip())
+
+        if (per, prog_up) in resp_set or (per, prog.upper().strip()) in resp_set:
+            continue
+
+        oferta = oferta_lookup.get((per, prog_up))
+        if not oferta:
+            oferta = oferta_lookup.get((per, prog.upper().strip()))
+        if not oferta:
+            for (op, oprog), oval in oferta_lookup.items():
+                if op == per:
+                    wp = set(w for w in prog_up.split() if len(w) > 3)
+                    wo = set(w for w in oprog.split() if len(w) > 3)
+                    if len(wp & wo) >= 3:
+                        oferta = oval
+                        break
+
+        coord_final = oferta['coord'] if oferta and oferta['coord'] != '—' else '—'
+        if coord_final == '—':
+            prog_key_lookup = prog_up
+            coord_from_map2 = coord_map.get((per, prog_key_lookup))
+            if not coord_from_map2:
+                for (mp, mprog), mc in coord_map.items():
+                    if mp == per:
+                        wp = set(w for w in prog_up.split() if len(w) > 3)
+                        wo = set(w for w in mprog.split() if len(w) > 3)
+                        if len(wp & wo) >= 3:
+                            coord_from_map2 = mc
+                            break
+            if coord_from_map2:
+                coord_final = coord_from_map2
+
+        fac = str(row['Facultad Postgrado']).strip()
+        fac_norm = fac
+        for key, val in [
+            ('Arquitectura','Arquitectura, Diseño y Construcción'),
+            ('Comunicaciones','Comunicaciones'),
+            ('Derecho','Derecho'),
+            ('Educación','Educación'),
+            ('Ingeniería','Ingeniería y Negocios'),
+            ('Medicina Veterinaria','Medicina Veterinaria y Agronomía'),
+            ('Salud','Salud y Ciencias Sociales'),
+        ]:
+            if key.lower() in fac.lower():
+                fac_norm = val
+                break
+
+        sin_respuesta.append({
+            'per': per,
+            'fac': fac_norm,
+            'prog': prog,
+            'coord': coord_final,
+            'matriculados': int(row['matriculados']),
+            'fecha_termino': oferta['fecha_termino'] if oferta and oferta.get('fecha_termino') else None
+        })
+
 D = {
     "periodos": all_periods, "facultades": all_facs, "coordinadores": all_coords,
     "global": d_global, "global_grupos": d_global_grupos,
     "por_facultad": d_por_fac, "preguntas_fac": d_preg_fac,
     "por_coordinador": d_por_coord,
-    "programas": d_programas, "comentarios": d_comentarios
+    "programas": d_programas, "comentarios": d_comentarios,
+    "sin_respuesta": sin_respuesta
 }
 
 # ─────────────────────────────────────────────────────────────────

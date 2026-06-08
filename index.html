@@ -117,6 +117,7 @@ select.flt,input.flt{padding:5px 8px;font-size:10px;font-family:inherit;backgrou
   <button class="nb" onclick="goSec(this,'facultades')">Facultades</button>
   <button class="nb" onclick="goSec(this,'preguntas')">Preguntas</button>
   <button class="nb" onclick="goSec(this,'programas')">Programas</button>
+  <button class="nb" onclick="goSec(this,'sinrespuesta')">Sin Respuesta</button>
   <button class="nb" onclick="goSec(this,'coordinadores')">Coordinadores</button>
   <button class="nb" onclick="goSec(this,'comentarios')">Comentarios</button>
   <button class="nb" onclick="goSec(this,'comparar')">Comparar</button>
@@ -188,6 +189,37 @@ select.flt,input.flt{padding:5px 8px;font-size:10px;font-family:inherit;backgrou
     <th style="text-align:center">Promotores</th><th style="text-align:center">Detractores</th><th style="text-align:center" title="Net Promoter Score · Escala UDLA 1-7 · Promotores (6-7) menos Detractores (1-3) dividido por Total × 100">NPS</th><th>Tend.</th>
   </tr></thead><tbody id="p-tbody"></tbody></table></div>
   <div class="pg"><button onclick="pgProg(progPg-1)">&#8249; Anterior</button><span class="pg-info" id="p-pg-info"></span><button onclick="pgProg(progPg+1)">Siguiente &#8250;</button></div>
+</div>
+<div id="sec-sinrespuesta" class="sec">
+  <div class="card" style="padding:16px">
+    <div class="ct" style="margin-bottom:12px;justify-content:space-between">
+      <span><span class="ct-dot"></span>Programas sin respuesta</span>
+      <div style="display:flex;gap:8px">
+        <select class="flt" id="sr-per" onchange="renderSR()">
+          <option value="">Todos los períodos</option>
+        </select>
+        <select class="flt" id="sr-fac" onchange="renderSR()">
+          <option value="">Todas las facultades</option>
+        </select>
+      </div>
+    </div>
+    <div style="font-size:10px;color:var(--mut);margin-bottom:10px" id="sr-count"></div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:11px" id="sr-table">
+        <thead>
+          <tr style="border-bottom:2px solid var(--brd);text-align:left">
+            <th style="padding:6px 8px;color:var(--mut);font-weight:500">Período</th>
+            <th style="padding:6px 8px;color:var(--mut);font-weight:500">Facultad</th>
+            <th style="padding:6px 8px;color:var(--mut);font-weight:500">Programa</th>
+            <th style="padding:6px 8px;color:var(--mut);font-weight:500;text-align:center">Coordinador</th>
+            <th style="padding:6px 8px;color:var(--mut);font-weight:500;text-align:center" title="Estudiantes matriculados en el período">Matríc.</th>
+            <th style="padding:6px 8px;color:var(--mut);font-weight:500;text-align:center">Fecha término</th>
+          </tr>
+        </thead>
+        <tbody id="sr-body"></tbody>
+      </table>
+    </div>
+  </div>
 </div>
 <div id="sec-coordinadores" class="sec">
   <div class="card" style="margin-bottom:14px">
@@ -357,12 +389,47 @@ function renderCmp(){
   D.periodos.forEach((p,i)=>{svgS+=`<text x="${lp+i*xS}" y="${H-8}" text-anchor="middle" font-size="9" fill="#9CA3AF">${p}</text>`;});document.getElementById('cmp-svg').innerHTML=svgS;
   document.getElementById('cmp-tbl').innerHTML=D.periodos.map(p=>{const sA=gst(tA,nA,p),sB=gst(tB,nB,p);if(!sA&&!sB)return'';const d=(sA&&sB)?sA.nps-sB.nps:null,w=d===null?'—':d>0?nA.split(' ')[0]:d<0?nB.split(' ')[0]:'Empate';return`<tr><td><span class="per-chip">${p}</span></td><td style="text-align:center">${sA?chipC(sA.nps):chipC(null)}</td><td style="text-align:center;color:var(--mut)">${sA?.resp||'—'}</td><td style="text-align:center">${sB?chipC(sB.nps):chipC(null)}</td><td style="text-align:center;color:var(--mut)">${sB?.resp||'—'}</td><td style="text-align:center;font-weight:600;color:${d===null?'var(--mut)':d>0?'var(--ok)':'var(--da)'}"> ${d!==null?(d>=0?'▲ +':'▼ ')+d+'pp':'—'}</td><td style="font-size:10px;font-weight:500">${w}</td></tr>`;}).join('');
 }
+function renderSR(){
+  const per = document.getElementById('sr-per').value;
+  const fac = document.getElementById('sr-fac').value;
+  const data = D.sin_respuesta || [];
+  const filtered = data.filter(r =>
+    (!per || r.per === per) &&
+    (!fac || r.fac === fac)
+  );
+  document.getElementById('sr-count').textContent =
+    `${filtered.length} programa${filtered.length !== 1 ? 's' : ''} sin respuesta${per ? ' en ' + per : ''}`;
+  const rows = filtered.map(r => `
+    <tr style="border-bottom:1px solid var(--brd)">
+      <td style="padding:6px 8px"><span class="per-chip">${r.per}</span></td>
+      <td style="padding:6px 8px;color:var(--mut);font-size:10px">${r.fac}</td>
+      <td style="padding:6px 8px;font-weight:500">${r.prog}</td>
+      <td style="padding:6px 8px;text-align:center;color:var(--mut)">${r.coord || '—'}</td>
+      <td style="padding:6px 8px;text-align:center">${r.matriculados}</td>
+      <td style="padding:6px 8px;text-align:center;color:var(--mut)">${r.fecha_termino || '—'}</td>
+    </tr>`).join('');
+  document.getElementById('sr-body').innerHTML = rows || '<tr><td colspan="6" style="text-align:center;padding:20px;color:var(--mut)">Sin datos</td></tr>';
+}
+
+function initSR(){
+  const data = D.sin_respuesta || [];
+  const perSel = document.getElementById('sr-per');
+  const facSel = document.getElementById('sr-fac');
+  [...new Set(data.map(r => r.per))].sort().forEach(p => {
+    const o = document.createElement('option'); o.value = p; o.textContent = p; perSel.appendChild(o);
+  });
+  [...new Set(data.map(r => r.fac))].sort().forEach(f => {
+    const o = document.createElement('option'); o.value = f; o.textContent = f; facSel.appendChild(o);
+  });
+  renderSR();
+}
+
 function initFilters(){
   ['q-fac','p-fac','c-fac'].forEach(id=>{const el=document.getElementById(id);D.facultades.forEach(f=>{const o=document.createElement('option');o.value=f;o.text=f;el.add(o);});});
   ['p-coo','c-coo'].forEach(id=>{const el=document.getElementById(id);D.coordinadores.forEach(c=>{const o=document.createElement('option');o.value=c;o.text=c;el.add(o);});});
   D.periodos.forEach(p=>{const o=document.createElement('option');o.value=p;o.text=p;document.getElementById('q-per').add(o.cloneNode(true));});
 }
-initFilters();renderResumen();renderFacultades();renderPreguntas();pgProg(1);renderCoords();pgCom(1);initCmpSels();renderCmp();
+initFilters();renderResumen();renderFacultades();renderPreguntas();pgProg(1);renderCoords();pgCom(1);initCmpSels();renderCmp();initSR();
 </script>
 </body>
 </html>

@@ -10194,5 +10194,2479 @@ const D = {
       "clase": "Neutro",
       "texto": "Gracias por todo"
     }
+  ],
+  "sin_respuesta": [
+    {
+      "per": "2021-10",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO BIM AVANZADO",
+      "coord": "—",
+      "matriculados": 19,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO DERECHO DEL TRABAJO Y SISTEMA DE RELACIONES LABORALES EN LA EMPRESA",
+      "coord": "—",
+      "matriculados": 34,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO EN DERECHO ADMINISTRATIVO Y FUNCIÓN PÚBLICA",
+      "coord": "—",
+      "matriculados": 34,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN DISEÑO DE INVESTIGACIÓN",
+      "coord": "—",
+      "matriculados": 33,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN LIDERAZGO DE ESTABLECIMIENTOS EDUCATIVOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN MOTRICIDAD INFANTIL",
+      "coord": "—",
+      "matriculados": 51,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN NECESIDADES EDUCATIVAS ESPECIALES Y CONTEXTOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 56,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN BIOESTADISTICA",
+      "coord": "—",
+      "matriculados": 28,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN DATA SCIENCE",
+      "coord": "—",
+      "matriculados": 56,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN Y PLANIFICACIÓN TRIBUTARIA",
+      "coord": "—",
+      "matriculados": 39,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN PLANIFICACIÓN Y GESTIÓN EN SEGURIDAD Y SALUD OCUPACIONAL MENCIÓN FACTORES PSICOSOCIALES",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD",
+      "coord": "—",
+      "matriculados": 57,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "POSTÍTULO EN TRIBUTACIÓN",
+      "coord": "—",
+      "matriculados": 29,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE CIRUGIA EN ESPECIES DE COMPAÑIA",
+      "coord": "—",
+      "matriculados": 39,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE DIAGNÓSTICO Y CONTROL DE PLAGAS URBANAS",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN DISEÑO DE SISTEMAS DE RIEGO Y FERTIIRRIGACIÓN",
+      "coord": "—",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN IMAGENOLOGÍA",
+      "coord": "—",
+      "matriculados": 32,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO MEDICINA INTERNA DE CANINOS",
+      "coord": "—",
+      "matriculados": 45,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PRESCRIPCIÓN DE EJERCICIOS DE FUERZA Y MUSCULACIÓN PARA LA ACTIVIDAD FÍSICA",
+      "coord": "—",
+      "matriculados": 45,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN RECURSOS HUMANOS Y GESTIÓN DEL CAMBIO ORGANIZACIONAL",
+      "coord": "—",
+      "matriculados": 51,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "—",
+      "matriculados": 42,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO DE MEDIACIÓN Y RESOLUCIÓN DE CONFLICTOS EN EL ÁMBITO DE LA FAMILIA",
+      "coord": "—",
+      "matriculados": 45,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN LIDERAZGO DE ESTABLECIMIENTOS EDUCATIVOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN MOTRICIDAD INFANTIL",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN NECESIDADES EDUCATIVAS ESPECIALES Y CONTEXTOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 25,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN PROFUNDICACIÓN DE ASIGNATURAS DEL PLAN ELECTIVO DE EDUCACIÓN FISICA",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN BIOESTADISTICA",
+      "coord": "—",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN DATA SCIENCE",
+      "coord": "—",
+      "matriculados": 22,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN TURISTICA SOSTENIBLE",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN Y PLANIFICACIÓN TRIBUTARIA",
+      "coord": "—",
+      "matriculados": 36,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD",
+      "coord": "—",
+      "matriculados": 22,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "POSTITULO EN PREVENCIÓN DE RIESGOS",
+      "coord": "—",
+      "matriculados": 17,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE CIRUGIA EN ESPECIES DE COMPAÑIA",
+      "coord": "—",
+      "matriculados": 32,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN MEDICINA FELINA",
+      "coord": "—",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DE EJERCICIO FÍSICO EN EL ADULTO MAYOR",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DE KINESITERAPIA RESPIRATORIA PARA ATENCIÓN PRIMARIA EN SALUD",
+      "coord": "—",
+      "matriculados": 42,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DOCENCIA EN SIMULACIÓN CLÍNICA",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GERONTOGERIATRÍA INTERDISCIPLINARIA",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PRESCRIPCIÓN DE EJERCICIOS DE FUERZA Y MUSCULACIÓN PARA LA ACTIVIDAD FÍSICA",
+      "coord": "—",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO ENTRENAMIENTO FUNCIONAL MENCIÓN EN ACTIVIDAD FISICA, DEPORTE Y SALUD",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "—",
+      "matriculados": 109,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO SALUD MENTAL: ABORDAJE INTERDISCIPLINARIO  Y GESTIÓN CLÍNICA",
+      "coord": "—",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2021-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
+      "coord": "—",
+      "matriculados": 85,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO BIM AVANZADO",
+      "coord": "—",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Comunicaciones",
+      "prog": "DIPLOMADO EN SOSTENIBILIDAD Y ESTRATEGIA CORPORATIVA",
+      "coord": "—",
+      "matriculados": 9,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Comunicaciones",
+      "prog": "DIPLOMADO MARKETING DIGITAL",
+      "coord": "—",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO DERECHO DEL TRABAJO Y SISTEMA DE RELACIONES LABORALES EN LA EMPRESA",
+      "coord": "—",
+      "matriculados": 20,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO EN DERECHO ADMINISTRATIVO Y FUNCIÓN PÚBLICA",
+      "coord": "—",
+      "matriculados": 48,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO CONVIVENCIA ESCOLAR Y APRENDIZAJE SOCIOEMOCIONAL",
+      "coord": "—",
+      "matriculados": 22,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA",
+      "coord": "—",
+      "matriculados": 27,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN APRENDIZAJE SOCIOEMOCIONAL DESDE UN MODELO ACTIVO EN EL AULA",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN DIVERSIFICACIÓN DE LA ENSEÑANZA PARA LA EDUCACIÓN INCLUSIVA",
+      "coord": "—",
+      "matriculados": 8,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN LIDERAZGO DE ESTABLECIMIENTOS EDUCATIVOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 9,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN MOTRICIDAD INFANTIL",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN NECESIDADES EDUCATIVAS ESPECIALES Y CONTEXTOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 53,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN PROFUNDICACIÓN DE ASIGNATURAS DEL PLAN ELECTIVO DE EDUCACIÓN FISICA",
+      "coord": "—",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR",
+      "coord": "—",
+      "matriculados": 28,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Educación",
+      "prog": "POSTÍTULO EN DISCAPACIDAD INTELECTUAL Y EDUCACIÓN INCLUSIVA",
+      "coord": "—",
+      "matriculados": 57,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN DATA SCIENCE",
+      "coord": "—",
+      "matriculados": 24,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN DE SEGURIDAD Y SALUD OCUPACIONAL BAJO NORMA ISO 45001",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN Y PLANIFICACIÓN TRIBUTARIA",
+      "coord": "—",
+      "matriculados": 31,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN MATEMÁTICA EDUCATIVA",
+      "coord": "—",
+      "matriculados": 7,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO GESTIÓN AMBIENTAL BAJO NORMA ISO 14001",
+      "coord": "—",
+      "matriculados": 6,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "POSTÍTULO EN TRIBUTACIÓN",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO ANESTESIA Y MANEJO DE DOLOR EN PEQUEÑOS ANIMALES",
+      "coord": "—",
+      "matriculados": 50,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE DIAGNÓSTICO Y CONTROL DE PLAGAS URBANAS",
+      "coord": "—",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN DISEÑO DE SISTEMAS DE RIEGO Y FERTIIRRIGACIÓN",
+      "coord": "—",
+      "matriculados": 59,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN IMAGENOLOGÍA",
+      "coord": "—",
+      "matriculados": 48,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO MEDICINA INTERNA DE CANINOS",
+      "coord": "—",
+      "matriculados": 53,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN DESARROLLO REGIONAL Y LOCAL HERRAMIENTAS PARA SUPERAR DESIGUALDADES TERRITORIALES",
+      "coord": "—",
+      "matriculados": 9,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GERONTOGERIATRÍA INTERDISCIPLINARIA",
+      "coord": "—",
+      "matriculados": 9,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN DE SALUD",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN INVESTIGACIÓN EN SALUD CON ENFOQUE EN ENFERMERÍA",
+      "coord": "—",
+      "matriculados": 20,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PSICOLOGÍA DEL TRAUMA: CLÍNICA Y ABORDAJES PSICOTERAPÉUTICOS",
+      "coord": "—",
+      "matriculados": 39,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN RECURSOS HUMANOS Y GESTIÓN DEL CAMBIO ORGANIZACIONAL",
+      "coord": "—",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN SALUD FAMILIAR Y COMUNITARIO",
+      "coord": "—",
+      "matriculados": 24,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PARTICIPACIÓN SOCIAL Y COMUNITARIA EN SALUD: HERRAMIENTAS Y METODOLOGIAS PARTICIPATIVAS",
+      "coord": "—",
+      "matriculados": 8,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "—",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
+      "coord": "—",
+      "matriculados": 40,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
+      "coord": "—",
+      "matriculados": 37,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO BIM AVANZADO",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO DE MEDIACIÓN Y RESOLUCIÓN DE CONFLICTOS EN EL ÁMBITO DE LA FAMILIA",
+      "coord": "—",
+      "matriculados": 28,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO EN DERECHO INMOBILIARIO",
+      "coord": "—",
+      "matriculados": 35,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN MOTRICIDAD INFANTIL",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN NECESIDADES EDUCATIVAS ESPECIALES Y CONTEXTOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN PROFUNDICACIÓN DE ASIGNATURAS DEL PLAN ELECTIVO DE EDUCACIÓN FISICA",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR",
+      "coord": "—",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Educación",
+      "prog": "POSTÍTULO EN DISCAPACIDAD INTELECTUAL Y EDUCACIÓN INCLUSIVA",
+      "coord": "—",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN CONTROL DE GESTIÓN ¿ CONTROLLING SAP",
+      "coord": "—",
+      "matriculados": 22,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN DE EMERGENCIAS Y RESPUESTAS ANTE DESASTRES BAJO NORMA ISO 22320",
+      "coord": "—",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN TURISTICA SOSTENIBLE",
+      "coord": "—",
+      "matriculados": 10,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN Y OPERACIÓN EN ALIMENTOS Y BEBIDAS",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN Y PLANIFICACIÓN TRIBUTARIA",
+      "coord": "—",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE CIRUGIA EN ESPECIES DE COMPAÑIA",
+      "coord": "—",
+      "matriculados": 60,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE DIAGNÓSTICO Y CONTROL DE PLAGAS URBANAS",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN MEDICINA FELINA",
+      "coord": "—",
+      "matriculados": 57,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DE KINESITERAPIA RESPIRATORIA PARA ATENCIÓN PRIMARIA EN SALUD",
+      "coord": "—",
+      "matriculados": 58,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DOCENCIA EN SIMULACIÓN CLÍNICA",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN DE SALUD",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN NEUROCOGNICÓN Y PROCESO TERAPÉUTICO EN EL CURSO DE LA VIDA",
+      "coord": "—",
+      "matriculados": 9,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PRESCRIPCIÓN DE EJERCICIOS DE FUERZA Y MUSCULACIÓN PARA LA ACTIVIDAD FÍSICA",
+      "coord": "—",
+      "matriculados": 8,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PSICOLOGÍA DEL TRAUMA: CLÍNICA Y ABORDAJES PSICOTERAPÉUTICOS",
+      "coord": "—",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN RECURSOS HUMANOS Y GESTIÓN DEL CAMBIO ORGANIZACIONAL",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN REHABILITACIÓN DE DESÓRDENES TEMPOROMANDIBULARES",
+      "coord": "—",
+      "matriculados": 16,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN SALUD BASADA EN LA EVIDENCIA",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN SALUD FAMILIAR Y COMUNITARIO",
+      "coord": "—",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO ENTRENAMIENTO FUNCIONAL MENCIÓN EN ACTIVIDAD FISICA, DEPORTE Y SALUD",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "—",
+      "matriculados": 114,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO SALUD MENTAL: ABORDAJE INTERDISCIPLINARIO  Y GESTIÓN CLÍNICA",
+      "coord": "—",
+      "matriculados": 16,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
+      "coord": "—",
+      "matriculados": 33,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN EDUCACIÓN DE ADULTOS: PROCESOS FORMATIVOS Y DESAFÍOS EN INSTITUCIONES DE ED. SUPERIOR",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2022-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
+      "coord": "—",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO BIM AVANZADO",
+      "coord": "—",
+      "matriculados": 20,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO DERECHO DEL TRABAJO Y SISTEMA DE RELACIONES LABORALES EN LA EMPRESA",
+      "coord": "—",
+      "matriculados": 24,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO EN DERECHO ADMINISTRATIVO Y FUNCIÓN PÚBLICA",
+      "coord": "—",
+      "matriculados": 64,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO EN GÉNERO E INTERCULTURALIDAD EN LOS PRINCIPIOS DEL ESTADO DE DERECHO",
+      "coord": "—",
+      "matriculados": 7,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO CONVIVENCIA ESCOLAR Y APRENDIZAJE SOCIOEMOCIONAL",
+      "coord": "—",
+      "matriculados": 31,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA",
+      "coord": "—",
+      "matriculados": 32,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN APRENDIZAJE SOCIOEMOCIONAL DESDE UN MODELO ACTIVO EN EL AULA",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN DIVERSIFICACIÓN DE LA ENSEÑANZA PARA LA EDUCACIÓN INCLUSIVA",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN ESTRATEGIAS EDUCATIVAS INCLUSIVAS PARA EL USO DE TECNOLOGÍAS EN EL AULA",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN EVALUACIÓN Y DISEÑO DE INSTRUMENTOS PARA EL CONTEXTO ESCOLAR",
+      "coord": "—",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN LIDERAZGO DE ESTABLECIMIENTOS EDUCATIVOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN MOTRICIDAD INFANTIL",
+      "coord": "—",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN NECESIDADES EDUCATIVAS ESPECIALES Y CONTEXTOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 35,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN PROFUNDICACIÓN DE ASIGNATURAS DEL PLAN ELECTIVO DE EDUCACIÓN FISICA",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR",
+      "coord": "—",
+      "matriculados": 56,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Educación",
+      "prog": "POSTÍTULO EN DISCAPACIDAD INTELECTUAL Y EDUCACIÓN INCLUSIVA",
+      "coord": "—",
+      "matriculados": 74,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN AUDITOR LÍDER EN GESTIÓN DE RIESGOS EN SEGURIDAD Y SALUD OCUPACI. BAJO NORMA ISO 45001",
+      "coord": "—",
+      "matriculados": 5,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN BUSINESS ANALYTICS",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN CIBERSEGURIDAD Y GESTIÓN",
+      "coord": "—",
+      "matriculados": 17,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN CONTROL DE GESTIÓN ¿ CONTROLLING SAP",
+      "coord": "—",
+      "matriculados": 30,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN DATA SCIENCE",
+      "coord": "—",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN DIRECCIÓN DE PROYECTOS ¿ MÓDULO PS SAP",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN DE EXPERIENCIAS EN TIE",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN DE SEGURIDAD Y SALUD OCUPACIONAL BAJO NORMA ISO 45001",
+      "coord": "—",
+      "matriculados": 10,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN Y PLANIFICACIÓN TRIBUTARIA",
+      "coord": "—",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN MATEMÁTICA EDUCATIVA",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD",
+      "coord": "—",
+      "matriculados": 28,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO GESTIÓN AMBIENTAL BAJO NORMA ISO 14001",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "POSTÍTULO EN TRIBUTACIÓN",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO ANESTESIA Y MANEJO DE DOLOR EN PEQUEÑOS ANIMALES",
+      "coord": "—",
+      "matriculados": 52,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE DIAGNÓSTICO Y CONTROL DE PLAGAS URBANAS",
+      "coord": "—",
+      "matriculados": 19,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN DISEÑO DE SISTEMAS DE RIEGO Y FERTIIRRIGACIÓN",
+      "coord": "—",
+      "matriculados": 55,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN IMAGENOLOGÍA",
+      "coord": "—",
+      "matriculados": 50,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO MEDICINA INTERNA DE CANINOS",
+      "coord": "—",
+      "matriculados": 53,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN ESCRITURA DE ARTÍCULOS CIENTÍFICOS APLICADO A LAS CIENCIAS DE LA SALUD",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GERONTOGERIATRÍA INTERDISCIPLINARIA",
+      "coord": "—",
+      "matriculados": 2,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN NUTRICIÓN DEPORTIVA Y FITNESS",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PSICOLOGÍA APLICADA A LA ACTIVIDAD FÍSICA Y EL DEPORTE",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PSICOLOGÍA DEL TRAUMA: CLÍNICA Y ABORDAJES PSICOTERAPÉUTICOS",
+      "coord": "—",
+      "matriculados": 19,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN RECURSOS HUMANOS Y GESTIÓN DEL CAMBIO ORGANIZACIONAL",
+      "coord": "—",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN SALUD FAMILIAR Y COMUNITARIO",
+      "coord": "—",
+      "matriculados": 30,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN TRASTORNO DEL ESPECTRO AUTISTA Y DISCAPACIDAD INTELECTUAL EN EL CURSO DE LA VIDA",
+      "coord": "—",
+      "matriculados": 69,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PARTICIPACIÓN SOCIAL Y COMUNITARIA EN SALUD: HERRAMIENTAS Y METODOLOGIAS PARTICIPATIVAS",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "—",
+      "matriculados": 34,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO SALUD MENTAL: ABORDAJE INTERDISCIPLINARIO  Y GESTIÓN CLÍNICA",
+      "coord": "—",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN EDUCACIÓN DE ADULTOS: PROCESOS FORMATIVOS Y DESAFÍOS EN INSTITUCIONES DE ED. SUPERIOR",
+      "coord": "—",
+      "matriculados": 25,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
+      "coord": "—",
+      "matriculados": 22,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO BIM AVANZADO",
+      "coord": "—",
+      "matriculados": 16,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Comunicaciones",
+      "prog": "DIPLOMADO EN TRADUCCIÓN AUDIOVISUAL: SUBTITULADO Y DOBLAJE",
+      "coord": "—",
+      "matriculados": 24,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO DE MEDIACIÓN Y RESOLUCIÓN DE CONFLICTOS EN EL ÁMBITO DE LA FAMILIA",
+      "coord": "—",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO EN DERECHO INMOBILIARIO",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO EN LITIGACIÓN Y ARGUMENTACIÓN",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO CONVIVENCIA ESCOLAR Y APRENDIZAJE SOCIOEMOCIONAL",
+      "coord": "—",
+      "matriculados": 37,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA",
+      "coord": "—",
+      "matriculados": 7,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN DIVERSIFICACIÓN DE LA ENSEÑANZA PARA LA EDUCACIÓN INCLUSIVA",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN MOTRICIDAD INFANTIL",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN NECESIDADES EDUCATIVAS ESPECIALES Y CONTEXTOS INCLUSIVOS",
+      "coord": "—",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR",
+      "coord": "—",
+      "matriculados": 36,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Educación",
+      "prog": "POSTÍTULO EN DISCAPACIDAD INTELECTUAL Y EDUCACIÓN INCLUSIVA",
+      "coord": "—",
+      "matriculados": 16,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN BIOESTADISTICA",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN BIOINFORMÁTICA GENÓMICA",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN DATA SCIENCE",
+      "coord": "—",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN DE EMERGENCIAS Y RESPUESTAS ANTE DESASTRES BAJO NORMA ISO 22320",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN TURISTICA SOSTENIBLE",
+      "coord": "—",
+      "matriculados": 20,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN Y OPERACIÓN EN ALIMENTOS Y BEBIDAS",
+      "coord": "—",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN Y PLANIFICACIÓN TRIBUTARIA",
+      "coord": "—",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN NORMATIVA IFRS",
+      "coord": "—",
+      "matriculados": 10,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD",
+      "coord": "—",
+      "matriculados": 36,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "POSTITULO EN PREVENCIÓN DE RIESGOS",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE CIRUGIA EN ESPECIES DE COMPAÑIA",
+      "coord": "—",
+      "matriculados": 60,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN APICULTURA",
+      "coord": "—",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN MANEJO DE HOSPITAL VETERINARIO",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN MEDICINA FELINA",
+      "coord": "—",
+      "matriculados": 48,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN TÉCNICAS DE ANÁLISIS CLÍNICO VETERINARIO",
+      "coord": "—",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DE KINESITERAPIA RESPIRATORIA PARA ATENCIÓN PRIMARIA EN SALUD",
+      "coord": "—",
+      "matriculados": 36,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DOCENCIA EN SIMULACIÓN CLÍNICA",
+      "coord": "—",
+      "matriculados": 19,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GERONTOGERIATRÍA INTERDISCIPLINARIA",
+      "coord": "—",
+      "matriculados": 9,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GESTIÓN DE PERSONAS Y CAMBIO ORGANIZACIONAL",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN DE SALUD",
+      "coord": "—",
+      "matriculados": 27,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN NEUROCOGNICÓN Y PROCESO TERAPÉUTICO EN EL CURSO DE LA VIDA",
+      "coord": "—",
+      "matriculados": 9,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PRESCRIPCIÓN DE EJERCICIOS DE FUERZA Y MUSCULACIÓN PARA LA ACTIVIDAD FÍSICA",
+      "coord": "—",
+      "matriculados": 19,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN REHABILITACIÓN DE DESÓRDENES TEMPOROMANDIBULARES",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN SALUD FAMILIAR Y COMUNITARIO",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN TENDENCIAS DE NUTRICIÓN INTEGRATIVA",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "—",
+      "matriculados": 131,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO SALUD MENTAL: ABORDAJE INTERDISCIPLINARIO  Y GESTIÓN CLÍNICA",
+      "coord": "—",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
+      "coord": "—",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENFOQUE DE GÉNERO E INTERCULTURALIDAD PARA EDUCACIÓN SUPERIOR",
+      "coord": "—",
+      "matriculados": 27,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
+      "coord": "—",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2023-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN INVESTIGACIÓN-ACCIÓN APLICADA A LA DOCENCIA UNIVERSITARIA",
+      "coord": "—",
+      "matriculados": 24,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO BIM AVANZADO",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO CONVIVENCIA ESCOLAR Y APRENDIZAJE SOCIOEMOCIONAL",
+      "coord": "Sergio Román",
+      "matriculados": 78,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA",
+      "coord": "Carolina Castro",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN EVALUACIÓN Y DISEÑO DE INSTRUMENTOS PARA EL CONTEXTO ESCOLAR",
+      "coord": "Sergio Román",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR",
+      "coord": "Sergio Román",
+      "matriculados": 56,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Educación",
+      "prog": "POSTÍTULO EN DISCAPACIDAD INTELECTUAL Y EDUCACIÓN INCLUSIVA",
+      "coord": "Fernanda Miranda",
+      "matriculados": 28,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN AUDITOR LÍDER EN GESTIÓN DE RIESGOS EN SEGURIDAD Y SALUD OCUPACI. BAJO NORMA ISO 45001",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN CONTROL DE GESTIÓN ¿ CONTROLLING SAP",
+      "coord": "Carolina Castro",
+      "matriculados": 17,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN DIRECCIÓN DE PROYECTOS ¿ MÓDULO PS SAP",
+      "coord": "Sergio Román",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 54,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO GESTIÓN AMBIENTAL BAJO NORMA ISO 14001",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 16,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO ANESTESIA Y MANEJO DE DOLOR EN PEQUEÑOS ANIMALES",
+      "coord": "Valentina Uribarri",
+      "matriculados": 58,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN DISEÑO DE SISTEMAS DE RIEGO Y FERTIIRRIGACIÓN",
+      "coord": "Valentina Uribarri",
+      "matriculados": 41,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO MEDICINA INTERNA DE CANINOS",
+      "coord": "Valentina Uribarri",
+      "matriculados": 60,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GERONTOGERIATRÍA INTERDISCIPLINARIA",
+      "coord": "—",
+      "matriculados": 20,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GEST. DE PROGR. EN ATENCIÓN PRIMARIA DE SALUD CON ENFOQUE EN MOD. DE ATEN. INTEG. EN SA",
+      "coord": "Paula Díaz",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN DE SALUD",
+      "coord": "Paula Díaz",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PARTICIPACIÓN SOCIAL Y COMUNITARIA EN SALUD: HERRAMIENTAS Y METODOLOGIAS PARTICIPATIVAS",
+      "coord": "Paula Díaz",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "Valentina Uribarri",
+      "matriculados": 39,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO SALUD MENTAL: ABORDAJE INTERDISCIPLINARIO  Y GESTIÓN CLÍNICA",
+      "coord": "Fernanda Miranda",
+      "matriculados": 25,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 24,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENFOQUE DE GÉNERO E INTERCULTURALIDAD PARA EDUCACIÓN SUPERIOR",
+      "coord": "Fernanda Miranda",
+      "matriculados": 38,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
+      "coord": "—",
+      "matriculados": 27,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
+      "coord": "Sergio Román",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN INVESTIGACIÓN-ACCIÓN APLICADA A LA DOCENCIA UNIVERSITARIA",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 25,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO BIM AVANZADO",
+      "coord": "—",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO DE MEDIACIÓN Y RESOLUCIÓN DE CONFLICTOS EN EL ÁMBITO DE LA FAMILIA",
+      "coord": "Paula Díaz",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO CONVIVENCIA ESCOLAR Y APRENDIZAJE SOCIOEMOCIONAL",
+      "coord": "Sergio Román",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA",
+      "coord": "Carolina Castro",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN DIVERSIFICACIÓN DE LA ENSEÑANZA PARA LA EDUCACIÓN INCLUSIVA",
+      "coord": "Fernanda Miranda",
+      "matriculados": 9,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN EVALUACIÓN Y DISEÑO DE INSTRUMENTOS PARA EL CONTEXTO ESCOLAR",
+      "coord": "Sergio Román",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN LIDERAZGO EDUCATIVO",
+      "coord": "Sergio Román",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN NECESIDADES EDUCATIVAS ESPECIALES Y CONTEXTOS INCLUSIVOS",
+      "coord": "Fernanda Miranda",
+      "matriculados": 16,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR",
+      "coord": "Sergio Román",
+      "matriculados": 32,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Educación",
+      "prog": "POSTÍTULO EN DISCAPACIDAD INTELECTUAL Y EDUCACIÓN INCLUSIVA",
+      "coord": "Fernanda Miranda",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN BIOESTADISTICA",
+      "coord": "—",
+      "matriculados": 9,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN DE EMERGENCIAS Y RESPUESTAS ANTE DESASTRES BAJO NORMA ISO 22320",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 25,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN TURISTICA SOSTENIBLE",
+      "coord": "Carolina Castro",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN Y OPERACIÓN EN ALIMENTOS Y BEBIDAS",
+      "coord": "Sergio Román",
+      "matriculados": 10,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 36,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "POSTITULO EN PREVENCIÓN DE RIESGOS",
+      "coord": "—",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE CIRUGIA EN ESPECIES DE COMPAÑIA",
+      "coord": "—",
+      "matriculados": 56,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN APICULTURA",
+      "coord": "Valentina Uribarri",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DE KINESITERAPIA RESPIRATORIA PARA ATENCIÓN PRIMARIA EN SALUD",
+      "coord": "Paula Díaz",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DOCENCIA EN SIMULACIÓN CLÍNICA",
+      "coord": "Paula Díaz",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GESTIÓN DE PERSONAS Y CAMBIO ORGANIZACIONAL",
+      "coord": "Fernanda Miranda",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN DE SALUD",
+      "coord": "Paula Díaz",
+      "matriculados": 32,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PRESCRIPCIÓN DE EJERCICIOS DE FUERZA Y MUSCULACIÓN PARA LA ACTIVIDAD FÍSICA",
+      "coord": "Fernanda Miranda",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "Valentina Uribarri",
+      "matriculados": 48,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO SALUD MENTAL: ABORDAJE INTERDISCIPLINARIO  Y GESTIÓN CLÍNICA",
+      "coord": "Fernanda Miranda",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENFOQUE DE GÉNERO E INTERCULTURALIDAD PARA EDUCACIÓN SUPERIOR",
+      "coord": "Fernanda Miranda",
+      "matriculados": 19,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
+      "coord": "Sergio Román",
+      "matriculados": 24,
+      "fecha_termino": null
+    },
+    {
+      "per": "2024-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN INVESTIGACIÓN-ACCIÓN APLICADA A LA DOCENCIA UNIVERSITARIA",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO BIM AVANZADO",
+      "coord": "—",
+      "matriculados": 24,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO EN GESTIÓN DE INFRAESTRUCTURA",
+      "coord": "Paulina Toledo",
+      "matriculados": 19,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO DERECHO DEL TRABAJO Y SISTEMA DE RELACIONES LABORALES EN LA EMPRESA",
+      "coord": "Paulina Toledo",
+      "matriculados": 42,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA",
+      "coord": "Carolina Castro",
+      "matriculados": 31,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN CONVIVENCIA EDUCATIVA Y APRENDIZAJE SOCIOEMOCIONAL",
+      "coord": "Sergio Román",
+      "matriculados": 46,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Educación",
+      "prog": "DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR",
+      "coord": "Sergio Román",
+      "matriculados": 80,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN AUDITOR LÍDER EN GESTIÓN DE RIESGOS EN SEGURIDAD Y SALUD OCUPACI. BAJO NORMA ISO 45001",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 27,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 50,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO GESTIÓN AMBIENTAL BAJO NORMA ISO 14001",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO ANESTESIA Y MANEJO DE DOLOR EN PEQUEÑOS ANIMALES",
+      "coord": "Valentina Uribarri",
+      "matriculados": 39,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN DISEÑO DE SISTEMAS DE RIEGO Y FERTIIRRIGACIÓN",
+      "coord": "Valentina Uribarri",
+      "matriculados": 34,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO MEDICINA INTERNA DE CANINOS",
+      "coord": "Paula Díaz",
+      "matriculados": 47,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GERONTOGERIATRÍA INTERDISCIPLINARIA",
+      "coord": "—",
+      "matriculados": 20,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN GEST. DE PROGR. EN ATENCIÓN PRIMARIA DE SALUD CON ENFOQUE EN MOD. DE ATEN. INTEG. EN SA",
+      "coord": "Paula Díaz",
+      "matriculados": 23,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN DE SALUD",
+      "coord": "Paula Díaz",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PERITAJE SOCIAL",
+      "coord": "—",
+      "matriculados": 1,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "Valentina Uribarri",
+      "matriculados": 60,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO SALUD MENTAL: ABORDAJE INTERDISCIPLINARIO  Y GESTIÓN CLÍNICA",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 22,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENFOQUE DE GÉNERO E INTERCULTURALIDAD PARA EDUCACIÓN SUPERIOR",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
+      "coord": "—",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
+      "coord": "Sergio Román",
+      "matriculados": 17,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-10",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN INVESTIGACIÓN-ACCIÓN APLICADA A LA DOCENCIA UNIVERSITARIA",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Fac. de Arq.Anin.Dis. y Const.",
+      "prog": "DIPLOMADO BIM AVANZADO",
+      "coord": "—",
+      "matriculados": 25,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Comunicaciones",
+      "prog": "DIP.EN IA APL. PERIOD. Y COM.",
+      "coord": "Carolina Castro",
+      "matriculados": 10,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Derecho",
+      "prog": "DIPLOMADO DE MEDIACIÓN Y RESOLUCIÓN DE CONFLICTOS EN EL ÁMBITO DE LA FAMILIA",
+      "coord": "Paulina Toledo",
+      "matriculados": 15,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN ALFABETIZACIÓN INICIAL Y DIDÁCTICAS PARA LA PRIMERA INFANCIA",
+      "coord": "Carolina Castro",
+      "matriculados": 11,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO EN CONVIVENCIA EDUCATIVA Y APRENDIZAJE SOCIOEMOCIONAL",
+      "coord": "Sergio Román",
+      "matriculados": 26,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Educación",
+      "prog": "DIPLOMADO ORIENTACIÓN EDUCACIONAL, VOCACIONAL Y FAMILIAR",
+      "coord": "Sergio Román",
+      "matriculados": 44,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIP.EN GEST. ENER.LEY 21.305",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 14,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIP.EN GEST. Y MAN. RES. PEL.",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN BIOESTADISTICA",
+      "coord": "—",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN GESTIÓN DE EMERGENCIAS Y RESPUESTAS ANTE DESASTRES BAJO NORMA ISO 22320",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 18,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Ingeniería y Negocios",
+      "prog": "DIPLOMADO EN SISTEMAS INTEGRADOS DE GESTIÓN DE CALIDAD, MEDIO AMBIENTE Y SEGURIDAD",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 30,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO DE CIRUGIA EN ESPECIES DE COMPAÑIA",
+      "coord": "—",
+      "matriculados": 47,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Fac. de Med. Veter. y Agronom.",
+      "prog": "DIPLOMADO EN MEDICINA FELINA",
+      "coord": "Valentina Uribarri",
+      "matriculados": 30,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIP.EN PSICO. EDUC. INTE. INT.",
+      "coord": "Fernanda Miranda",
+      "matriculados": 10,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIP.INTERV. PSICOS. A VÍCTIMAS",
+      "coord": "Valentina Uribarri",
+      "matriculados": 12,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DE KINESITERAPIA RESPIRATORIA PARA ATENCIÓN PRIMARIA EN SALUD",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 35,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO DOCENCIA EN SIMULACIÓN CLÍNICA",
+      "coord": "Fernanda Miranda",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN INFECCIONES ASOCIADAS A LA ATENCIÓN DE SALUD",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 39,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO EN PRESCRIPCIÓN DE EJERCICIOS DE FUERZA Y MUSCULACIÓN PARA LA ACTIVIDAD FÍSICA",
+      "coord": "Carolina Castro",
+      "matriculados": 21,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO PERITAJE PSICOSOCIAL EN MATERIA PENAL Y FAMILIA",
+      "coord": "Valentina Uribarri",
+      "matriculados": 153,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Salud y Ciencias Sociales",
+      "prog": "DIPLOMADO SOBRE INCLUSIÓN EN EDUCACIÓN SUPERIOR",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 13,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN DOCENCIA UNIVERSITARIA",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 19,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENFOQUE DE GÉNERO E INTERCULTURALIDAD PARA EDUCACIÓN SUPERIOR",
+      "coord": "Fernanda Miranda",
+      "matriculados": 16,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN ENSEÑANZA REMOTA Y APRENDIZAJE DIGITAL",
+      "coord": "—",
+      "matriculados": 20,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN EVALUACIÓN PARA LOS APRENDIZAJES",
+      "coord": "Sergio Román",
+      "matriculados": 7,
+      "fecha_termino": null
+    },
+    {
+      "per": "2025-20",
+      "fac": "Vicerrectoría Académica",
+      "prog": "DIPLOMADO EN INVESTIGACIÓN-ACCIÓN APLICADA A LA DOCENCIA UNIVERSITARIA",
+      "coord": "Vanessa Álvarez",
+      "matriculados": 25,
+      "fecha_termino": null
+    }
   ]
 };
