@@ -95,7 +95,10 @@ select.flt,input.flt{padding:5px 8px;font-size:10px;font-family:inherit;backgrou
     <div class="hdr-logo">U</div>
     <div><h1>NPS Dashboard — Educación Continua UDLA</h1><p>Comparativo 4 períodos · 1.072 respuestas · 8 facultades · 7 coordinadores</p></div>
   </div>
-  <div class="hdr-badge">Cobertura histórica verificada</div>
+  <div class="hdr-badge" style="display:flex;align-items:center;gap:10px">
+    <span>Cobertura histórica verificada</span>
+    <button onclick="(function(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([document.documentElement.outerHTML],{type:'text/html'}));a.download='Dashboard_NPS_UDLA.html';a.click();})()" style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;padding:5px 13px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap">⬇ Descargar HTML</button>
+  </div>
 </div>
 <nav class="nav">
   <button class="nb on" onclick="goSec(this,'resumen')">Resumen</button>

@@ -402,28 +402,6 @@ if os.path.exists(html_template):
             html_out
         )
 
-        # Botón de descarga (lo inyecta si no existe ya)
-        if 'Descargar HTML' not in html_out:
-            download_btn = (
-                '<button onclick="(function(){const a=document.createElement(\'a\');'
-                'a.href=URL.createObjectURL(new Blob([document.documentElement.outerHTML],'
-                '{type:\'text/html\'}));a.download=\'Dashboard_NPS_UDLA.html\';a.click();})()" '
-                'style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);'
-                'color:#fff;padding:5px 13px;border-radius:6px;font-size:11px;font-weight:600;'
-                'cursor:pointer;white-space:nowrap" '
-                'onmouseover="this.style.background=\'rgba(255,255,255,.28)\'" '
-                'onmouseout="this.style.background=\'rgba(255,255,255,.15)\'">⬇ Descargar HTML</button>'
-            )
-            html_out = html_out.replace(
-                'class="hdr-badge">', f'class="hdr-badge" style="display:flex;align-items:center;gap:10px"><span>', 1
-            )
-            # Insertar botón después del badge
-            html_out = re.sub(
-                r'(class="hdr-badge"[^>]*><span>[^<]*</span>)',
-                r'\1' + download_btn,
-                html_out
-            )
-
         with open(output_html, 'w', encoding='utf-8') as f:
             f.write(html_out)
 
